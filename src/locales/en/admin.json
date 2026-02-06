@@ -1,0 +1,77 @@
+{
+  "title": "Admin Dashboard",
+  "login": {
+    "title": "Admin Access",
+    "description": "Sign in with an authorized Google account to access the admin dashboard.",
+    "signIn": "Sign in with Google",
+    "unauthorized": "Your email is not authorized for admin access",
+    "backToSite": "Back to website"
+  },
+  "header": {
+    "dashboard": "Dashboard",
+    "questions": "Questions",
+    "signOut": "Sign out"
+  },
+  "stats": {
+    "totalQuestions": "Total Questions",
+    "categories": "Categories",
+    "pendingChanges": "Pending Changes"
+  },
+  "questions": {
+    "title": "Questions",
+    "search": "Search questions...",
+    "filter": "Filter by category",
+    "all": "All categories",
+    "noResults": "No questions found",
+    "edit": "Edit",
+    "delete": "Delete",
+    "restore": "Restore",
+    "add": "Add Question",
+    "deleted": "Deleted",
+    "modified": "Modified",
+    "new": "New"
+  },
+  "editor": {
+    "title": "Edit Question",
+    "titleNew": "New Question",
+    "questionFr": "Question (French)",
+    "translationEn": "English Translation",
+    "translationDe": "German Translation",
+    "category": "Category",
+    "autoTranslate": "Auto-translate",
+    "translating": "Translating...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirmDelete": "Are you sure you want to delete this question?"
+  },
+  "generator": {
+    "title": "Generate Questions",
+    "description": "Use AI to generate new questions for your selected category.",
+    "category": "Category",
+    "selectCategory": "Select a category",
+    "count": "Number of questions",
+    "generate": "Generate with AI",
+    "generating": "Generating...",
+    "generated": "Generated Questions",
+    "addSelected": "Add Selected",
+    "addAll": "Add All",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All",
+    "noQuestions": "No questions generated yet",
+    "error": "Failed to generate questions. Please try again."
+  },
+  "saveBar": {
+    "unsaved": "{{count}} unsaved change(s)",
+    "save": "Save All",
+    "discard": "Discard",
+    "saving": "Saving...",
+    "saved": "All changes saved!",
+    "error": "Failed to save. Please try again."
+  },
+  "errors": {
+    "loadFailed": "Failed to load questions. Please refresh the page.",
+    "saveFailed": "Failed to save changes. Please try again.",
+    "unauthorized": "You are not authorized to perform this action."
+  }
+}

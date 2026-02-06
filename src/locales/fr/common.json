@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "A propos",
+    "features": "Fonctionnalites",
+    "team": "Equipe",
+    "blog": "Blog"
+  },
+  "footer": {
+    "pages": "Pages",
+    "home": "Accueil",
+    "about": "A propos",
+    "services": "Services",
+    "terms": "Conditions d'utilisation",
+    "privacy": "Politique de confidentialite",
+    "deleteAccount": "Supprimer le compte",
+    "address": "Avenue de Beauregard 14",
+    "city": "1700 Fribourg, Suisse",
+    "emailLabel": "Email :",
+    "email": "info@whoisthemost.com",
+    "copyright": "Copyright",
+    "allRightsReserved": "Tous droits reserves",
+    "brandTagline": "Who Is The Most - Le jeu de vote entre amis qui rapproche.",
+    "downloadTitle": "T\u00e9l\u00e9charger l'App",
+    "downloadDescription": "Disponible sur iOS et Android. Jouez avec vos amis partout !"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous recherchez n'existe pas ou a \u00e9t\u00e9 d\u00e9plac\u00e9e. Laissez-nous vous aider.",
+    "backToHome": "Retour \u00e0 l'accueil",
+    "blog": "Blog",
+    "privacy": "Confidentialit\u00e9",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "download": "Telecharger",
+    "downloadIos": "Telecharger sur l'App Store",
+    "downloadAndroid": "Disponible sur Google Play",
+    "joinCommunity": "Rejoindre la Communaute",
+    "shareIdeas": "Partagez Vos Idees",
+    "readMore": "Lire la suite",
+    "backToHome": "Retour a l'accueil",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "submit": "Envoyer"
+  },
+  "languages": {
+    "en": "Anglais",
+    "fr": "Francais",
+    "de": "Allemand"
+  },
+  "meta": {
+    "siteTitle": "WITM - Qui Est Le Plus",
+    "siteDescription": "Le jeu de soiree qui revele ce que vos amis pensent vraiment ! Votez sur des questions fun et lancez des defis aux gagnants. Gratuit sur iOS et Android."
+  }
+}

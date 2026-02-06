@@ -1,0 +1,77 @@
+{
+  "title": "Tableau de bord Admin",
+  "login": {
+    "title": "Acces Admin",
+    "description": "Connectez-vous avec un compte Google autorise pour acceder au tableau de bord admin.",
+    "signIn": "Se connecter avec Google",
+    "unauthorized": "Votre email n'est pas autorise pour l'acces admin",
+    "backToSite": "Retour au site"
+  },
+  "header": {
+    "dashboard": "Tableau de bord",
+    "questions": "Questions",
+    "signOut": "Deconnexion"
+  },
+  "stats": {
+    "totalQuestions": "Total Questions",
+    "categories": "Categories",
+    "pendingChanges": "Modifications en attente"
+  },
+  "questions": {
+    "title": "Questions",
+    "search": "Rechercher des questions...",
+    "filter": "Filtrer par categorie",
+    "all": "Toutes les categories",
+    "noResults": "Aucune question trouvee",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "restore": "Restaurer",
+    "add": "Ajouter une question",
+    "deleted": "Supprimee",
+    "modified": "Modifiee",
+    "new": "Nouvelle"
+  },
+  "editor": {
+    "title": "Modifier la question",
+    "titleNew": "Nouvelle question",
+    "questionFr": "Question (Francais)",
+    "translationEn": "Traduction anglaise",
+    "translationDe": "Traduction allemande",
+    "category": "Categorie",
+    "autoTranslate": "Traduction auto",
+    "translating": "Traduction en cours...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "confirmDelete": "Etes-vous sur de vouloir supprimer cette question ?"
+  },
+  "generator": {
+    "title": "Generer des questions",
+    "description": "Utilisez l'IA pour generer de nouvelles questions pour la categorie selectionnee.",
+    "category": "Categorie",
+    "selectCategory": "Selectionnez une categorie",
+    "count": "Nombre de questions",
+    "generate": "Generer avec l'IA",
+    "generating": "Generation en cours...",
+    "generated": "Questions generees",
+    "addSelected": "Ajouter la selection",
+    "addAll": "Tout ajouter",
+    "selectAll": "Tout selectionner",
+    "deselectAll": "Tout deselectionner",
+    "noQuestions": "Aucune question generee pour l'instant",
+    "error": "Echec de la generation. Veuillez reessayer."
+  },
+  "saveBar": {
+    "unsaved": "{{count}} modification(s) non enregistree(s)",
+    "save": "Tout enregistrer",
+    "discard": "Annuler",
+    "saving": "Enregistrement...",
+    "saved": "Toutes les modifications ont ete enregistrees !",
+    "error": "Echec de l'enregistrement. Veuillez reessayer."
+  },
+  "errors": {
+    "loadFailed": "Echec du chargement des questions. Veuillez rafraichir la page.",
+    "saveFailed": "Echec de l'enregistrement. Veuillez reessayer.",
+    "unauthorized": "Vous n'etes pas autorise a effectuer cette action."
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "hero": {
+    "title": "WITM",
+    "subtitle": "Qui Est Le Plus...?",
+    "description": "Le jeu de soiree qui revele ce que vos amis pensent vraiment ! Votez sur des questions fun, decouvrez des verites surprenantes et lancez des defis aux gagnants. Rapide a lancer, impossible a oublier.",
+    "ctaJoin": "Rejoindre la Communaute",
+    "ctaDownload": "Telecharger",
+    "scrollHint": "Defilez pour explorer"
+  },
+  "about": {
+    "sectionLabel": "A propos",
+    "title": "Une Petite Equipe Suisse, De Grandes Idees",
+    "description": "Nous sommes une equipe passionnee de Fribourg, en Suisse, dediee a rapprocher les amis a travers des moments fun et inoubliables.",
+    "story": "WITM est ne d'une question simple : \"Qui parmi nous est le plus susceptible de...?\" Maintenant vous pouvez trancher le debat ! Creez une salle, invitez vos amis avec un code PIN et votez sur des questions hilarantes. Celui qui a le plus de votes ? Il recoit un defi !",
+    "pillars": {
+      "swissQuality": {
+        "label": "Qualite Suisse",
+        "text": "Cree avec soin a Fribourg"
+      },
+      "weListen": {
+        "label": "A Votre Ecoute",
+        "text": "Vos retours faconnent notre app"
+      },
+      "justLaunched": {
+        "label": "Tout Juste Lance",
+        "text": "Version 1.0 le 3 fevrier 2026"
+      },
+      "communityFirst": {
+        "label": "Communaute d'Abord",
+        "text": "Nous grandissons avec vous"
+      }
+    },
+    "cta": "Partagez Vos Idees"
+  },
+  "iconBoxes": {
+    "createRooms": {
+      "title": "Configuration Rapide",
+      "description": "Creez une salle en quelques secondes et partagez un code PIN a 3 chiffres. Vos amis rejoignent instantanement !"
+    },
+    "funQuiz": {
+      "title": "Votez pour Vos Amis",
+      "description": "Des questions fun comme \"Qui est le plus susceptible de...\" apparaissent. Tout le monde vote en secret !"
+    },
+    "dynamicVoting": {
+      "title": "Resultats & Defis",
+      "description": "Decouvrez qui a eu le plus de votes ! Le gagnant recoit un defi amusant du groupe."
+    },
+    "leaderboard": {
+      "title": "Classement Final",
+      "description": "A la fin, decouvrez qui a ete vote \"Le Plus\" tout au long du jeu. Droits de se vanter inclus !"
+    }
+  },
+  "features": {
+    "sectionTitle": "Categories de Questions",
+    "sectionDescription": "Choisissez votre ambiance ! Chaque categorie apporte une saveur differente a votre soiree.",
+    "wtf": "WTF!?",
+    "friends": "Amis",
+    "family": "Famille",
+    "job": "Boulot",
+    "hot": "Hot",
+    "problemes": "Problemes",
+    "normal": "Normal"
+  },
+  "examples": {
+    "sectionTitle": "Exemples de Questions",
+    "sectionDescription": "Voici un apercu de ce sur quoi vous allez voter :",
+    "q1": "Qui est le plus susceptible d'organiser une fete surprise ?",
+    "q2": "Qui est le plus susceptible de depenser beaucoup trop d'argent en cafe ?",
+    "q3": "Qui est le plus susceptible de s'enfuir pour rejoindre le cirque ?",
+    "q4": "Qui est le plus susceptible d'etre le plus desordonne a la maison ?",
+    "q5": "Qui est le plus susceptible de demissionner de facon theatrale ?",
+    "q6": "Qui est le plus susceptible de s'infiltrer dans la Zone 51 juste pour voir ce qu'il y a dedans ?"
+  },
+  "carousel": {
+    "sectionTitle": "Decouvrez l'App",
+    "sectionDescription": "Faites defiler les captures d'ecran et voyez comme c'est facile de jouer avec vos amis.",
+    "screen1Alt": "Ecran d'accueil WITM",
+    "screen2Alt": "Ecran de creation de salle",
+    "screen3Alt": "Ecran de vote",
+    "previous": "Capture precedente",
+    "next": "Capture suivante",
+    "goToSlide": "Aller a la diapositive {{number}}"
+  },
+  "whyChoose": {
+    "title": "Pourquoi Choisir WITM ?",
+    "subtitle": "Le jeu de soiree fait pour les vraies amities",
+    "swissMade": "Fait en Suisse",
+    "weListen": "A Votre Ecoute",
+    "justLaunched": "Tout Juste Lance",
+    "communityFirst": "Communaute d'Abord",
+    "swissMadeDesc": "Concu et developpe avec precision et soin suisse a Fribourg. Une qualite de confiance.",
+    "weListenDesc": "Une idee ? Nous lisons chaque suggestion. Vos retours faconnent directement nos fonctionnalites.",
+    "justLaunchedDesc": "Tout frais sorti du four ! Version 1.0 lancee en fevrier 2026 - encore plus de fun a venir.",
+    "communityFirstDesc": "Cree pour les groupes d'amis, faconne par des joueurs comme vous. Vous etes au coeur de WITM."
+  },
+  "details": {
+    "sectionTitle": "Comment WITM Fonctionne",
+    "sectionSubtitlePrefix": "Decouvrez",
+    "sectionSubtitleHighlight": "Le Gameplay",
+    "feature1": {
+      "title": "Creez ou Rejoignez en Quelques Secondes",
+      "description": "Lancer une partie est super simple. Creez une salle et obtenez un code PIN unique a 3 caracteres. Partagez-le par message, et vos amis sont dedans ! Pas d'inscription requise.",
+      "bullet1": "Codes PIN a 3 caracteres pour rejoindre facilement",
+      "bullet2": "Minimum 2-3 joueurs pour commencer le fun",
+      "bullet3": "Fonctionne sur iOS et Android"
+    },
+    "feature2": {
+      "title": "Votez selon les Capacites",
+      "description": "Les utilisateurs peuvent voter pour les autres en fonction de leurs capacites demontrees dans differents domaines comme la creativite, les competences et le travail d'equipe.",
+      "extra": "Avec un systeme de vote dynamique, les utilisateurs ont la possibilite de voter en fonction des qualites uniques que les joueurs demontrent. Que ce soit un defi de jeu, une tache ou un projet creatif, la communaute vote pour mettre en avant les meilleures performances."
+    },
+    "feature3": {
+      "title": "Votez pour Qui Correspond le Mieux",
+      "description": "A chaque manche, une question apparait : \"Qui est le plus susceptible de...?\" Tout le monde vote en secret pour l'ami qui correspond le mieux. Soyez honnete... ou strategique !",
+      "bullet1": "Le vote secret garde l'excitation",
+      "bullet2": "Mode anonyme optionnel cache qui a vote pour qui",
+      "bullet3": "Option d'auto-vote pour encore plus de fun"
+    },
+    "feature4": {
+      "title": "Vote et Retours en Temps Reel",
+      "description": "Les joueurs peuvent recevoir des retours en temps reel bases sur les votes et participer a des defis en cours, les aidant a s'ameliorer et a progresser plus vite.",
+      "extra": "Avec des mises a jour en direct, les utilisateurs sont immediatement informes des votes recus, et la possibilite de donner des retours sur les performances des autres favorise une communaute solidaire."
+    },
+    "feature5": {
+      "title": "Resultats & Defis",
+      "description": "Apres le vote, les resultats sont reveles ! La personne avec le plus de votes est couronnee \"Le Plus\" pour cette manche et recoit un defi amusant du groupe.",
+      "extra": "Le jeu avance automatiquement apres chaque manche. Configurez de 5 a 20 questions par partie, avec des minuteries de 5 a 30 secondes. Chaque parametre est personnalisable !"
+    },
+    "feature6": {
+      "title": "Communaute et Partage Social",
+      "description": "Les joueurs peuvent partager leurs succes, votes recus et resultats de defis avec leur communaute, leur permettant de montrer leur progression.",
+      "extra": "L'integration sociale permet aux utilisateurs de partager leur historique de vote et leurs positions au classement sur differentes plateformes de medias sociaux, leur permettant d'augmenter leur visibilite et de celebrer leurs accomplissements."
+    },
+    "feature7": {
+      "title": "Classement Final",
+      "description": "A la fin, decouvrez le classement complet montrant qui a ete vote \"Le Plus\" sur toutes les manches. Parfait pour trancher les debats amicaux et gagner des droits de fanfaronner !",
+      "extra": "Les joueurs Premium peuvent creer des questions personnalisees, acceder a toutes les categories et personnaliser chaque parametre. Faites de WITM le votre !"
+    }
+  },
+  "download": {
+    "title": "Pret a Jouer ?",
+    "description": "Telechargez WITM maintenant et decouvrez ce que vos amis pensent vraiment. Disponible gratuitement sur iOS et Android !"
+  },
+  "team": {
+    "sectionTitle": "Equipe",
+    "sectionSubtitlePrefix": "Rencontrez Notre",
+    "sectionSubtitleHighlight": "Equipe",
+    "members": {
+      "corentin": {
+        "name": "Corentin Bompard",
+        "role": "Directeur General"
+      }
+    }
+  },
+  "feedback": {
+    "title": "Des idees ? On vous ecoute !",
+    "description": "Nous adorons entendre nos joueurs. Partagez vos pensees, suggerez de nouvelles questions, ou dites simplement bonjour. Chaque message nous aide a ameliorer WITM !",
+    "email": "quiestlepluss@gmail.com"
+  }
+}

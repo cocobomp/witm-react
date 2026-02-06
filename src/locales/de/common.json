@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Uber uns",
+    "features": "Funktionen",
+    "team": "Team",
+    "blog": "Blog"
+  },
+  "footer": {
+    "pages": "Seiten",
+    "home": "Startseite",
+    "about": "Uber uns",
+    "services": "Dienste",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutz",
+    "deleteAccount": "Konto loschen",
+    "address": "Avenue de Beauregard 14",
+    "city": "1700 Freiburg, Schweiz",
+    "emailLabel": "E-Mail:",
+    "email": "info@whoisthemost.com",
+    "copyright": "Copyright",
+    "allRightsReserved": "Alle Rechte vorbehalten",
+    "brandTagline": "Who Is The Most - Das Abstimmungsspiel, das Freunde zusammenbringt.",
+    "downloadTitle": "App herunterladen",
+    "downloadDescription": "Verf\u00fcgbar auf iOS und Android. Spielt mit Freunden \u00fcberall!"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben. Lassen Sie uns Ihnen helfen.",
+    "backToHome": "Zur\u00fcck zur Startseite",
+    "blog": "Blog",
+    "privacy": "Datenschutz",
+    "contact": "Kontakt"
+  },
+  "buttons": {
+    "download": "Herunterladen",
+    "downloadIos": "Im App Store laden",
+    "downloadAndroid": "Bei Google Play laden",
+    "joinCommunity": "Community beitreten",
+    "shareIdeas": "Teile Deine Ideen",
+    "readMore": "Weiterlesen",
+    "backToHome": "Zuruck zur Startseite",
+    "cancel": "Abbrechen",
+    "confirm": "Bestatigen",
+    "submit": "Absenden"
+  },
+  "languages": {
+    "en": "Englisch",
+    "fr": "Franzosisch",
+    "de": "Deutsch"
+  },
+  "meta": {
+    "siteTitle": "WITM - Wer Ist Am Meisten",
+    "siteDescription": "Das Partyspiel, das zeigt, was deine Freunde wirklich denken! Stimme bei lustigen Fragen ab und fordere die Gewinner heraus. Kostenlos auf iOS und Android."
+  }
+}

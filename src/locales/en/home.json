@@ -1,0 +1,160 @@
+{
+  "hero": {
+    "title": "WITM",
+    "subtitle": "Who Is The Most...?",
+    "description": "The party game that reveals what your friends really think! Vote on fun questions, discover surprising truths, and dare the winners. Quick to start, impossible to forget.",
+    "ctaJoin": "Join Our Community",
+    "ctaDownload": "Get the App",
+    "scrollHint": "Scroll to explore"
+  },
+  "about": {
+    "sectionLabel": "About Us",
+    "title": "A Small Swiss Team, Big Ideas",
+    "description": "We're a passionate team from Fribourg, Switzerland, dedicated to bringing friends together through fun and unforgettable moments.",
+    "story": "WITM was born from a simple question: \"Who among us is the most likely to...?\" Now you can settle the debate! Create a room, invite your friends with a PIN code, and vote on hilarious questions. The one with the most votes? They get a dare!",
+    "pillars": {
+      "swissQuality": {
+        "label": "Swiss Quality",
+        "text": "Built with care in Fribourg"
+      },
+      "weListen": {
+        "label": "We Listen",
+        "text": "Your feedback shapes our app"
+      },
+      "justLaunched": {
+        "label": "Just Launched",
+        "text": "Version 1.0 on February 3, 2026"
+      },
+      "communityFirst": {
+        "label": "Community First",
+        "text": "Growing together with you"
+      }
+    },
+    "cta": "Share Your Ideas"
+  },
+  "iconBoxes": {
+    "createRooms": {
+      "title": "Quick Room Setup",
+      "description": "Create a room in seconds and share a 3-digit PIN. Friends join instantly - no accounts needed!"
+    },
+    "funQuiz": {
+      "title": "Vote on Friends",
+      "description": "Fun questions like \"Who is the most likely to...\" appear. Everyone votes secretly for who fits best!"
+    },
+    "dynamicVoting": {
+      "title": "Reveal & Dare",
+      "description": "See who got the most votes! The winner gets a fun dare or challenge from the group."
+    },
+    "leaderboard": {
+      "title": "Final Rankings",
+      "description": "At the end, discover who was voted \"The Most\" throughout the game. Bragging rights included!"
+    }
+  },
+  "features": {
+    "sectionTitle": "Question Categories",
+    "sectionDescription": "Choose your vibe! Each category brings a different flavor to your game night.",
+    "wtf": "WTF!?",
+    "friends": "Friends",
+    "family": "Family",
+    "job": "Job",
+    "hot": "Hot",
+    "problemes": "Problems",
+    "normal": "Normal"
+  },
+  "examples": {
+    "sectionTitle": "Sample Questions",
+    "sectionDescription": "Here's a taste of what you'll vote on:",
+    "q1": "Most likely to plan a surprise party",
+    "q2": "Most likely to spend way too much money on coffee",
+    "q3": "Most likely to run away and join the circus",
+    "q4": "Most likely to be the messiest in the house",
+    "q5": "Most likely to quit their job in a dramatic way",
+    "q6": "Most likely to break into Area 51 just to see what's inside"
+  },
+  "carousel": {
+    "sectionTitle": "See It in Action",
+    "sectionDescription": "Swipe through the app and see how easy it is to play with friends.",
+    "screen1Alt": "WITM home screen",
+    "screen2Alt": "Create room screen",
+    "screen3Alt": "Voting screen",
+    "previous": "Previous screenshot",
+    "next": "Next screenshot",
+    "goToSlide": "Go to slide {{number}}"
+  },
+  "whyChoose": {
+    "title": "Why Choose WITM?",
+    "subtitle": "The party game made for real friendships",
+    "swissMade": "Swiss Made",
+    "weListen": "We Listen",
+    "justLaunched": "Just Launched",
+    "communityFirst": "Community First",
+    "swissMadeDesc": "Designed and developed with Swiss precision and care in Fribourg. Quality you can trust.",
+    "weListenDesc": "Have an idea? We read every suggestion. Your feedback directly shapes our features.",
+    "justLaunchedDesc": "Fresh out of the oven! Version 1.0 launched February 2026 - more fun coming soon.",
+    "communityFirstDesc": "Built for friend groups, shaped by players like you. You are the heart of WITM."
+  },
+  "details": {
+    "sectionTitle": "How WITM Works",
+    "sectionSubtitlePrefix": "Discover",
+    "sectionSubtitleHighlight": "The Gameplay",
+    "feature1": {
+      "title": "Create or Join in Seconds",
+      "description": "Starting a game is effortless. Create a room and get a unique 3-character PIN code. Share it with friends via text, and they're in! No sign-up required for guests.",
+      "bullet1": "3-character PIN codes for easy joining",
+      "bullet2": "Minimum 2-3 players to start the fun",
+      "bullet3": "Works on iOS and Android"
+    },
+    "feature2": {
+      "title": "Vote Based on Capabilities",
+      "description": "Users can vote for others based on their displayed capabilities in different areas like creativity, skill, and teamwork. The app allows users to assess and vote accordingly.",
+      "extra": "With a dynamic voting system, users get the chance to vote based on the unique qualities that players showcase. Whether it's a game challenge, a task, or a creative project, the community votes to highlight the best performances."
+    },
+    "feature3": {
+      "title": "Vote for Who Fits Best",
+      "description": "Each round, a question appears: \"Who is the most likely to...?\" Everyone votes secretly for the friend they think matches best. Be honest... or be strategic!",
+      "bullet1": "Secret voting keeps it exciting",
+      "bullet2": "Optional anonymous mode hides who voted for whom",
+      "bullet3": "Self-vote toggle for even more fun"
+    },
+    "feature4": {
+      "title": "Real-Time Voting & Feedback",
+      "description": "Players can receive real-time feedback based on votes and participate in ongoing challenges, helping them improve and advance faster.",
+      "extra": "With live updates, users are instantly notified of votes they've received, and the ability to give feedback on others' performances fosters a supportive community."
+    },
+    "feature5": {
+      "title": "Results & Dares",
+      "description": "After voting, the results are revealed! The person with the most votes is crowned \"The Most\" for that round and receives a dare or fun challenge from the group.",
+      "extra": "The game automatically advances after each round. Configure 5 to 20 questions per game, with timers from 5 to 30 seconds. Every setting is customizable!"
+    },
+    "feature6": {
+      "title": "Community and Social Sharing",
+      "description": "Players can share their achievements, votes received, and challenge results with their community, allowing them to show off their progress.",
+      "extra": "Social integration lets users share their voting history and leaderboard positions on various social media platforms, enabling them to increase visibility and celebrate achievements."
+    },
+    "feature7": {
+      "title": "Final Leaderboard",
+      "description": "At the end, see the complete leaderboard showing who was voted \"The Most\" across all rounds. Perfect for settling friendly debates and earning bragging rights!",
+      "extra": "Premium players can create custom questions, access all categories, and personalize every game setting. Make WITM truly yours!"
+    }
+  },
+  "download": {
+    "title": "Ready to Play?",
+    "description": "Download WITM now and discover what your friends really think. Available free on iOS and Android!"
+  },
+  "team": {
+    "sectionTitle": "Team",
+    "sectionSubtitlePrefix": "Meet Our",
+    "sectionSubtitleHighlight": "Team",
+    "members": {
+      "corentin": {
+        "name": "Corentin Bompard",
+        "role": "Chief Executive Officer"
+      }
+    }
+  },
+  "feedback": {
+    "title": "Got ideas? We're all ears!",
+    "description": "We love hearing from our players. Share your thoughts, suggest new questions, or just say hello. Every message helps us make WITM better!",
+    "email": "quiestlepluss@gmail.com"
+  }
+}

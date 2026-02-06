@@ -1,0 +1,18 @@
+{
+  "pageTitle": "Blog",
+  "metaTitle": "WITM - Blog",
+  "breadcrumb": "Blog",
+  "latestPosts": "Latest Posts",
+  "allPosts": "All Posts",
+  "readMore": "Read More",
+  "tags": "Tags",
+  "noPosts": "No posts found.",
+  "search": "Search articles...",
+  "backToBlog": "Back to Blog",
+  "publishedOn": "Published on",
+  "by": "by",
+  "share": "Share this article",
+  "relatedPosts": "Related Posts",
+  "categories": "Categories",
+  "minuteRead": "min read"
+}

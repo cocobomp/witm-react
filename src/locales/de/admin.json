@@ -1,0 +1,77 @@
+{
+  "title": "Admin-Dashboard",
+  "login": {
+    "title": "Admin-Zugang",
+    "description": "Melden Sie sich mit einem autorisierten Google-Konto an, um auf das Admin-Dashboard zuzugreifen.",
+    "signIn": "Mit Google anmelden",
+    "unauthorized": "Ihre E-Mail ist nicht fur den Admin-Zugang autorisiert",
+    "backToSite": "Zuruck zur Website"
+  },
+  "header": {
+    "dashboard": "Dashboard",
+    "questions": "Fragen",
+    "signOut": "Abmelden"
+  },
+  "stats": {
+    "totalQuestions": "Gesamtzahl Fragen",
+    "categories": "Kategorien",
+    "pendingChanges": "Ausstehende Anderungen"
+  },
+  "questions": {
+    "title": "Fragen",
+    "search": "Fragen suchen...",
+    "filter": "Nach Kategorie filtern",
+    "all": "Alle Kategorien",
+    "noResults": "Keine Fragen gefunden",
+    "edit": "Bearbeiten",
+    "delete": "Loschen",
+    "restore": "Wiederherstellen",
+    "add": "Frage hinzufugen",
+    "deleted": "Geloscht",
+    "modified": "Geandert",
+    "new": "Neu"
+  },
+  "editor": {
+    "title": "Frage bearbeiten",
+    "titleNew": "Neue Frage",
+    "questionFr": "Frage (Franzosisch)",
+    "translationEn": "Englische Ubersetzung",
+    "translationDe": "Deutsche Ubersetzung",
+    "category": "Kategorie",
+    "autoTranslate": "Auto-Ubersetzen",
+    "translating": "Ubersetze...",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Loschen",
+    "confirmDelete": "Sind Sie sicher, dass Sie diese Frage loschen mochten?"
+  },
+  "generator": {
+    "title": "Fragen generieren",
+    "description": "Verwenden Sie KI, um neue Fragen fur Ihre ausgewahlte Kategorie zu generieren.",
+    "category": "Kategorie",
+    "selectCategory": "Kategorie auswahlen",
+    "count": "Anzahl der Fragen",
+    "generate": "Mit KI generieren",
+    "generating": "Generiere...",
+    "generated": "Generierte Fragen",
+    "addSelected": "Ausgewahlte hinzufugen",
+    "addAll": "Alle hinzufugen",
+    "selectAll": "Alle auswahlen",
+    "deselectAll": "Auswahl aufheben",
+    "noQuestions": "Noch keine Fragen generiert",
+    "error": "Generierung fehlgeschlagen. Bitte versuchen Sie es erneut."
+  },
+  "saveBar": {
+    "unsaved": "{{count}} ungespeicherte Anderung(en)",
+    "save": "Alles speichern",
+    "discard": "Verwerfen",
+    "saving": "Speichere...",
+    "saved": "Alle Anderungen gespeichert!",
+    "error": "Speichern fehlgeschlagen. Bitte versuchen Sie es erneut."
+  },
+  "errors": {
+    "loadFailed": "Fragen konnten nicht geladen werden. Bitte aktualisieren Sie die Seite.",
+    "saveFailed": "Anderungen konnten nicht gespeichert werden. Bitte versuchen Sie es erneut.",
+    "unauthorized": "Sie sind nicht berechtigt, diese Aktion auszufuhren."
+  }
+}

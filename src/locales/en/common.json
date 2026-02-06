@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "features": "Features",
+    "team": "Team",
+    "blog": "Blog"
+  },
+  "footer": {
+    "pages": "Pages",
+    "home": "Home",
+    "about": "About us",
+    "services": "Services",
+    "terms": "Terms of service",
+    "privacy": "Privacy policy",
+    "deleteAccount": "Delete account",
+    "address": "Avenue de Beauregard 14",
+    "city": "1700 Fribourg, Switzerland",
+    "emailLabel": "Email:",
+    "email": "info@whoisthemost.com",
+    "copyright": "Copyright",
+    "allRightsReserved": "All Rights Reserved",
+    "brandTagline": "Who Is The Most - The party voting game that brings friends together.",
+    "downloadTitle": "Download the App",
+    "downloadDescription": "Available on iOS and Android. Play with friends anywhere!"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or has been moved. Let us help you find your way.",
+    "backToHome": "Back to Home",
+    "blog": "Blog",
+    "privacy": "Privacy",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "download": "Download App",
+    "downloadIos": "Download on the App Store",
+    "downloadAndroid": "Get it on Google Play",
+    "joinCommunity": "Join Our Community",
+    "shareIdeas": "Share Your Ideas",
+    "readMore": "Read More",
+    "backToHome": "Back to Home",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "submit": "Submit"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "French",
+    "de": "German"
+  },
+  "meta": {
+    "siteTitle": "WITM - Who Is The Most",
+    "siteDescription": "The party game that reveals what your friends really think! Vote on fun questions like \"Who is the most likely to...\" and dare the winners. Free on iOS and Android."
+  }
+}
