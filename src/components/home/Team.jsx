@@ -9,6 +9,14 @@ const teamMembers = [
     image: '/img/team/team-1.JPEG',
   },
   {
+    key: 'celien',
+    image: '/img/team/celien.jpeg',
+  },
+  {
+    key: 'fabien',
+    image: '/img/team/fabien.jpeg',
+  },
+  {
     key: 'nathan',
     image: '/img/team/nathan.jpeg',
   },
