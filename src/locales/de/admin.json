@@ -59,7 +59,25 @@
     "selectAll": "Alle auswahlen",
     "deselectAll": "Auswahl aufheben",
     "noQuestions": "Noch keine Fragen generiert",
-    "error": "Generierung fehlgeschlagen. Bitte versuchen Sie es erneut."
+    "error": "Generierung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "submitBatch": "Stapel einreichen",
+    "submitting": "Wird eingereicht...",
+    "batchSubmitted": "Stapel eingereicht! Prufen Sie das Panel fur ausstehende Stapel.",
+    "batchInfo": "Fragen werden per Stapelverarbeitung generiert (50% gunstiger). Ergebnisse kommen in der Regel innerhalb weniger Minuten. Prufen Sie das Panel fur ausstehende Stapel unten."
+  },
+  "batch": {
+    "title": "Ausstehende Stapel",
+    "empty": "Keine ausstehenden Stapel",
+    "inProgress": "In Bearbeitung...",
+    "ended": "Abgeschlossen",
+    "viewResults": "Ergebnisse anzeigen",
+    "dismiss": "Verwerfen",
+    "importSelected": "Ausgewahlte importieren",
+    "selectAll": "Alle auswahlen",
+    "deselectAll": "Auswahl aufheben",
+    "fetchingResults": "Ergebnisse werden abgerufen...",
+    "questionsReady": "{{count}} Fragen zur Uberprufung bereit",
+    "submitted": "Eingereicht"
   },
   "saveBar": {
     "unsaved": "{{count}} ungespeicherte Anderung(en)",

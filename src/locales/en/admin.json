@@ -59,7 +59,25 @@
     "selectAll": "Select All",
     "deselectAll": "Deselect All",
     "noQuestions": "No questions generated yet",
-    "error": "Failed to generate questions. Please try again."
+    "error": "Failed to generate questions. Please try again.",
+    "submitBatch": "Submit Batch",
+    "submitting": "Submitting...",
+    "batchSubmitted": "Batch submitted! Check the Pending Batches panel for results.",
+    "batchInfo": "Questions are generated via batch processing (50% cheaper). Results typically arrive within a few minutes. Check the Pending Batches panel below."
+  },
+  "batch": {
+    "title": "Pending Batches",
+    "empty": "No pending batches",
+    "inProgress": "Processing...",
+    "ended": "Completed",
+    "viewResults": "View Results",
+    "dismiss": "Dismiss",
+    "importSelected": "Import Selected",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All",
+    "fetchingResults": "Fetching results...",
+    "questionsReady": "{{count}} questions ready for review",
+    "submitted": "Submitted"
   },
   "saveBar": {
     "unsaved": "{{count}} unsaved change(s)",

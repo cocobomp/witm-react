@@ -59,7 +59,25 @@
     "selectAll": "Tout selectionner",
     "deselectAll": "Tout deselectionner",
     "noQuestions": "Aucune question generee pour l'instant",
-    "error": "Echec de la generation. Veuillez reessayer."
+    "error": "Echec de la generation. Veuillez reessayer.",
+    "submitBatch": "Soumettre le lot",
+    "submitting": "Soumission en cours...",
+    "batchSubmitted": "Lot soumis ! Consultez le panneau des lots en attente pour les resultats.",
+    "batchInfo": "Les questions sont generees par traitement en lot (50% moins cher). Les resultats arrivent generalement en quelques minutes. Consultez le panneau des lots en attente ci-dessous."
+  },
+  "batch": {
+    "title": "Lots en attente",
+    "empty": "Aucun lot en attente",
+    "inProgress": "En cours...",
+    "ended": "Termine",
+    "viewResults": "Voir les resultats",
+    "dismiss": "Ignorer",
+    "importSelected": "Importer la selection",
+    "selectAll": "Tout selectionner",
+    "deselectAll": "Tout deselectionner",
+    "fetchingResults": "Recuperation des resultats...",
+    "questionsReady": "{{count}} questions pretes a etre importees",
+    "submitted": "Soumis"
   },
   "saveBar": {
     "unsaved": "{{count}} modification(s) non enregistree(s)",

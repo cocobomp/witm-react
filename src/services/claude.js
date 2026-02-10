@@ -3,10 +3,12 @@
  * Communicates with Vercel serverless function to access Claude API
  */
 
-const API_ENDPOINT = '/api/claude';
+const API_ENDPOINT = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/api/claude`
+  : '/api/claude';
 
 /**
- * Generate new questions using Claude AI
+ * Generate new questions using Claude AI (synchronous fallback)
  * @param {Object} options - Generation options
  * @param {string} options.category - Category name for context
  * @param {number} options.count - Number of questions to generate
@@ -42,9 +44,80 @@ export async function generateQuestions({ category, count = 5, language = 'fr' }
 }
 
 /**
+ * Create a batch generation request
+ * @param {Object} options - { category, count, language }
+ * @returns {Promise<Object>} Batch metadata with batchId
+ */
+export async function createBatch({ category, count = 5, language = 'fr' }) {
+  const response = await fetch(API_ENDPOINT, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      action: 'batch-create',
+      category,
+      count,
+      language,
+    }),
+  });
+
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({}));
+    throw new Error(error.error || `Failed to create batch: ${response.status}`);
+  }
+
+  return response.json();
+}
+
+/**
+ * Check batch processing status
+ * @param {string} batchId
+ * @returns {Promise<Object>} Batch status info
+ */
+export async function checkBatchStatus(batchId) {
+  const response = await fetch(API_ENDPOINT, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      action: 'batch-status',
+      batchId,
+    }),
+  });
+
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({}));
+    throw new Error(error.error || `Failed to check batch status: ${response.status}`);
+  }
+
+  return response.json();
+}
+
+/**
+ * Retrieve batch results (parsed questions)
+ * @param {string} batchId
+ * @returns {Promise<Object>} { questions: [...] }
+ */
+export async function fetchBatchResults(batchId) {
+  const response = await fetch(API_ENDPOINT, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      action: 'batch-results',
+      batchId,
+    }),
+  });
+
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({}));
+    throw new Error(error.error || `Failed to fetch batch results: ${response.status}`);
+  }
+
+  return response.json();
+}
+
+/**
  * Translate a question to all supported languages using Claude AI
  * @param {string} text - The text to translate
- * @param {string} sourceLanguage - Source language code (optional, auto-detected if not provided)
+ * @param {string} sourceLanguage - Source language code (optional)
  * @returns {Promise<Object>} Object with translations { en, fr, de }
  */
 export async function translateQuestion(text, sourceLanguage = null) {

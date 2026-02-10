@@ -8,6 +8,7 @@ import QuestionEditor from '../components/admin/QuestionEditor';
 import CategoryFilter from '../components/admin/CategoryFilter';
 import SaveBar from '../components/admin/SaveBar';
 import AIGenerator from '../components/admin/AIGenerator';
+import BatchPanel from '../components/admin/BatchPanel';
 
 function AdminDashboard() {
   const { t, i18n } = useTranslation('admin');
@@ -150,6 +151,9 @@ function AdminDashboard() {
             </p>
           </motion.div>
         </div>
+
+        {/* Pending Batches */}
+        <BatchPanel categories={categories} />
 
         {/* Error message */}
         {error && (
