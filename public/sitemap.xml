@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home -->
+  <url>
+    <loc>https://whoisthemost.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://whoisthemost.com/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://whoisthemost.com/fr</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://whoisthemost.com/de</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Blog listing -->
+  <url>
+    <loc>https://whoisthemost.com/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/blog" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/blog" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://whoisthemost.com/blog" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://whoisthemost.com/fr/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/blog" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/blog" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/blog" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://whoisthemost.com/de/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/blog" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/blog" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/blog" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog post: WITM is Live! -->
+  <url>
+    <loc>https://whoisthemost.com/blog/2026-02-03-witm-launch</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://whoisthemost.com/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://whoisthemost.com/privacy-policy" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://whoisthemost.com/fr/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/privacy-policy" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://whoisthemost.com/de/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/privacy-policy" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Terms and Conditions -->
+  <url>
+    <loc>https://whoisthemost.com/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://whoisthemost.com/terms" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://whoisthemost.com/fr/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/terms" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://whoisthemost.com/de/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/terms" />
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Delete Account -->
+  <url>
+    <loc>https://whoisthemost.com/delete-account</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/delete-account" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/delete-account" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/delete-account" />
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+</urlset>
