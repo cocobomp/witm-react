@@ -40,7 +40,7 @@ export default function Team() {
         </h2>
       </motion.div>
 
-      <div className="flex flex-wrap justify-center gap-12 lg:gap-20">
+      <div className="flex flex-wrap justify-center gap-8 sm:gap-12 lg:gap-20">
         {teamMembers.map((member, index) => (
           <motion.div
             key={member.key}
@@ -51,7 +51,7 @@ export default function Team() {
             className="text-center max-w-sm"
           >
             {/* Photo with decorative background */}
-            <div className="relative w-44 h-44 mx-auto mb-8">
+            <div className="relative w-32 h-32 sm:w-44 sm:h-44 mx-auto mb-5 sm:mb-8">
               {/* Decorative gradient ring */}
               <div
                 className="absolute inset-0 -m-2 rounded-full bg-gradient-to-br from-primary/30 via-accent/30 to-primary/30 animate-spin-slow"
@@ -63,6 +63,7 @@ export default function Team() {
                   src={member.image}
                   alt={t(`team.members.${member.key}.name`)}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
             </div>

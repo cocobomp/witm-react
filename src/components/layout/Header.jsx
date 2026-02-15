@@ -51,14 +51,30 @@ export default function Header() {
     setMobileOpen(false);
   }, [location.pathname]);
 
-  // Lock body scroll when mobile menu is open
+  // Lock body scroll when mobile menu is open (iOS-safe)
   useEffect(() => {
     if (mobileOpen) {
       document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${window.scrollY}px`;
+      document.body.style.left = '0';
+      document.body.style.right = '0';
     } else {
+      const scrollY = document.body.style.top;
       document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
-    return () => { document.body.style.overflow = ''; };
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+    };
   }, [mobileOpen]);
 
   // Close mobile menu on Escape key
@@ -196,63 +212,53 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu with backdrop blur */}
+      {/* Full-screen mobile menu */}
       <AnimatePresence>
         {mobileOpen && (
-          <>
-            {/* Backdrop overlay */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              className="fixed inset-0 top-16 bg-black/20 backdrop-blur-sm z-30 md:hidden"
-              onClick={() => setMobileOpen(false)}
-            />
-            {/* Slide-in panel */}
-            <motion.div
-              initial={{ x: '100%' }}
-              animate={{ x: 0 }}
-              exit={{ x: '100%' }}
-              transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-              className="fixed top-16 right-0 bottom-0 w-[280px] bg-white/95 backdrop-blur-xl z-40 md:hidden shadow-2xl border-l border-gray-100"
-            >
-              <nav className="flex flex-col p-6 gap-1">
-                {navItems.map((item, index) => {
-                  const active = isNavActive(item);
-                  return (
-                    <motion.div
-                      key={item.label}
-                      initial={{ opacity: 0, x: 20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.05, duration: 0.2 }}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            className="fixed top-16 left-0 right-0 bottom-0 bg-white z-40 md:hidden"
+          >
+            <nav className="flex flex-col items-center justify-center h-full gap-2 -mt-16">
+              {navItems.map((item, index) => {
+                const active = isNavActive(item);
+                return (
+                  <motion.div
+                    key={item.label}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.06, duration: 0.3 }}
+                  >
+                    <Link
+                      to={item.href}
+                      onClick={(e) => {
+                        handleNavClick(e, item.href);
+                        setMobileOpen(false);
+                      }}
+                      className={`block text-center text-xl font-semibold py-4 px-8 rounded-2xl transition-all duration-200 ${
+                        active
+                          ? 'text-primary bg-primary/5'
+                          : 'text-gray-700 hover:text-primary hover:bg-gray-50'
+                      }`}
                     >
-                      <Link
-                        to={item.href}
-                        onClick={(e) => {
-                          handleNavClick(e, item.href);
-                          setMobileOpen(false);
-                        }}
-                        className={`flex items-center gap-3 text-base font-medium py-3 px-4 rounded-xl transition-all duration-200 ${
-                          active
-                            ? 'text-primary bg-primary/5'
-                            : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
-                        }`}
-                      >
-                        {active && (
-                          <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                        )}
-                        {item.label}
-                      </Link>
-                    </motion.div>
-                  );
-                })}
-                <div className="pt-6 mt-4 border-t border-gray-100">
-                  <LanguageSwitcher />
-                </div>
-              </nav>
-            </motion.div>
-          </>
+                      {item.label}
+                    </Link>
+                  </motion.div>
+                );
+              })}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: navItems.length * 0.06, duration: 0.3 }}
+                className="pt-6 mt-4 border-t border-gray-100"
+              >
+                <LanguageSwitcher />
+              </motion.div>
+            </nav>
+          </motion.div>
         )}
       </AnimatePresence>
     </header>

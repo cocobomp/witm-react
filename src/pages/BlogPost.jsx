@@ -80,6 +80,7 @@ export default function BlogPost() {
         description={post.excerpt}
         lang={i18n.language}
         canonical={`https://whoisthemost.com/blog/${post.slug}`}
+        article={{ title: post.title, date: post.date, author: post.author }}
       />
 
       <Section>

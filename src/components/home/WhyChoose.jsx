@@ -39,14 +39,14 @@ export default function WhyChoose() {
             className="text-center"
           >
             {/* Glassmorphism card */}
-            <div className="relative rounded-2xl p-8 bg-white/[0.06] backdrop-blur-md border border-white/10 hover:bg-white/[0.1] transition-all duration-300">
+            <div className="relative rounded-2xl p-5 sm:p-8 bg-white/[0.06] backdrop-blur-md border border-white/10 hover:bg-white/[0.1] transition-all duration-300">
               {/* Emoji with glow */}
               <div className="relative inline-block mb-5">
                 <div
                   className="absolute inset-0 blur-xl opacity-30 rounded-full"
                   style={{ background: 'radial-gradient(circle, #8b5cf6, transparent)' }}
                 />
-                <span className="relative text-6xl block">{item.emoji}</span>
+                <span className="relative text-5xl sm:text-6xl block">{item.emoji}</span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-white">
                 {t(`whyChoose.${item.key}`)}

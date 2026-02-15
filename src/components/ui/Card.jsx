@@ -15,10 +15,10 @@ export default function Card({ children, className = '', hover = false, gradient
 
   return (
     <div
-      className={`bg-white rounded-2xl border border-gray-100 shadow-sm p-6 ${
+      className={`bg-white rounded-2xl border border-gray-100 shadow-sm p-6 transition-all duration-300 ${
         hover
-          ? 'transition-all duration-300 hover:shadow-lg hover:shadow-indigo-100 hover:-translate-y-1'
-          : ''
+          ? 'hover:shadow-lg hover:shadow-indigo-100 hover:-translate-y-1'
+          : 'hover:-translate-y-0.5 hover:shadow-md'
       } ${className}`.trim()}
     >
       {children}

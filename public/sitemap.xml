@@ -64,6 +64,22 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Blog post: Website Update -->
+  <url>
+    <loc>https://whoisthemost.com/blog/2026-02-11-website-update</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: 840 Questions -->
+  <url>
+    <loc>https://whoisthemost.com/blog/2026-02-12-840-questions</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Privacy Policy -->
   <url>
     <loc>https://whoisthemost.com/privacy-policy</loc>

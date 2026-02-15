@@ -66,6 +66,7 @@ export default function Download() {
                   src="/img/appstore.png"
                   alt="Download on the App Store"
                   className="h-11"
+                  loading="lazy"
                 />
               </a>
               <a
@@ -78,6 +79,7 @@ export default function Download() {
                   src="/img/google_play.png"
                   alt="Get it on Google Play"
                   className="h-11"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -102,6 +104,7 @@ export default function Download() {
                     src="/img/screens.png"
                     alt="WITM App"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
               </div>

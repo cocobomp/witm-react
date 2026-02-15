@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import Button from '../ui/Button';
 import { INSTAGRAM_URL } from '../../constants/links';
 
@@ -9,6 +9,10 @@ const screenshots = ['/img/screens.png', '/img/screen-2.png', '/img/screen-3.png
 export default function Hero() {
   const { t } = useTranslation('home');
   const [currentImage, setCurrentImage] = useState(0);
+  const sectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({ target: sectionRef, offset: ['start start', 'end start'] });
+  const blobY1 = useTransform(scrollYProgress, [0, 1], [0, -80]);
+  const blobY2 = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -19,21 +23,26 @@ export default function Hero() {
 
   return (
     <section
+      ref={sectionRef}
       id="hero"
       className="relative bg-gradient-to-b from-white to-slate-50 overflow-hidden"
     >
-      {/* Decorative gradient blobs */}
-      <div
+      {/* Decorative gradient blobs with parallax */}
+      <motion.div
+        style={{ y: blobY1 }}
         className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full opacity-20 blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, #6366f1 0%, #8b5cf6 40%, transparent 70%)' }}
-      />
-      <div
+      >
+        <div className="w-full h-full rounded-full" style={{ background: 'radial-gradient(circle, #6366f1 0%, #8b5cf6 40%, transparent 70%)' }} />
+      </motion.div>
+      <motion.div
+        style={{ y: blobY2 }}
         className="absolute bottom-[-15%] left-[-10%] w-[400px] h-[400px] rounded-full opacity-15 blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, #8b5cf6 0%, #6366f1 40%, transparent 70%)' }}
-      />
+      >
+        <div className="w-full h-full rounded-full" style={{ background: 'radial-gradient(circle, #8b5cf6 0%, #6366f1 40%, transparent 70%)' }} />
+      </motion.div>
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-36">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -91,7 +100,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative flex justify-center"
           >
-            <div className="relative w-64 sm:w-72 h-[500px] sm:h-[560px]">
+            <div className="relative w-64 sm:w-72 h-[440px] sm:h-[500px] md:h-[560px]">
               {/* Device frame */}
               <div className="absolute inset-0 -m-3 rounded-[3rem] bg-gradient-to-b from-gray-800 to-gray-900 shadow-2xl shadow-gray-900/30" />
               <div className="absolute inset-0 -m-1.5 rounded-[2.6rem] bg-gradient-to-b from-gray-700 to-gray-800" />

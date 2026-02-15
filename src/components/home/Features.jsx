@@ -40,7 +40,7 @@ export default function Features() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: i * 0.05 }}
+            transition={{ duration: 0.4, delay: i * 0.08 }}
             whileHover={{ scale: 1.05 }}
             className="group relative rounded-2xl p-[1px] transition-all duration-300 cursor-default bg-gradient-to-br from-transparent via-transparent to-transparent hover:from-primary/30 hover:via-accent/20 hover:to-primary/30"
           >

@@ -121,6 +121,7 @@ export default function AppCarousel() {
                     opacity: { duration: 0.2 },
                   }}
                   className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
                   draggable={false}
                 />
               </AnimatePresence>

@@ -29,7 +29,7 @@ export default function About() {
         style={{ background: 'radial-gradient(circle, #6366f1 0%, transparent 70%)' }}
       />
 
-      <div className="relative grid lg:grid-cols-2 gap-16 items-start">
+      <div className="relative grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
         {/* Left Column */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}

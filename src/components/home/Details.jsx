@@ -37,7 +37,7 @@ export default function Details() {
         </h2>
       </motion.div>
 
-      <div className="space-y-28">
+      <div className="space-y-16 md:space-y-28">
         {featureKeys.map((key, i) => {
           const isEven = i % 2 === 1;
           const featureNum = parseInt(key.replace('feature', ''), 10);
@@ -50,17 +50,18 @@ export default function Details() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.6 }}
-              className={`grid md:grid-cols-2 gap-16 items-center ${
+              className={`grid md:grid-cols-2 gap-8 md:gap-16 items-center ${
                 isEven ? 'md:direction-rtl' : ''
               }`}
             >
               {/* Image with background shape */}
               <div className={`${isEven ? 'md:order-2' : ''} flex justify-center`}>
-                <div className={`relative p-8 rounded-3xl ${bgColors[i]}`}>
+                <div className={`relative p-4 sm:p-8 rounded-3xl ${bgColors[i]}`}>
                   <img
                     src={imgSrc}
                     alt={t(`details.${key}.title`)}
                     className="w-full max-w-sm mx-auto relative z-10"
+                    loading="lazy"
                   />
                 </div>
               </div>
