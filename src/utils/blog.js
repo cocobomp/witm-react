@@ -42,8 +42,15 @@ function parsePosts() {
   const posts = [];
 
   for (const [path, raw] of Object.entries(blogFiles)) {
-    const slug = path.split('/').pop().replace('.md', '');
+    let slug = path.split('/').pop().replace('.md', '');
     const { data, content: body } = parseFrontmatter(raw);
+    const lang = data.lang || 'en';
+
+    // Strip language suffix so translated files share the same slug
+    // e.g. "2026-02-03-witm-launch-fr" → "2026-02-03-witm-launch"
+    if (lang !== 'en' && slug.endsWith(`-${lang}`)) {
+      slug = slug.slice(0, -(lang.length + 1));
+    }
 
     posts.push({
       slug,
@@ -52,7 +59,7 @@ function parsePosts() {
       excerpt: data.excerpt || '',
       tags: Array.isArray(data.tags) ? data.tags : [],
       author: data.author || '',
-      lang: data.lang || 'en',
+      lang,
       body,
     });
   }
