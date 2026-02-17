@@ -40,7 +40,7 @@ export default function Team() {
         </h2>
       </motion.div>
 
-      <div className="flex flex-wrap justify-center gap-8 sm:gap-12 lg:gap-20">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 max-w-5xl mx-auto">
         {teamMembers.map((member, index) => (
           <motion.div
             key={member.key}
@@ -48,10 +48,10 @@ export default function Team() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 * index }}
-            className="text-center max-w-sm"
+            className="text-center"
           >
             {/* Photo with decorative background */}
-            <div className="relative w-32 h-32 sm:w-44 sm:h-44 mx-auto mb-5 sm:mb-8">
+            <div className="relative w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40 mx-auto mb-4 sm:mb-6">
               {/* Decorative gradient ring */}
               <div
                 className="absolute inset-0 -m-2 rounded-full bg-gradient-to-br from-primary/30 via-accent/30 to-primary/30 animate-spin-slow"

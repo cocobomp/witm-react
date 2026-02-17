@@ -97,7 +97,7 @@ function AdminDashboard() {
                 {user?.photoURL && (
                   <img
                     src={user.photoURL}
-                    alt=""
+                    alt={`${user.email || 'User'} profile photo`}
                     className="w-8 h-8 rounded-full"
                   />
                 )}

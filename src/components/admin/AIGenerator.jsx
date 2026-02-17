@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { createBatch } from '../../services/claude';
@@ -12,6 +12,16 @@ export default function AIGenerator({ categories, onClose }) {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
+  const closeTimerRef = useRef(null);
+
+  // Cleanup timer on unmount to prevent state updates on unmounted component
+  useEffect(() => {
+    return () => {
+      if (closeTimerRef.current) {
+        clearTimeout(closeTimerRef.current);
+      }
+    };
+  }, []);
 
   const getCategoryName = (catId) => {
     const category = categories.find((c) => c.id === catId);
@@ -45,7 +55,7 @@ export default function AIGenerator({ categories, onClose }) {
       });
 
       setSuccess(true);
-      setTimeout(() => onClose(), 1500);
+      closeTimerRef.current = setTimeout(() => onClose(), 1500);
     } catch (err) {
       console.error('Batch creation error:', err);
       setError(err.message || t('generator.error'));

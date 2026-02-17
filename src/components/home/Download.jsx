@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import Section from '../ui/Section';
 import { APP_STORE_URL, GOOGLE_PLAY_URL } from '../../constants/links';
+import StoreBadges from '../ui/StoreBadges';
 
 export default function Download() {
   const { t } = useTranslation('home');
@@ -55,34 +56,7 @@ export default function Download() {
               {t('download.description')}
             </p>
 
-            <div className="flex flex-wrap justify-center md:justify-start gap-4">
-              <a
-                href={APP_STORE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-white/95 hover:bg-white rounded-full px-2 py-2 transition-all hover:scale-105 hover:shadow-lg shadow-md"
-              >
-                <img
-                  src="/img/appstore.png"
-                  alt="Download on the App Store"
-                  className="h-11"
-                  loading="lazy"
-                />
-              </a>
-              <a
-                href={GOOGLE_PLAY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-white/95 hover:bg-white rounded-full px-2 py-2 transition-all hover:scale-105 hover:shadow-lg shadow-md"
-              >
-                <img
-                  src="/img/google_play.png"
-                  alt="Get it on Google Play"
-                  className="h-11"
-                  loading="lazy"
-                />
-              </a>
-            </div>
+            <StoreBadges className="justify-center md:justify-start" />
           </motion.div>
 
           {/* Right: Floating app mockup */}

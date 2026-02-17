@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 import useLangPrefix from '../../hooks/useLangPrefix';
-import { APP_STORE_URL, GOOGLE_PLAY_URL, INSTAGRAM_URL, TIKTOK_URL } from '../../constants/links';
+import { INSTAGRAM_URL, TIKTOK_URL } from '../../constants/links';
+import StoreBadges from '../ui/StoreBadges';
 
 export default function Footer() {
   const { t } = useTranslation('common');
@@ -106,36 +107,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               {t('footer.downloadDescription')}
             </p>
-            <div className="flex flex-col gap-3">
-              <a
-                href={APP_STORE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-dark-surface hover:bg-gray-700 transition-colors duration-200 rounded-xl px-5 py-3 w-fit"
-              >
-                <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
-                </svg>
-                <div>
-                  <div className="text-[10px] text-gray-400 leading-none">Download on the</div>
-                  <div className="text-sm font-semibold text-white leading-tight">App Store</div>
-                </div>
-              </a>
-              <a
-                href={GOOGLE_PLAY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-dark-surface hover:bg-gray-700 transition-colors duration-200 rounded-xl px-5 py-3 w-fit"
-              >
-                <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3.18 23.68c.17.16.38.24.63.24.13 0 .25-.03.36-.07l11.33-5.71-3.2-3.2L3.18 23.68zM.32 1.34A1.32 1.32 0 000 2.2v19.6c0 .35.11.65.32.86l11.02-11.02L.32 1.34zM23.16 10.5l-3.63-2.05-3.8 3.8 3.8 3.57 3.63-1.84c.56-.28.84-.7.84-1.24s-.28-.96-.84-1.24zM15.67 7.7L4.5.38C4.28.22 4.07.17 3.81.17l11.14 11.14 .72-.72L15.67 7.7z" />
-                </svg>
-                <div>
-                  <div className="text-[10px] text-gray-400 leading-none">Get it on</div>
-                  <div className="text-sm font-semibold text-white leading-tight">Google Play</div>
-                </div>
-              </a>
-            </div>
+            <StoreBadges className="flex-col" variant="dark" />
           </div>
         </div>
       </div>
