@@ -125,6 +125,18 @@ export default function Footer() {
               >
                 &bull;
               </Link>
+              <span className="mx-2 text-gray-600">&middot;</span>
+              <span>
+                {t('footer.madeBy', 'Developed by')}{' '}
+                <a
+                  href="https://bompard.digital"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-500 hover:text-gray-400 transition-colors"
+                >
+                  Bompard Digital
+                </a>
+              </span>
             </p>
             <LanguageSwitcher />
           </div>
