@@ -31,14 +31,14 @@ export default function Blog() {
         title={t('metaTitle')}
         description={t('latestPosts')}
         lang={i18n.language}
-        canonical="https://whoisthemost.com/blog"
+        canonical={`https://whoisthemost.com${langPrefix}/blog`}
       />
 
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-gray-50 to-white pt-28 pb-8 sm:pt-32 sm:pb-12">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumbs */}
-          <nav className="flex items-center gap-2 text-sm text-gray-400 mb-8">
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-gray-400 mb-8">
             <Link to={langPrefix || '/'} className="hover:text-primary transition-colors">
               Home
             </Link>

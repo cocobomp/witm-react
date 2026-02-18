@@ -79,7 +79,7 @@ export default function BlogPost() {
         title={post.title}
         description={post.excerpt}
         lang={i18n.language}
-        canonical={`https://whoisthemost.com/blog/${post.slug}`}
+        canonical={`https://whoisthemost.com${langPrefix}/blog/${post.slug}`}
         article={{ title: post.title, date: post.date, author: post.author }}
       />
 

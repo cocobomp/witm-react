@@ -92,6 +92,7 @@ export default function AppCarousel() {
 
       <div
         className="relative max-w-sm mx-auto"
+        aria-live="polite"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
         onTouchStart={() => setIsPaused(true)}
@@ -166,7 +167,7 @@ export default function AppCarousel() {
                 : 'bg-gray-300 hover:bg-gray-400'
             }`}
             aria-label={t('carousel.goToSlide', { number: index + 1, defaultValue: `Go to slide ${index + 1}` })}
-            aria-current={index === currentIndex ? 'true' : undefined}
+            aria-current={index === currentIndex ? 'true' : 'false'}
           />
         ))}
       </div>

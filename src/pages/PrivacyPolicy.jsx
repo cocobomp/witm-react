@@ -58,7 +58,7 @@ export default function PrivacyPolicy() {
 
       <Section>
         {/* Breadcrumbs */}
-        <nav className="flex items-center gap-2 text-sm text-gray-400 mb-8">
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-gray-400 mb-8">
           <Link to={langPrefix || '/'} className="hover:text-primary transition-colors">
             Home
           </Link>
