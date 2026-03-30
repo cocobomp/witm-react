@@ -1,14 +1,24 @@
 /**
- * Claude API client service
- * Communicates with Vercel serverless function to access Claude API
+ * AI API client service
+ * Communicates with Vercel serverless function to access Groq API
  */
 
 const API_ENDPOINT = import.meta.env.VITE_API_URL
   ? `${import.meta.env.VITE_API_URL}/api/claude`
   : '/api/claude';
 
+const ADMIN_KEY = import.meta.env.VITE_ADMIN_SECRET || '';
+
+function getHeaders() {
+  const headers = { 'Content-Type': 'application/json' };
+  if (ADMIN_KEY) {
+    headers['X-Admin-Key'] = ADMIN_KEY;
+  }
+  return headers;
+}
+
 /**
- * Generate new questions using Claude AI (synchronous fallback)
+ * Generate new questions using AI (synchronous fallback)
  * @param {Object} options - Generation options
  * @param {string} options.category - Category name for context
  * @param {number} options.count - Number of questions to generate
@@ -19,9 +29,7 @@ export async function generateQuestions({ category, count = 5, language = 'fr' }
   try {
     const response = await fetch(API_ENDPOINT, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: getHeaders(),
       body: JSON.stringify({
         action: 'generate',
         category,
@@ -51,7 +59,7 @@ export async function generateQuestions({ category, count = 5, language = 'fr' }
 export async function createBatch({ category, count = 5, language = 'fr' }) {
   const response = await fetch(API_ENDPOINT, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: getHeaders(),
     body: JSON.stringify({
       action: 'batch-create',
       category,
@@ -76,7 +84,7 @@ export async function createBatch({ category, count = 5, language = 'fr' }) {
 export async function checkBatchStatus(batchId) {
   const response = await fetch(API_ENDPOINT, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: getHeaders(),
     body: JSON.stringify({
       action: 'batch-status',
       batchId,
@@ -99,7 +107,7 @@ export async function checkBatchStatus(batchId) {
 export async function fetchBatchResults(batchId) {
   const response = await fetch(API_ENDPOINT, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: getHeaders(),
     body: JSON.stringify({
       action: 'batch-results',
       batchId,
@@ -115,7 +123,7 @@ export async function fetchBatchResults(batchId) {
 }
 
 /**
- * Translate a question to all supported languages using Claude AI
+ * Translate a question to all supported languages using AI
  * @param {string} text - The text to translate
  * @param {string} sourceLanguage - Source language code (optional)
  * @returns {Promise<Object>} Object with translations { en, fr, de }
@@ -124,9 +132,7 @@ export async function translateQuestion(text, sourceLanguage = null) {
   try {
     const response = await fetch(API_ENDPOINT, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: getHeaders(),
       body: JSON.stringify({
         action: 'translate',
         text,
@@ -149,7 +155,7 @@ export async function translateQuestion(text, sourceLanguage = null) {
 }
 
 /**
- * Check if the Claude API is available
+ * Check if the AI API is available
  * @returns {Promise<boolean>} True if API is available
  */
 export async function checkApiHealth() {

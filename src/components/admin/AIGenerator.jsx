@@ -51,7 +51,7 @@ export default function AIGenerator({ categories, onClose }) {
         createdAt: result.createdAt,
         expiresAt: result.expiresAt,
         requestCounts: result.requestCounts,
-        questions: null,
+        questions: result.questions || null,
       });
 
       setSuccess(true);
