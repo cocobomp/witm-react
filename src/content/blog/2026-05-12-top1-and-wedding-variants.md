@@ -45,6 +45,6 @@ It's our way of rewarding the players who *animate* games — not the ones who w
 
 ## Available Now
 
-[App Store](https://apps.apple.com/app/id6503980498) — [Google Play](https://play.google.com/store/apps/details?id=com.qelp.ch)
+[App Store](https://apps.apple.com/ch/app/witm-who-is-the-most/id6740246093) — [Google Play](https://play.google.com/store/apps/details?id=com.qelp.ch)
 
 Update, gather three friends (or fifty), pick your mode, and have fun.

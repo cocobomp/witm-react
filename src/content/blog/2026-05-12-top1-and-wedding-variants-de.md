@@ -45,6 +45,6 @@ Unser Weg, jene zu belohnen, die das Spiel *beleben* — nicht die Sieger:innen,
 
 ## Jetzt verfügbar
 
-[App Store](https://apps.apple.com/app/id6503980498) — [Google Play](https://play.google.com/store/apps/details?id=com.qelp.ch)
+[App Store](https://apps.apple.com/ch/app/witm-who-is-the-most/id6740246093) — [Google Play](https://play.google.com/store/apps/details?id=com.qelp.ch)
 
 Aktualisiere, hol drei Freunde (oder fünfzig), wähle deinen Modus und hab Spass.

@@ -45,6 +45,6 @@ C'est notre façon de récompenser ceux qui font vivre les parties — pas ceux 
 
 ## Disponible maintenant
 
-[App Store](https://apps.apple.com/app/id6503980498) — [Google Play](https://play.google.com/store/apps/details?id=com.qelp.ch)
+[App Store](https://apps.apple.com/ch/app/witm-who-is-the-most/id6740246093) — [Google Play](https://play.google.com/store/apps/details?id=com.qelp.ch)
 
 Mets à jour, réunis trois amis (ou cinquante), choisis ton mode, et amuse-toi.
