@@ -216,6 +216,13 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Download landing -->
+  <url>
+    <loc>https://whoisthemost.com/download</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Blog post: v3.0 — Top 1 Mode and Wedding Variants -->
   <url>
     <loc>https://whoisthemost.com/blog/2026-05-12-top1-and-wedding-variants</loc>
