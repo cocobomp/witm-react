@@ -140,8 +140,91 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/delete-account" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/delete-account" />
     <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/delete-account" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://whoisthemost.com/delete-account" />
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://whoisthemost.com/fr/delete-account</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/delete-account" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/delete-account" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/delete-account" />
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://whoisthemost.com/de/delete-account</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/delete-account" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/delete-account" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/delete-account" />
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <!-- Blog post: Behind the Code -->
+  <url>
+    <loc>https://whoisthemost.com/blog/2026-02-17-behind-the-code</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/blog/2026-02-17-behind-the-code" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/blog/2026-02-17-behind-the-code" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/blog/2026-02-17-behind-the-code" />
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Your Voice Matters -->
+  <url>
+    <loc>https://whoisthemost.com/blog/2026-02-17-your-voice-matters</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/blog/2026-02-17-your-voice-matters" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/blog/2026-02-17-your-voice-matters" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/blog/2026-02-17-your-voice-matters" />
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Lobby Revamp -->
+  <url>
+    <loc>https://whoisthemost.com/blog/2026-02-18-lobby-revamp</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/blog/2026-02-18-lobby-revamp" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/blog/2026-02-18-lobby-revamp" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/blog/2026-02-18-lobby-revamp" />
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Security & Performance Update -->
+  <url>
+    <loc>https://whoisthemost.com/blog/2026-02-18-security-performance-update</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/blog/2026-02-18-security-performance-update" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/blog/2026-02-18-security-performance-update" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/blog/2026-02-18-security-performance-update" />
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Game Flow Update -->
+  <url>
+    <loc>https://whoisthemost.com/blog/2026-02-19-game-flow-update</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/blog/2026-02-19-game-flow-update" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/blog/2026-02-19-game-flow-update" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/blog/2026-02-19-game-flow-update" />
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: v3.0 — Top 1 Mode and Wedding Variants -->
+  <url>
+    <loc>https://whoisthemost.com/blog/2026-05-12-top1-and-wedding-variants</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/blog/2026-05-12-top1-and-wedding-variants" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/blog/2026-05-12-top1-and-wedding-variants" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/blog/2026-05-12-top1-and-wedding-variants" />
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
