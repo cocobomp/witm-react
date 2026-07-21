@@ -1,103 +1,103 @@
 {
   "privacyPolicy": {
-    "pageTitle": "Politique de Confidentialite",
-    "metaTitle": "WITM - Politique de Confidentialite",
-    "breadcrumb": "Politique de Confidentialite",
-    "intro": "Chez WITM, nous valorisons votre vie privee et nous nous engageons a proteger vos informations personnelles. Cette politique de confidentialite explique comment nous collectons, utilisons et partageons vos informations lorsque vous utilisez notre application.",
+    "pageTitle": "Politique de Confidentialité",
+    "metaTitle": "WITM - Politique de Confidentialité",
+    "breadcrumb": "Politique de Confidentialité",
+    "intro": "Chez WITM, nous valorisons votre vie privée et nous nous engageons à protéger vos informations personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons et partageons vos informations lorsque vous utilisez notre application.",
     "infoCollected": {
       "title": "Informations que Nous Collectons",
       "personalInfo": {
         "label": "Informations Personnelles :",
-        "text": "Nous pouvons collecter des informations telles que votre nom, adresse e-mail et photo de profil lors de la creation de compte ou de la mise a jour de votre profil. Cela nous aide a vous identifier de maniere unique et a vous offrir une experience personnalisee."
+        "text": "Nous pouvons collecter des informations telles que votre nom, adresse e-mail et photo de profil lors de la création de compte ou de la mise à jour de votre profil. Cela nous aide à vous identifier de manière unique et à vous offrir une expérience personnalisée."
       },
       "usageData": {
-        "label": "Donnees d'Utilisation de l'App :",
-        "text": "Cela inclut des informations sur la facon dont vous interagissez avec l'application, telles que les statistiques de jeu, l'activite de vote, les defis completes, les classements et autres interactions dans l'app. Nous pouvons egalement collecter des journaux de plantages ou des donnees de performance pour ameliorer les fonctionnalites."
+        "label": "Données d'Utilisation de l'App :",
+        "text": "Cela inclut des informations sur la façon dont vous interagissez avec l'application, telles que les statistiques de jeu, l'activité de vote, les défis complétés, les classements et autres interactions dans l'app. Nous pouvons également collecter des journaux de plantages ou des données de performance pour améliorer les fonctionnalités."
       },
       "deviceInfo": {
         "label": "Informations sur l'Appareil :",
-        "text": "Nous pouvons collecter des details tels que le type d'appareil, le systeme d'exploitation, la version de l'app et les identifiants uniques de l'appareil pour assurer la compatibilite et ameliorer les performances de l'app."
+        "text": "Nous pouvons collecter des détails tels que le type d'appareil, le système d'exploitation, la version de l'app et les identifiants uniques de l'appareil pour assurer la compatibilité et améliorer les performances de l'app."
       },
       "locationData": {
-        "label": "Donnees de Localisation :",
-        "text": "Si vous accordez la permission, nous pouvons collecter des informations de localisation pour ameliorer les fonctionnalites de l'app, telles que les defis localises ou les recommandations d'amis. Ces donnees sont optionnelles et controlees par les parametres de votre appareil."
+        "label": "Données de Localisation :",
+        "text": "Si vous accordez la permission, nous pouvons collecter des informations de localisation pour améliorer les fonctionnalités de l'app, telles que les défis localisés ou les recommandations d'amis. Ces données sont optionnelles et contrôlées par les paramètres de votre appareil."
       }
     },
     "howUsed": {
       "title": "Comment Nous Utilisons Vos Informations",
-      "item1": "Pour fournir, maintenir et ameliorer l'experience de l'application en comprenant le comportement des utilisateurs et en optimisant les performances.",
-      "item2": "Pour personnaliser le contenu et les fonctionnalites, comme adapter les defis ou les options de vote a vos preferences et interactions.",
-      "item3": "Pour communiquer avec vous concernant les mises a jour, les offres speciales ou les informations importantes liees a l'app.",
-      "item4": "Pour assurer la securite de l'app et prevenir les activites frauduleuses ou non autorisees.",
-      "item5": "Pour analyser les tendances d'utilisation de l'app et generer des insights qui nous aident a ameliorer nos services."
+      "item1": "Pour fournir, maintenir et améliorer l'expérience de l'application en comprenant le comportement des utilisateurs et en optimisant les performances.",
+      "item2": "Pour personnaliser le contenu et les fonctionnalités, comme adapter les défis ou les options de vote à vos préférences et interactions.",
+      "item3": "Pour communiquer avec vous concernant les mises à jour, les offres spéciales ou les informations importantes liées à l'app.",
+      "item4": "Pour assurer la sécurité de l'app et prévenir les activités frauduleuses ou non autorisées.",
+      "item5": "Pour analyser les tendances d'utilisation de l'app et générer des insights qui nous aident à améliorer nos services."
     },
     "dataSharing": {
-      "title": "Partage des Donnees",
-      "intro": "Nous nous engageons a proteger votre vie privee et ne vendons pas vos donnees a des tiers. Cependant, nous pouvons partager vos informations dans les circonstances suivantes :",
-      "item1": "Avec des prestataires de services de confiance qui nous aident a maintenir et ameliorer l'application, tels que les services d'hebergement, les plateformes d'analyse ou les outils de support client.",
-      "item2": "Lorsque requis par la loi ou pour se conformer a des procedures legales, comme repondre a des ordonnances judiciaires valides ou des demandes reglementaires.",
-      "item3": "Pour proteger les droits, la propriete ou la securite de nos utilisateurs, de notre entreprise ou du public lorsqu'il y a une croyance raisonnable de prejudice ou d'activite frauduleuse."
+      "title": "Partage des Données",
+      "intro": "Nous nous engageons à protéger votre vie privée et ne vendons pas vos données à des tiers. Cependant, nous pouvons partager vos informations dans les circonstances suivantes :",
+      "item1": "Avec des prestataires de services de confiance qui nous aident à maintenir et améliorer l'application, tels que les services d'hébergement, les plateformes d'analyse ou les outils de support client.",
+      "item2": "Lorsque requis par la loi ou pour se conformer à des procédures légales, comme répondre à des ordonnances judiciaires valides ou des demandes réglementaires.",
+      "item3": "Pour protéger les droits, la propriété ou la sécurité de nos utilisateurs, de notre entreprise ou du public lorsqu'il y a une croyance raisonnable de préjudice ou d'activité frauduleuse."
     },
     "rights": {
       "title": "Vos Droits",
-      "intro": "Nous respectons vos droits d'acces, de gestion et de controle de vos informations personnelles. Vous pouvez :",
-      "item1": "Acceder et mettre a jour vos donnees personnelles directement dans les parametres de l'app.",
-      "item2": "Demander la suppression de donnees ou la desactivation de compte en contactant notre equipe support.",
-      "item3": "Revoquer les permissions telles que l'acces a la localisation ou les notifications via les parametres de votre appareil.",
-      "retention": "Nous pouvons conserver certaines donnees comme requis par la loi ou a des fins commerciales legitimes, telles que la resolution de litiges ou la tenue de registres de securite."
+      "intro": "Nous respectons vos droits d'accès, de gestion et de contrôle de vos informations personnelles. Vous pouvez :",
+      "item1": "Accéder et mettre à jour vos données personnelles directement dans les paramètres de l'app.",
+      "item2": "Demander la suppression de données ou la désactivation de compte en contactant notre équipe support.",
+      "item3": "Révoquer les permissions telles que l'accès à la localisation ou les notifications via les paramètres de votre appareil.",
+      "retention": "Nous pouvons conserver certaines données comme requis par la loi ou à des fins commerciales légitimes, telles que la résolution de litiges ou la tenue de registres de sécurité."
     },
     "security": {
-      "title": "Mesures de Securite",
-      "text": "Nous mettons en oeuvre des mesures de securite robustes pour proteger vos donnees contre l'acces non autorise, la modification ou la perte. Celles-ci incluent le chiffrement, des serveurs securises et des audits de securite periodiques. Cependant, aucune methode de transmission electronique ou de stockage n'est completement securisee, et nous ne pouvons garantir une securite absolue."
+      "title": "Mesures de Sécurité",
+      "text": "Nous mettons en œuvre des mesures de sécurité robustes pour protéger vos données contre l'accès non autorisé, la modification ou la perte. Celles-ci incluent le chiffrement, des serveurs sécurisés et des audits de sécurité périodiques. Cependant, aucune méthode de transmission électronique ou de stockage n'est complètement sécurisée, et nous ne pouvons garantir une sécurité absolue."
     },
     "changes": {
-      "title": "Modifications de la Politique de Confidentialite",
-      "text": "Nous pouvons mettre a jour cette politique de confidentialite pour refleter les changements dans nos pratiques ou les exigences legales. Les mises a jour significatives seront communiquees via l'app ou par e-mail, et la politique mise a jour sera toujours disponible sur notre site web."
+      "title": "Modifications de la Politique de Confidentialité",
+      "text": "Nous pouvons mettre à jour cette politique de confidentialité pour refléter les changements dans nos pratiques ou les exigences légales. Les mises à jour significatives seront communiquées via l'app ou par e-mail, et la politique mise à jour sera toujours disponible sur notre site web."
     },
     "contact": {
       "title": "Nous Contacter",
-      "text": "Si vous avez des questions ou des preoccupations concernant cette politique de confidentialite ou la facon dont nous traitons vos donnees, n'hesitez pas a nous contacter :",
+      "text": "Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité ou la façon dont nous traitons vos données, n'hésitez pas à nous contacter :",
       "email": "info@whoisthemost.com",
-      "closing": "Nous nous engageons a repondre a vos preoccupations rapidement et de maniere transparente."
+      "closing": "Nous nous engageons à répondre à vos préoccupations rapidement et de manière transparente."
     }
   },
   "terms": {
     "pageTitle": "Conditions d'Utilisation",
     "metaTitle": "WITM - Conditions d'Utilisation",
     "breadcrumb": "Conditions d'Utilisation",
-    "intro": "Bienvenue sur WITM ! En utilisant notre application, vous acceptez de vous conformer aux conditions d'utilisation suivantes. Veuillez lire attentivement ces conditions avant d'acceder a nos services.",
+    "intro": "Bienvenue sur WITM ! En utilisant notre application, vous acceptez de vous conformer aux conditions d'utilisation suivantes. Veuillez lire attentivement ces conditions avant d'accéder à nos services.",
     "acceptance": {
       "title": "1. Acceptation des Conditions",
-      "text": "En creant un compte ou en utilisant notre application, vous acceptez ces conditions d'utilisation dans leur integralite. Si vous n'etes pas d'accord avec ces conditions, vous ne devez pas utiliser notre application."
+      "text": "En créant un compte ou en utilisant notre application, vous acceptez ces conditions d'utilisation dans leur intégralité. Si vous n'êtes pas d'accord avec ces conditions, vous ne devez pas utiliser notre application."
     },
     "responsibilities": {
-      "title": "2. Responsabilites de l'Utilisateur",
-      "item1": "Vous acceptez de fournir des informations exactes et a jour lors de l'inscription et de maintenir la securite de vos identifiants de compte.",
-      "item2": "Vous etes responsable de toutes les activites menees sous votre compte et vous engagez a ne pas adopter un comportement illegal, nuisible ou contraire a nos politiques."
+      "title": "2. Responsabilités de l'Utilisateur",
+      "item1": "Vous acceptez de fournir des informations exactes et à jour lors de l'inscription et de maintenir la sécurité de vos identifiants de compte.",
+      "item2": "Vous êtes responsable de toutes les activités menées sous votre compte et vous engagez à ne pas adopter un comportement illégal, nuisible ou contraire à nos politiques."
     },
     "ip": {
-      "title": "3. Propriete Intellectuelle",
-      "text": "Tout le contenu, les fonctionnalites et la fonctionnalite de l'application, y compris le texte, les images, les videos, les graphiques et les marques deposees, sont la propriete de WITM ou de ses concedants de licence et sont proteges par les lois sur la propriete intellectuelle. Vous ne pouvez pas reproduire, distribuer ou utiliser tout contenu sans consentement ecrit prealable."
+      "title": "3. Propriété Intellectuelle",
+      "text": "Tout le contenu, les fonctionnalités et la fonctionnalité de l'application, y compris le texte, les images, les vidéos, les graphiques et les marques déposées, sont la propriété de WITM ou de ses concédants de licence et sont protégés par les lois sur la propriété intellectuelle. Vous ne pouvez pas reproduire, distribuer ou utiliser tout contenu sans consentement écrit préalable."
     },
     "liability": {
-      "title": "4. Limitation de Responsabilite",
-      "text": "WITM n'est pas responsable des dommages decoulant de l'utilisation de l'application, y compris mais sans s'y limiter, les dommages directs, indirects, accessoires ou consecutifs. Utilisez l'application a vos propres risques."
+      "title": "4. Limitation de Responsabilité",
+      "text": "WITM n'est pas responsable des dommages découlant de l'utilisation de l'application, y compris mais sans s'y limiter, les dommages directs, indirects, accessoires ou consécutifs. Utilisez l'application à vos propres risques."
     },
     "termination": {
-      "title": "5. Resiliation",
-      "text": "Nous nous reservons le droit de suspendre ou de resilier votre compte si vous violez ces conditions ou si vous vous engagez dans des activites non autorisees. Nous pouvons egalement mettre fin aux services sans preavis si cela est necessaire pour des raisons legales ou operationnelles."
+      "title": "5. Résiliation",
+      "text": "Nous nous réservons le droit de suspendre ou de résilier votre compte si vous violez ces conditions ou si vous vous engagez dans des activités non autorisées. Nous pouvons également mettre fin aux services sans préavis si cela est nécessaire pour des raisons légales ou opérationnelles."
     },
     "governingLaw": {
       "title": "6. Droit Applicable",
-      "text": "Ces conditions sont regies et interpretees conformement aux lois de la Suisse. Tout litige decoulant de ces conditions sera soumis a la juridiction exclusive des tribunaux de Fribourg, Suisse."
+      "text": "Ces conditions sont régies et interprétées conformément aux lois de la Suisse. Tout litige découlant de ces conditions sera soumis à la juridiction exclusive des tribunaux de Fribourg, Suisse."
     },
     "changes": {
       "title": "7. Modifications des Conditions",
-      "text": "Nous pouvons mettre a jour ces conditions de temps a autre pour refleter les changements dans nos politiques ou les exigences legales. Vous serez notifie des mises a jour significatives, et les conditions mises a jour seront effectives immediatement apres publication."
+      "text": "Nous pouvons mettre à jour ces conditions de temps à autre pour refléter les changements dans nos politiques ou les exigences légales. Vous serez notifié des mises à jour significatives, et les conditions mises à jour seront effectives immédiatement après publication."
     },
     "contact": {
       "title": "8. Nous Contacter",
-      "text": "Si vous avez des questions ou des preoccupations concernant ces conditions, n'hesitez pas a nous contacter :",
+      "text": "Si vous avez des questions ou des préoccupations concernant ces conditions, n'hésitez pas à nous contacter :",
       "email": "info@whoisthemost.com"
     }
   },
@@ -105,26 +105,26 @@
     "pageTitle": "Suppression de Compte",
     "metaTitle": "WITM - Supprimer le Compte",
     "breadcrumb": "Supprimer le compte",
-    "intro": "La suppression de votre compte est une action permanente et irreversible. En procedant a la suppression du compte, vous acceptez ce qui suit",
-    "permanentTitle": "Votre compte sera supprime definitivement",
+    "intro": "La suppression de votre compte est une action permanente et irréversible. En procédant à la suppression du compte, vous acceptez ce qui suit",
+    "permanentTitle": "Votre compte sera supprimé définitivement",
     "permanentItems": {
-      "item1": "Toutes vos donnees personnelles, y compris les informations de compte, l'historique des transactions, les journaux de communication, les preferences et le contenu enregistre, seront definitivement effacees de nos systemes.",
-      "item2": "Vous perdrez l'acces a toutes les fonctionnalites ou services associes a votre compte, et cela ne peut etre restaure en aucune circonstance.",
-      "item3": "Tous les abonnements actifs ou transactions en cours seront automatiquement annules, et aucun acces supplementaire ne sera fourni."
+      "item1": "Toutes vos données personnelles, y compris les informations de compte, l'historique des transactions, les journaux de communication, les préférences et le contenu enregistré, seront définitivement effacées de nos systèmes.",
+      "item2": "Vous perdrez l'accès à toutes les fonctionnalités ou services associés à votre compte, et cela ne peut être restauré en aucune circonstance.",
+      "item3": "Tous les abonnements actifs ou transactions en cours seront automatiquement annulés, et aucun accès supplémentaire ne sera fourni."
     },
     "instructionsTitle": "Instructions Importantes Avant de Supprimer Votre Compte",
-    "instructionsIntro": "Pour eviter de perdre des informations importantes, nous recommandons les etapes suivantes avant de proceder :",
+    "instructionsIntro": "Pour éviter de perdre des informations importantes, nous recommandons les étapes suivantes avant de procéder :",
     "instructionsItems": {
-      "item1": "Telechargez et enregistrez une copie de toutes les donnees importantes, telles que l'historique des transactions ou les fichiers personnels associes a votre compte.",
-      "item2": "Assurez-vous que toutes les transactions en cours sont terminees et resolues. Une fois supprime, vous ne pourrez plus acceder aux details associes.",
-      "item3": "Annulez tous les abonnements actifs pour eviter les frais futurs."
+      "item1": "Téléchargez et enregistrez une copie de toutes les données importantes, telles que l'historique des transactions ou les fichiers personnels associés à votre compte.",
+      "item2": "Assurez-vous que toutes les transactions en cours sont terminées et résolues. Une fois supprimé, vous ne pourrez plus accéder aux détails associés.",
+      "item3": "Annulez tous les abonnements actifs pour éviter les frais futurs."
     },
     "howToTitle": "Comment Supprimer Votre Compte",
-    "howToText": "Vous pouvez supprimer votre compte en accedant a la page des parametres du compte et en selectionnant l'option \"Supprimer le compte\". Vous pouvez egalement demander la suppression du compte en contactant notre equipe support a",
+    "howToText": "Vous pouvez supprimer votre compte en accédant à la page des paramètres du compte et en sélectionnant l'option \"Supprimer le compte\". Vous pouvez également demander la suppression du compte en contactant notre équipe support à",
     "supportEmail": "support@whoisthemost.com",
-    "confirmationText": "En confirmant la suppression du compte, vous reconnaissez et acceptez que toutes les donnees associees seront definitivement supprimees, et cette action ne peut etre annulee.",
+    "confirmationText": "En confirmant la suppression du compte, vous reconnaissez et acceptez que toutes les données associées seront définitivement supprimées, et cette action ne peut être annulée.",
     "cardTitle": "Supprimer le Compte",
-    "cardDescription": "Etes-vous sur de vouloir supprimer definitivement votre compte et toutes les donnees associees ? Cette action ne peut pas etre annulee.",
+    "cardDescription": "Êtes-vous sûr de vouloir supprimer définitivement votre compte et toutes les données associées ? Cette action ne peut pas être annulée.",
     "confirmButton": "Oui, Supprimer Mon Compte",
     "cancelButton": "Annuler"
   }

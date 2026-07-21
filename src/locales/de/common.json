@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Startseite",
-    "about": "Uber uns",
+    "about": "Über uns",
     "features": "Funktionen",
     "team": "Team",
     "blog": "Blog"
@@ -9,11 +9,11 @@
   "footer": {
     "pages": "Seiten",
     "home": "Startseite",
-    "about": "Uber uns",
+    "about": "Über uns",
     "services": "Dienste",
     "terms": "Nutzungsbedingungen",
     "privacy": "Datenschutz",
-    "deleteAccount": "Konto loschen",
+    "deleteAccount": "Konto löschen",
     "address": "Avenue de Beauregard 14",
     "city": "1700 Freiburg, Schweiz",
     "emailLabel": "E-Mail:",
@@ -22,13 +22,13 @@
     "allRightsReserved": "Alle Rechte vorbehalten",
     "brandTagline": "Who Is The Most - Das Abstimmungsspiel, das Freunde zusammenbringt.",
     "downloadTitle": "App herunterladen",
-    "downloadDescription": "Verf\u00fcgbar auf iOS und Android. Spielt mit Freunden \u00fcberall!",
+    "downloadDescription": "Verfügbar auf iOS und Android. Spielt mit Freunden überall!",
     "madeBy": "Entwickelt von"
   },
   "notFound": {
     "title": "Seite nicht gefunden",
     "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben. Lassen Sie uns Ihnen helfen.",
-    "backToHome": "Zur\u00fcck zur Startseite",
+    "backToHome": "Zurück zur Startseite",
     "blog": "Blog",
     "privacy": "Datenschutz",
     "contact": "Kontakt"
@@ -40,14 +40,14 @@
     "joinCommunity": "Community beitreten",
     "shareIdeas": "Teile Deine Ideen",
     "readMore": "Weiterlesen",
-    "backToHome": "Zuruck zur Startseite",
+    "backToHome": "Zurück zur Startseite",
     "cancel": "Abbrechen",
-    "confirm": "Bestatigen",
+    "confirm": "Bestätigen",
     "submit": "Absenden"
   },
   "languages": {
     "en": "Englisch",
-    "fr": "Franzosisch",
+    "fr": "Französisch",
     "de": "Deutsch"
   },
   "meta": {

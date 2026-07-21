@@ -4,8 +4,8 @@
     "title": "Admin-Zugang",
     "description": "Melden Sie sich mit einem autorisierten Google-Konto an, um auf das Admin-Dashboard zuzugreifen.",
     "signIn": "Mit Google anmelden",
-    "unauthorized": "Ihre E-Mail ist nicht fur den Admin-Zugang autorisiert",
-    "backToSite": "Zuruck zur Website"
+    "unauthorized": "Ihre E-Mail ist nicht für den Admin-Zugang autorisiert",
+    "backToSite": "Zurück zur Website"
   },
   "header": {
     "dashboard": "Dashboard",
@@ -13,9 +13,14 @@
     "signOut": "Abmelden"
   },
   "stats": {
-    "totalQuestions": "Gesamtzahl Fragen",
+    "totalQuestions": "Aktive Fragen",
+    "deletedQuestions": "Gelöschte Fragen",
     "categories": "Kategorien",
-    "pendingChanges": "Ausstehende Anderungen"
+    "pendingChanges": "Ausstehende Änderungen"
+  },
+  "tabs": {
+    "active": "Aktiv",
+    "deleted": "Gelöscht"
   },
   "questions": {
     "title": "Fragen",
@@ -24,46 +29,47 @@
     "all": "Alle Kategorien",
     "noResults": "Keine Fragen gefunden",
     "edit": "Bearbeiten",
-    "delete": "Loschen",
+    "delete": "Löschen",
     "restore": "Wiederherstellen",
-    "add": "Frage hinzufugen",
-    "deleted": "Geloscht",
-    "modified": "Geandert",
-    "new": "Neu"
+    "add": "Frage hinzufügen",
+    "deleted": "Gelöscht",
+    "modified": "Geändert",
+    "new": "Neu",
+    "restoring": "Wiederherstellen..."
   },
   "editor": {
     "title": "Frage bearbeiten",
     "titleNew": "Neue Frage",
-    "questionFr": "Frage (Franzosisch)",
-    "translationEn": "Englische Ubersetzung",
-    "translationDe": "Deutsche Ubersetzung",
+    "questionFr": "Frage (Französisch)",
+    "translationEn": "Englische Übersetzung",
+    "translationDe": "Deutsche Übersetzung",
     "category": "Kategorie",
-    "autoTranslate": "Auto-Ubersetzen",
-    "translating": "Ubersetze...",
+    "autoTranslate": "Auto-Übersetzen",
+    "translating": "Übersetze...",
     "save": "Speichern",
     "cancel": "Abbrechen",
-    "delete": "Loschen",
-    "confirmDelete": "Sind Sie sicher, dass Sie diese Frage loschen mochten?"
+    "delete": "Löschen",
+    "confirmDelete": "Sind Sie sicher, dass Sie diese Frage löschen möchten?"
   },
   "generator": {
     "title": "Fragen generieren",
-    "description": "Verwenden Sie KI, um neue Fragen fur Ihre ausgewahlte Kategorie zu generieren.",
+    "description": "Verwenden Sie KI, um neue Fragen für Ihre ausgewählte Kategorie zu generieren.",
     "category": "Kategorie",
-    "selectCategory": "Kategorie auswahlen",
+    "selectCategory": "Kategorie auswählen",
     "count": "Anzahl der Fragen",
     "generate": "Mit KI generieren",
     "generating": "Generiere...",
     "generated": "Generierte Fragen",
-    "addSelected": "Ausgewahlte hinzufugen",
-    "addAll": "Alle hinzufugen",
-    "selectAll": "Alle auswahlen",
+    "addSelected": "Ausgewählte hinzufügen",
+    "addAll": "Alle hinzufügen",
+    "selectAll": "Alle auswählen",
     "deselectAll": "Auswahl aufheben",
     "noQuestions": "Noch keine Fragen generiert",
     "error": "Generierung fehlgeschlagen. Bitte versuchen Sie es erneut.",
     "submitBatch": "Stapel einreichen",
     "submitting": "Wird eingereicht...",
-    "batchSubmitted": "Stapel eingereicht! Prufen Sie das Panel fur ausstehende Stapel.",
-    "batchInfo": "Fragen werden per Stapelverarbeitung generiert (50% gunstiger). Ergebnisse kommen in der Regel innerhalb weniger Minuten. Prufen Sie das Panel fur ausstehende Stapel unten."
+    "batchSubmitted": "Stapel eingereicht! Prüfen Sie das Panel für ausstehende Stapel.",
+    "batchInfo": "Fragen werden per Stapelverarbeitung generiert (50% günstiger). Ergebnisse kommen in der Regel innerhalb weniger Minuten. Prüfen Sie das Panel für ausstehende Stapel unten."
   },
   "batch": {
     "title": "Ausstehende Stapel",
@@ -72,24 +78,24 @@
     "ended": "Abgeschlossen",
     "viewResults": "Ergebnisse anzeigen",
     "dismiss": "Verwerfen",
-    "importSelected": "Ausgewahlte importieren",
-    "selectAll": "Alle auswahlen",
+    "importSelected": "Ausgewählte importieren",
+    "selectAll": "Alle auswählen",
     "deselectAll": "Auswahl aufheben",
     "fetchingResults": "Ergebnisse werden abgerufen...",
-    "questionsReady": "{{count}} Fragen zur Uberprufung bereit",
+    "questionsReady": "{{count}} Fragen zur Überprüfung bereit",
     "submitted": "Eingereicht"
   },
   "saveBar": {
-    "unsaved": "{{count}} ungespeicherte Anderung(en)",
+    "unsaved": "{{count}} ungespeicherte Änderung(en)",
     "save": "Alles speichern",
     "discard": "Verwerfen",
     "saving": "Speichere...",
-    "saved": "Alle Anderungen gespeichert!",
+    "saved": "Alle Änderungen gespeichert!",
     "error": "Speichern fehlgeschlagen. Bitte versuchen Sie es erneut."
   },
   "errors": {
     "loadFailed": "Fragen konnten nicht geladen werden. Bitte aktualisieren Sie die Seite.",
-    "saveFailed": "Anderungen konnten nicht gespeichert werden. Bitte versuchen Sie es erneut.",
-    "unauthorized": "Sie sind nicht berechtigt, diese Aktion auszufuhren."
+    "saveFailed": "Änderungen konnten nicht gespeichert werden. Bitte versuchen Sie es erneut.",
+    "unauthorized": "Sie sind nicht berechtigt, diese Aktion auszuführen."
   }
 }

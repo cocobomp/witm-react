@@ -3,60 +3,60 @@
     "pageTitle": "Datenschutzrichtlinie",
     "metaTitle": "WITM - Datenschutzrichtlinie",
     "breadcrumb": "Datenschutzrichtlinie",
-    "intro": "Bei WITM schatzen wir Ihre Privatsphare und sind bestrebt, Ihre personlichen Daten zu schutzen. Diese Datenschutzrichtlinie erklart, wie wir Ihre Informationen sammeln, verwenden und teilen, wenn Sie unsere App nutzen.",
+    "intro": "Bei WITM schätzen wir Ihre Privatsphäre und sind bestrebt, Ihre persönlichen Daten zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden und teilen, wenn Sie unsere App nutzen.",
     "infoCollected": {
       "title": "Informationen, die Wir Sammeln",
       "personalInfo": {
-        "label": "Personliche Informationen:",
-        "text": "Wir konnen Informationen wie Ihren Namen, Ihre E-Mail-Adresse und Ihr Profilbild bei der Kontoerstellung oder bei der Aktualisierung Ihres Profils sammeln. Dies hilft uns, Sie eindeutig zu identifizieren und Ihnen ein personalisiertes Erlebnis zu bieten."
+        "label": "Persönliche Informationen:",
+        "text": "Wir können Informationen wie Ihren Namen, Ihre E-Mail-Adresse und Ihr Profilbild bei der Kontoerstellung oder bei der Aktualisierung Ihres Profils sammeln. Dies hilft uns, Sie eindeutig zu identifizieren und Ihnen ein personalisiertes Erlebnis zu bieten."
       },
       "usageData": {
         "label": "App-Nutzungsdaten:",
-        "text": "Dies umfasst Informationen daruber, wie Sie mit der App interagieren, wie Spielstatistiken, Abstimmungsaktivitaten, abgeschlossene Herausforderungen, Ranglistenplatzierungen und andere In-App-Interaktionen. Wir konnen auch Absturzprotokolle oder Leistungsdaten sammeln, um die Funktionalitat zu verbessern."
+        "text": "Dies umfasst Informationen darüber, wie Sie mit der App interagieren, wie Spielstatistiken, Abstimmungsaktivitäten, abgeschlossene Herausforderungen, Ranglistenplatzierungen und andere In-App-Interaktionen. Wir können auch Absturzprotokolle oder Leistungsdaten sammeln, um die Funktionalität zu verbessern."
       },
       "deviceInfo": {
-        "label": "Gerateinformationen:",
-        "text": "Wir konnen Details wie Geratetyp, Betriebssystem, App-Version und eindeutige Geratekennungen sammeln, um die Kompatibilitat sicherzustellen und die App-Leistung zu verbessern."
+        "label": "Geräteinformationen:",
+        "text": "Wir können Details wie Gerätetyp, Betriebssystem, App-Version und eindeutige Gerätekennungen sammeln, um die Kompatibilität sicherzustellen und die App-Leistung zu verbessern."
       },
       "locationData": {
         "label": "Standortdaten:",
-        "text": "Wenn Sie die Erlaubnis erteilen, konnen wir Standortinformationen sammeln, um App-Funktionen zu verbessern, wie lokalisierte Herausforderungen oder Freundesempfehlungen. Diese Daten sind optional und werden durch Ihre Gerateeinstellungen gesteuert."
+        "text": "Wenn Sie die Erlaubnis erteilen, können wir Standortinformationen sammeln, um App-Funktionen zu verbessern, wie lokalisierte Herausforderungen oder Freundesempfehlungen. Diese Daten sind optional und werden durch Ihre Geräteeinstellungen gesteuert."
       }
     },
     "howUsed": {
       "title": "Wie Wir Ihre Informationen Verwenden",
       "item1": "Um die App-Erfahrung bereitzustellen, zu pflegen und zu verbessern, indem wir das Nutzerverhalten verstehen und die App-Leistung optimieren.",
-      "item2": "Um Inhalte und Funktionen zu personalisieren, wie das Anpassen von Herausforderungen oder Abstimmungsoptionen an Ihre Praferenzen und Interaktionen.",
-      "item3": "Um mit Ihnen uber Updates, Sonderangebote oder wichtige Informationen im Zusammenhang mit der App zu kommunizieren.",
-      "item4": "Um die App-Sicherheit zu gewahrleisten und betrugerische oder nicht autorisierte Aktivitaten zu verhindern.",
+      "item2": "Um Inhalte und Funktionen zu personalisieren, wie das Anpassen von Herausforderungen oder Abstimmungsoptionen an Ihre Präferenzen und Interaktionen.",
+      "item3": "Um mit Ihnen über Updates, Sonderangebote oder wichtige Informationen im Zusammenhang mit der App zu kommunizieren.",
+      "item4": "Um die App-Sicherheit zu gewährleisten und betrügerische oder nicht autorisierte Aktivitäten zu verhindern.",
       "item5": "Um App-Nutzungstrends zu analysieren und Erkenntnisse zu gewinnen, die uns helfen, unsere Dienste zu verbessern."
     },
     "dataSharing": {
       "title": "Datenweitergabe",
-      "intro": "Wir sind bestrebt, Ihre Privatsphare zu schutzen und verkaufen Ihre Daten nicht an Dritte. Wir konnen Ihre Informationen jedoch unter folgenden Umstanden teilen:",
-      "item1": "Mit vertrauenswurdigen Dienstleistern, die uns bei der Wartung und Verbesserung der App helfen, wie Hosting-Dienste, Analyseplattformen oder Kundensupport-Tools.",
-      "item2": "Wenn gesetzlich vorgeschrieben oder um rechtlichen Verfahren nachzukommen, wie die Beantwortung gultiger Gerichtsbeschlusse oder behordlicher Anfragen.",
-      "item3": "Um die Rechte, das Eigentum oder die Sicherheit unserer Nutzer, unseres Unternehmens oder der Offentlichkeit zu schutzen, wenn ein berechtigter Grund zur Annahme von Schaden oder betrugerischer Aktivitat besteht."
+      "intro": "Wir sind bestrebt, Ihre Privatsphäre zu schützen und verkaufen Ihre Daten nicht an Dritte. Wir können Ihre Informationen jedoch unter folgenden Umständen teilen:",
+      "item1": "Mit vertrauenswürdigen Dienstleistern, die uns bei der Wartung und Verbesserung der App helfen, wie Hosting-Dienste, Analyseplattformen oder Kundensupport-Tools.",
+      "item2": "Wenn gesetzlich vorgeschrieben oder um rechtlichen Verfahren nachzukommen, wie die Beantwortung gültiger Gerichtsbeschlüsse oder behördlicher Anfragen.",
+      "item3": "Um die Rechte, das Eigentum oder die Sicherheit unserer Nutzer, unseres Unternehmens oder der Öffentlichkeit zu schützen, wenn ein berechtigter Grund zur Annahme von Schaden oder betrügerischer Aktivität besteht."
     },
     "rights": {
       "title": "Ihre Rechte",
-      "intro": "Wir respektieren Ihre Rechte auf Zugang, Verwaltung und Kontrolle Ihrer personlichen Daten. Sie konnen:",
-      "item1": "Ihre personlichen Daten direkt in den App-Einstellungen einsehen und aktualisieren.",
-      "item2": "Datenloschung oder Kontodeaktivierung anfordern, indem Sie unser Support-Team kontaktieren.",
-      "item3": "Berechtigungen wie Standortzugang oder Benachrichtigungen uber Ihre Gerateeinstellungen widerrufen.",
-      "retention": "Wir konnen bestimmte Daten behalten, wie es gesetzlich vorgeschrieben ist oder fur berechtigte Geschaftszwecke, wie die Beilegung von Streitigkeiten oder die Fuhrung von Sicherheitsprotokollen."
+      "intro": "Wir respektieren Ihre Rechte auf Zugang, Verwaltung und Kontrolle Ihrer persönlichen Daten. Sie können:",
+      "item1": "Ihre persönlichen Daten direkt in den App-Einstellungen einsehen und aktualisieren.",
+      "item2": "Datenlöschung oder Kontodeaktivierung anfordern, indem Sie unser Support-Team kontaktieren.",
+      "item3": "Berechtigungen wie Standortzugang oder Benachrichtigungen über Ihre Geräteeinstellungen widerrufen.",
+      "retention": "Wir können bestimmte Daten behalten, wie es gesetzlich vorgeschrieben ist oder für berechtigte Geschäftszwecke, wie die Beilegung von Streitigkeiten oder die Führung von Sicherheitsprotokollen."
     },
     "security": {
-      "title": "Sicherheitsmassnahmen",
-      "text": "Wir implementieren robuste Sicherheitsmassnahmen, um Ihre Daten vor unbefugtem Zugriff, Anderung oder Verlust zu schutzen. Dazu gehoren Verschlusselung, sichere Server und regelmassige Sicherheitsuberprufungen. Keine Methode der elektronischen Ubertragung oder Speicherung ist jedoch vollstandig sicher, sodass wir keine absolute Sicherheit garantieren konnen."
+      "title": "Sicherheitsmaßnahmen",
+      "text": "Wir implementieren robuste Sicherheitsmaßnahmen, um Ihre Daten vor unbefugtem Zugriff, Änderung oder Verlust zu schützen. Dazu gehören Verschlüsselung, sichere Server und regelmäßige Sicherheitsüberprüfungen. Keine Methode der elektronischen Übertragung oder Speicherung ist jedoch vollständig sicher, sodass wir keine absolute Sicherheit garantieren können."
     },
     "changes": {
-      "title": "Anderungen der Datenschutzrichtlinie",
-      "text": "Wir konnen diese Datenschutzrichtlinie aktualisieren, um Anderungen in unseren Praktiken oder gesetzlichen Anforderungen widerzuspiegeln. Wesentliche Aktualisierungen werden uber die App oder per E-Mail mitgeteilt, und die aktualisierte Richtlinie wird immer auf unserer Website verfugbar sein."
+      "title": "Änderungen der Datenschutzrichtlinie",
+      "text": "Wir können diese Datenschutzrichtlinie aktualisieren, um Änderungen in unseren Praktiken oder gesetzlichen Anforderungen widerzuspiegeln. Wesentliche Aktualisierungen werden über die App oder per E-Mail mitgeteilt, und die aktualisierte Richtlinie wird immer auf unserer Website verfügbar sein."
     },
     "contact": {
       "title": "Kontaktieren Sie Uns",
-      "text": "Wenn Sie Fragen oder Bedenken bezuglich dieser Datenschutzrichtlinie oder der Art und Weise haben, wie wir Ihre Daten verarbeiten, kontaktieren Sie uns bitte:",
+      "text": "Wenn Sie Fragen oder Bedenken bezüglich dieser Datenschutzrichtlinie oder der Art und Weise haben, wie wir Ihre Daten verarbeiten, kontaktieren Sie uns bitte:",
       "email": "info@whoisthemost.com",
       "closing": "Wir sind bestrebt, Ihre Anliegen zeitnah und transparent zu behandeln."
     }
@@ -65,35 +65,35 @@
     "pageTitle": "Nutzungsbedingungen",
     "metaTitle": "WITM - Nutzungsbedingungen",
     "breadcrumb": "Nutzungsbedingungen",
-    "intro": "Willkommen bei WITM! Durch die Nutzung unserer App stimmen Sie den folgenden Nutzungsbedingungen zu. Bitte lesen Sie diese Bedingungen sorgfaltig durch, bevor Sie auf unsere Dienste zugreifen.",
+    "intro": "Willkommen bei WITM! Durch die Nutzung unserer App stimmen Sie den folgenden Nutzungsbedingungen zu. Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie auf unsere Dienste zugreifen.",
     "acceptance": {
       "title": "1. Annahme der Bedingungen",
-      "text": "Durch die Erstellung eines Kontos oder die Nutzung unserer App akzeptieren Sie diese Nutzungsbedingungen vollstandig. Wenn Sie diesen Bedingungen nicht zustimmen, durfen Sie unsere App nicht nutzen."
+      "text": "Durch die Erstellung eines Kontos oder die Nutzung unserer App akzeptieren Sie diese Nutzungsbedingungen vollständig. Wenn Sie diesen Bedingungen nicht zustimmen, dürfen Sie unsere App nicht nutzen."
     },
     "responsibilities": {
       "title": "2. Nutzerverantwortung",
-      "item1": "Sie stimmen zu, bei der Kontoregistrierung genaue und aktuelle Informationen anzugeben und die Sicherheit Ihrer Kontodaten zu gewahrleisten.",
-      "item2": "Sie sind fur alle Aktivitaten unter Ihrem Konto verantwortlich und stimmen zu, sich nicht an rechtswidrigem, schadlichem oder gegen unsere Richtlinien verstossendem Verhalten zu beteiligen."
+      "item1": "Sie stimmen zu, bei der Kontoregistrierung genaue und aktuelle Informationen anzugeben und die Sicherheit Ihrer Kontodaten zu gewährleisten.",
+      "item2": "Sie sind für alle Aktivitäten unter Ihrem Konto verantwortlich und stimmen zu, sich nicht an rechtswidrigem, schädlichem oder gegen unsere Richtlinien verstoßendem Verhalten zu beteiligen."
     },
     "ip": {
       "title": "3. Geistiges Eigentum",
-      "text": "Alle Inhalte, Funktionen und Funktionalitaten der App, einschliesslich Text, Bilder, Videos, Grafiken und Marken, sind Eigentum von WITM oder seinen Lizenzgebern und durch Gesetze zum geistigen Eigentum geschutzt. Sie durfen keine Inhalte ohne vorherige schriftliche Zustimmung reproduzieren, verbreiten oder verwenden."
+      "text": "Alle Inhalte, Funktionen und Funktionalitäten der App, einschließlich Text, Bilder, Videos, Grafiken und Marken, sind Eigentum von WITM oder seinen Lizenzgebern und durch Gesetze zum geistigen Eigentum geschützt. Sie dürfen keine Inhalte ohne vorherige schriftliche Zustimmung reproduzieren, verbreiten oder verwenden."
     },
     "liability": {
-      "title": "4. Haftungsbeschrankung",
-      "text": "WITM ist nicht verantwortlich fur Schaden, die aus der Nutzung der App entstehen, einschliesslich, aber nicht beschrankt auf direkte, indirekte, zufallige oder Folgeschaden. Die Nutzung der App erfolgt auf eigenes Risiko."
+      "title": "4. Haftungsbeschränkung",
+      "text": "WITM ist nicht verantwortlich für Schäden, die aus der Nutzung der App entstehen, einschließlich, aber nicht beschränkt auf direkte, indirekte, zufällige oder Folgeschäden. Die Nutzung der App erfolgt auf eigenes Risiko."
     },
     "termination": {
-      "title": "5. Kundigung",
-      "text": "Wir behalten uns das Recht vor, Ihr Konto zu sperren oder zu kundigen, wenn Sie gegen diese Bedingungen verstossen oder sich an nicht autorisierten Aktivitaten beteiligen. Wir konnen Dienste auch ohne vorherige Ankundigung beenden, wenn dies aus rechtlichen oder betrieblichen Grunden erforderlich ist."
+      "title": "5. Kündigung",
+      "text": "Wir behalten uns das Recht vor, Ihr Konto zu sperren oder zu kündigen, wenn Sie gegen diese Bedingungen verstoßen oder sich an nicht autorisierten Aktivitäten beteiligen. Wir können Dienste auch ohne vorherige Ankündigung beenden, wenn dies aus rechtlichen oder betrieblichen Gründen erforderlich ist."
     },
     "governingLaw": {
       "title": "6. Anwendbares Recht",
-      "text": "Diese Bedingungen unterliegen den Gesetzen der Schweiz und werden entsprechend ausgelegt. Alle Streitigkeiten, die sich aus diesen Bedingungen ergeben, unterliegen der ausschliesslichen Zustandigkeit der Gerichte in Freiburg, Schweiz."
+      "text": "Diese Bedingungen unterliegen den Gesetzen der Schweiz und werden entsprechend ausgelegt. Alle Streitigkeiten, die sich aus diesen Bedingungen ergeben, unterliegen der ausschließlichen Zuständigkeit der Gerichte in Freiburg, Schweiz."
     },
     "changes": {
-      "title": "7. Anderungen der Bedingungen",
-      "text": "Wir konnen diese Bedingungen von Zeit zu Zeit aktualisieren, um Anderungen in unseren Richtlinien oder rechtlichen Anforderungen widerzuspiegeln. Sie werden uber wesentliche Aktualisierungen benachrichtigt, und die aktualisierten Bedingungen werden sofort nach Veroffentlichung wirksam."
+      "title": "7. Änderungen der Bedingungen",
+      "text": "Wir können diese Bedingungen von Zeit zu Zeit aktualisieren, um Änderungen in unseren Richtlinien oder rechtlichen Anforderungen widerzuspiegeln. Sie werden über wesentliche Aktualisierungen benachrichtigt, und die aktualisierten Bedingungen werden sofort nach Veröffentlichung wirksam."
     },
     "contact": {
       "title": "8. Kontaktieren Sie Uns",
@@ -102,30 +102,30 @@
     }
   },
   "deleteAccount": {
-    "pageTitle": "Kontoloschung",
-    "metaTitle": "WITM - Konto Loschen",
-    "breadcrumb": "Konto loschen",
-    "intro": "Das Loschen Ihres Kontos ist eine dauerhafte und unwiderrufliche Aktion. Indem Sie mit der Kontoloschung fortfahren, stimmen Sie Folgendem zu",
-    "permanentTitle": "Ihr Konto wird dauerhaft geloscht",
+    "pageTitle": "Kontolöschung",
+    "metaTitle": "WITM - Konto Löschen",
+    "breadcrumb": "Konto löschen",
+    "intro": "Das Löschen Ihres Kontos ist eine dauerhafte und unwiderrufliche Aktion. Indem Sie mit der Kontolöschung fortfahren, stimmen Sie Folgendem zu",
+    "permanentTitle": "Ihr Konto wird dauerhaft gelöscht",
     "permanentItems": {
-      "item1": "Alle Ihre personlichen Daten, einschliesslich Kontoinformationen, Transaktionshistorie, Kommunikationsprotokolle, Praferenzen und gespeicherte Inhalte, werden dauerhaft aus unseren Systemen geloscht.",
-      "item2": "Sie verlieren den Zugang zu allen Funktionen oder Diensten, die mit Ihrem Konto verbunden sind, und dies kann unter keinen Umstanden wiederhergestellt werden.",
-      "item3": "Alle aktiven Abonnements oder laufenden Transaktionen werden automatisch gekundigt, und es wird kein weiterer Zugang gewahrt."
+      "item1": "Alle Ihre persönlichen Daten, einschließlich Kontoinformationen, Transaktionshistorie, Kommunikationsprotokolle, Präferenzen und gespeicherte Inhalte, werden dauerhaft aus unseren Systemen gelöscht.",
+      "item2": "Sie verlieren den Zugang zu allen Funktionen oder Diensten, die mit Ihrem Konto verbunden sind, und dies kann unter keinen Umständen wiederhergestellt werden.",
+      "item3": "Alle aktiven Abonnements oder laufenden Transaktionen werden automatisch gekündigt, und es wird kein weiterer Zugang gewährt."
     },
-    "instructionsTitle": "Wichtige Anweisungen vor der Loschung Ihres Kontos",
+    "instructionsTitle": "Wichtige Anweisungen vor der Löschung Ihres Kontos",
     "instructionsIntro": "Um den Verlust wichtiger Informationen zu vermeiden, empfehlen wir folgende Schritte vor dem Fortfahren:",
     "instructionsItems": {
-      "item1": "Laden Sie eine Kopie aller wichtigen Daten herunter und speichern Sie sie, wie Transaktionshistorie oder personliche Dateien, die mit Ihrem Konto verbunden sind.",
-      "item2": "Stellen Sie sicher, dass alle laufenden Transaktionen abgeschlossen und gelost sind. Nach der Loschung konnen Sie nicht mehr auf die zugehorigen Details zugreifen.",
-      "item3": "Kundigen Sie alle aktiven Abonnements, um zukunftige Gebuhren zu vermeiden."
+      "item1": "Laden Sie eine Kopie aller wichtigen Daten herunter und speichern Sie sie, wie Transaktionshistorie oder persönliche Dateien, die mit Ihrem Konto verbunden sind.",
+      "item2": "Stellen Sie sicher, dass alle laufenden Transaktionen abgeschlossen und gelöst sind. Nach der Löschung können Sie nicht mehr auf die zugehörigen Details zugreifen.",
+      "item3": "Kündigen Sie alle aktiven Abonnements, um zukünftige Gebühren zu vermeiden."
     },
-    "howToTitle": "So Loschen Sie Ihr Konto",
-    "howToText": "Sie konnen Ihr Konto loschen, indem Sie zur Kontoeinstellungsseite navigieren und die Option \"Konto loschen\" auswahlen. Alternativ konnen Sie die Kontoloschung anfordern, indem Sie unser Support-Team unter",
+    "howToTitle": "So Löschen Sie Ihr Konto",
+    "howToText": "Sie können Ihr Konto löschen, indem Sie zur Kontoeinstellungsseite navigieren und die Option \"Konto löschen\" auswählen. Alternativ können Sie die Kontolöschung anfordern, indem Sie unser Support-Team unter",
     "supportEmail": "support@whoisthemost.com",
-    "confirmationText": "Durch die Bestatigung der Kontoloschung erkennen Sie an und akzeptieren Sie, dass alle zugehorigen Daten dauerhaft entfernt werden und diese Aktion nicht ruckgangig gemacht werden kann.",
-    "cardTitle": "Konto Loschen",
-    "cardDescription": "Sind Sie sicher, dass Sie Ihr Konto und alle zugehorigen Daten dauerhaft loschen mochten? Diese Aktion kann nicht ruckgangig gemacht werden.",
-    "confirmButton": "Ja, Mein Konto Loschen",
+    "confirmationText": "Durch die Bestätigung der Kontolöschung erkennen Sie an und akzeptieren Sie, dass alle zugehörigen Daten dauerhaft entfernt werden und diese Aktion nicht rückgängig gemacht werden kann.",
+    "cardTitle": "Konto Löschen",
+    "cardDescription": "Sind Sie sicher, dass Sie Ihr Konto und alle zugehörigen Daten dauerhaft löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "confirmButton": "Ja, Mein Konto Löschen",
     "cancelButton": "Abbrechen"
   }
 }

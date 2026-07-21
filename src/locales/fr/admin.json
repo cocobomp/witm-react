@@ -1,95 +1,101 @@
 {
   "title": "Tableau de bord Admin",
   "login": {
-    "title": "Acces Admin",
-    "description": "Connectez-vous avec un compte Google autorise pour acceder au tableau de bord admin.",
+    "title": "Accès admin",
+    "description": "Connectez-vous avec un compte Google autorisé pour accéder au tableau de bord admin.",
     "signIn": "Se connecter avec Google",
-    "unauthorized": "Votre email n'est pas autorise pour l'acces admin",
+    "unauthorized": "Votre email n'est pas autorisé pour l'accès admin",
     "backToSite": "Retour au site"
   },
   "header": {
     "dashboard": "Tableau de bord",
     "questions": "Questions",
-    "signOut": "Deconnexion"
+    "signOut": "Déconnexion"
   },
   "stats": {
-    "totalQuestions": "Total Questions",
-    "categories": "Categories",
+    "totalQuestions": "Questions actives",
+    "deletedQuestions": "Questions supprimées",
+    "categories": "Catégories",
     "pendingChanges": "Modifications en attente"
+  },
+  "tabs": {
+    "active": "Actives",
+    "deleted": "Supprimées"
   },
   "questions": {
     "title": "Questions",
     "search": "Rechercher des questions...",
-    "filter": "Filtrer par categorie",
-    "all": "Toutes les categories",
-    "noResults": "Aucune question trouvee",
+    "filter": "Filtrer par catégorie",
+    "all": "Toutes les catégories",
+    "noResults": "Aucune question trouvée",
     "edit": "Modifier",
     "delete": "Supprimer",
     "restore": "Restaurer",
     "add": "Ajouter une question",
-    "deleted": "Supprimee",
-    "modified": "Modifiee",
-    "new": "Nouvelle"
+    "deleted": "Supprimée",
+    "modified": "Modifiée",
+    "new": "Nouvelle",
+    "restoring": "Restauration..."
   },
   "editor": {
     "title": "Modifier la question",
     "titleNew": "Nouvelle question",
-    "questionFr": "Question (Francais)",
+    "questionFr": "Question (Français)",
     "translationEn": "Traduction anglaise",
     "translationDe": "Traduction allemande",
-    "category": "Categorie",
+    "category": "Catégorie",
     "autoTranslate": "Traduction auto",
     "translating": "Traduction en cours...",
     "save": "Enregistrer",
     "cancel": "Annuler",
     "delete": "Supprimer",
-    "confirmDelete": "Etes-vous sur de vouloir supprimer cette question ?"
+    "confirmDelete": "Êtes-vous sûr de vouloir supprimer cette question ?"
   },
   "generator": {
-    "title": "Generer des questions",
-    "description": "Utilisez l'IA pour generer de nouvelles questions pour la categorie selectionnee.",
-    "category": "Categorie",
-    "selectCategory": "Selectionnez une categorie",
+    "title": "Générer des questions",
+    "description": "Utilisez l'IA pour générer de nouvelles questions pour la catégorie sélectionnée.",
+    "category": "Catégorie",
+    "selectCategory": "Sélectionnez une catégorie",
     "count": "Nombre de questions",
-    "generate": "Generer avec l'IA",
-    "generating": "Generation en cours...",
-    "generated": "Questions generees",
-    "addSelected": "Ajouter la selection",
+    "generate": "Générer avec l'IA",
+    "generating": "Génération en cours...",
+    "generated": "Questions générées",
+    "addSelected": "Ajouter la sélection",
     "addAll": "Tout ajouter",
-    "selectAll": "Tout selectionner",
-    "deselectAll": "Tout deselectionner",
-    "noQuestions": "Aucune question generee pour l'instant",
-    "error": "Echec de la generation. Veuillez reessayer.",
+    "selectAll": "Tout sélectionner",
+    "deselectAll": "Tout désélectionner",
+    "noQuestions": "Aucune question générée pour l'instant",
+    "error": "Échec de la génération. Veuillez réessayer.",
     "submitBatch": "Soumettre le lot",
     "submitting": "Soumission en cours...",
-    "batchSubmitted": "Lot soumis ! Consultez le panneau des lots en attente pour les resultats.",
-    "batchInfo": "Les questions sont generees par traitement en lot (50% moins cher). Les resultats arrivent generalement en quelques minutes. Consultez le panneau des lots en attente ci-dessous."
+    "batchSubmitted": "Lot soumis ! Consultez le panneau des lots en attente pour les résultats.",
+    "batchInfo": "Les questions sont générées par traitement en lot (50% moins cher). Les résultats arrivent généralement en quelques minutes. Consultez le panneau des lots en attente ci-dessous."
   },
   "batch": {
     "title": "Lots en attente",
     "empty": "Aucun lot en attente",
     "inProgress": "En cours...",
-    "ended": "Termine",
-    "viewResults": "Voir les resultats",
+    "ended": "Terminé",
+    "viewResults": "Voir les résultats",
     "dismiss": "Ignorer",
-    "importSelected": "Importer la selection",
-    "selectAll": "Tout selectionner",
-    "deselectAll": "Tout deselectionner",
-    "fetchingResults": "Recuperation des resultats...",
-    "questionsReady": "{{count}} questions pretes a etre importees",
+    "importSelected": "Importer la sélection",
+    "selectAll": "Tout sélectionner",
+    "deselectAll": "Tout désélectionner",
+    "fetchingResults": "Récupération des résultats...",
+    "questionsReady": "{{count}} questions prêtes à être importées",
     "submitted": "Soumis"
   },
   "saveBar": {
-    "unsaved": "{{count}} modification(s) non enregistree(s)",
+    "unsaved": "{{count}} modification(s) non enregistrée(s)",
     "save": "Tout enregistrer",
     "discard": "Annuler",
     "saving": "Enregistrement...",
-    "saved": "Toutes les modifications ont ete enregistrees !",
-    "error": "Echec de l'enregistrement. Veuillez reessayer."
+    "saved": "Toutes les modifications ont été enregistrées !",
+    "error": "Échec de l'enregistrement. Veuillez réessayer."
   },
   "errors": {
-    "loadFailed": "Echec du chargement des questions. Veuillez rafraichir la page.",
-    "saveFailed": "Echec de l'enregistrement. Veuillez reessayer.",
-    "unauthorized": "Vous n'etes pas autorise a effectuer cette action."
+    "loadFailed": "Échec du chargement des questions. Veuillez rafraîchir la page.",
+    "saveFailed": "Échec de l'enregistrement. Veuillez réessayer.",
+    "unauthorized": "Vous n'êtes pas autorisé à effectuer cette action."
   }
 }

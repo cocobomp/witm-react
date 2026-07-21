@@ -2,28 +2,33 @@
   "hero": {
     "title": "WITM",
     "subtitle": "Wer Ist Am Meisten...?",
-    "description": "Das Partyspiel, das zeigt, was deine Freunde wirklich denken! Stimme bei lustigen Fragen ab, entdecke uberraschende Wahrheiten und fordere die Gewinner heraus. Schnell gestartet, unvergesslich.",
+    "description": "Das Partyspiel, bei dem du über deine Freunde abstimmst — und sie über dich. Wer traut sich heute Abend?",
     "ctaJoin": "Community beitreten",
     "ctaDownload": "App laden",
-    "scrollHint": "Scrollen zum Entdecken"
+    "scrollHint": "Scrollen zum Entdecken",
+    "stats": {
+      "questions": "520+ Fragen",
+      "categories": "7 Kategorien",
+      "languages": "3 Sprachen"
+    }
   },
   "about": {
-    "sectionLabel": "Uber uns",
-    "title": "Ein Kleines Schweizer Team, Grosse Ideen",
+    "sectionLabel": "Über uns",
+    "title": "Ein Kleines Schweizer Team, Große Ideen",
     "description": "Wir sind ein leidenschaftliches Team aus Freiburg, Schweiz, das sich der Verbindung von Freunden durch lustige und unvergessliche Momente widmet.",
-    "story": "WITM wurde aus einer einfachen Frage geboren: \"Wer von uns ist am ehesten...?\" Jetzt konnt ihr die Debatte klaren! Erstellt einen Raum, ladet eure Freunde mit einem PIN-Code ein und stimmt uber witzige Fragen ab. Wer die meisten Stimmen hat? Bekommt eine Mutprobe!",
+    "story": "WITM wurde aus einer einfachen Frage geboren: \"Wer von uns ist am ehesten...?\" Jetzt könnt ihr die Debatte klären! Erstellt einen Raum, ladet eure Freunde mit einem PIN-Code ein und stimmt über witzige Fragen ab. Wer die meisten Stimmen hat? Bekommt eine Mutprobe! Und mit Kollaborativen Fragen kann eure Gruppe eigene Fragen in Echtzeit erstellen und einreichen.",
     "pillars": {
       "swissQuality": {
-        "label": "Schweizer Qualitat",
+        "label": "Schweizer Qualität",
         "text": "Mit Sorgfalt in Freiburg entwickelt"
       },
       "weListen": {
-        "label": "Wir Horen Zu",
+        "label": "Wir Hören Zu",
         "text": "Euer Feedback formt unsere App"
       },
       "justLaunched": {
-        "label": "Gerade Gestartet",
-        "text": "Version 1.0 am 3. Februar 2026"
+        "label": "Regelmäßig aktualisiert",
+        "text": "Jeden Monat neue Features"
       },
       "communityFirst": {
         "label": "Community Zuerst",
@@ -35,24 +40,24 @@
   "iconBoxes": {
     "createRooms": {
       "title": "Schneller Raumaufbau",
-      "description": "Erstelle einen Raum in Sekunden und teile einen 3-stelligen PIN. Freunde treten sofort bei - kein Konto notig!"
+      "description": "Erstelle einen Raum in Sekunden und teile einen 3-stelligen PIN. Freunde treten sofort bei - kein Konto nötig!"
     },
     "funQuiz": {
-      "title": "Fur Freunde Abstimmen",
-      "description": "Lustige Fragen wie \"Wer ist am ehesten...\" erscheinen. Alle stimmen geheim ab, wer am besten passt!"
+      "title": "Für Freunde Abstimmen",
+      "description": "Lustige Fragen wie \"Wer ist am ehesten...\" erscheinen — und eure Gruppe kann eigene Fragen live einreichen. Alle stimmen geheim ab, wer am besten passt!"
     },
     "dynamicVoting": {
-      "title": "Enthullung & Mutprobe",
+      "title": "Enthüllung & Mutprobe",
       "description": "Seht, wer die meisten Stimmen bekommen hat! Der Gewinner bekommt eine lustige Mutprobe von der Gruppe."
     },
     "leaderboard": {
       "title": "Endrangliste",
-      "description": "Am Ende entdeckt, wer wahrend des Spiels am meisten \"Der Meiste\" war. Angeber-Rechte inklusive!"
+      "description": "Am Ende entdeckt, wer während des Spiels am meisten \"Der Meiste\" war. Angeber-Rechte inklusive!"
     }
   },
   "features": {
     "sectionTitle": "Fragenkategorien",
-    "sectionDescription": "Wahle deine Stimmung! Jede Kategorie bringt einen anderen Geschmack zu deinem Spieleabend.",
+    "sectionDescription": "Wähle deine Stimmung! Jede Kategorie bringt einen anderen Geschmack zu deinem Spieleabend.",
     "wtf": "WTF!?",
     "friends": "Freunde",
     "family": "Familie",
@@ -63,13 +68,15 @@
   },
   "examples": {
     "sectionTitle": "Beispielfragen",
-    "sectionDescription": "Hier ein Vorgeschmack, woruber ihr abstimmen werdet:",
-    "q1": "Wer wird am ehesten eine Uberraschungsparty planen?",
-    "q2": "Wer wird am ehesten viel zu viel Geld fur Kaffee ausgeben?",
+    "sectionDescription": "Hier ein Vorgeschmack, worüber ihr abstimmen werdet:",
+    "q1": "Wer wird am ehesten eine Überraschungsparty planen?",
+    "q2": "Wer wird am ehesten viel zu viel Geld für Kaffee ausgeben?",
     "q3": "Wer wird am ehesten abhauen und zum Zirkus gehen?",
     "q4": "Wer wird am ehesten zu Hause der Unordentlichste sein?",
-    "q5": "Wer wird am ehesten seinen Job auf dramatische Weise kundigen?",
-    "q6": "Wer wird am ehesten in Area 51 einbrechen, nur um zu sehen, was drin ist?"
+    "q5": "Wer wird am ehesten seinen Job auf dramatische Weise kündigen?",
+    "q6": "Wer wird am ehesten in Area 51 einbrechen, nur um zu sehen, was drin ist?",
+    "q7": "Wer wird am ehesten eine Nachricht aus Versehen an die falsche Person schicken?",
+    "q8": "Wer wird am ehesten eine Zombie-Apokalypse überleben?"
   },
   "carousel": {
     "sectionTitle": "Erlebe die App",
@@ -78,20 +85,20 @@
     "screen2Alt": "Raum erstellen Bildschirm",
     "screen3Alt": "Abstimmungsbildschirm",
     "previous": "Vorheriger Screenshot",
-    "next": "Nachster Screenshot",
+    "next": "Nächster Screenshot",
     "goToSlide": "Zur Folie {{number}}"
   },
   "whyChoose": {
-    "title": "Warum WITM Wahlen?",
-    "subtitle": "Das Partyspiel fur echte Freundschaften",
+    "title": "Warum WITM Wählen?",
+    "subtitle": "Das Partyspiel für echte Freundschaften",
     "swissMade": "Made in Switzerland",
-    "weListen": "Wir Horen Zu",
-    "justLaunched": "Gerade Gestartet",
+    "weListen": "Wir Hören Zu",
+    "justLaunched": "Regelmäßig aktualisiert",
     "communityFirst": "Community Zuerst",
-    "swissMadeDesc": "Mit Schweizer Prazision und Sorgfalt in Freiburg entworfen und entwickelt. Qualitat, der du vertrauen kannst.",
+    "swissMadeDesc": "Mit Schweizer Präzision und Sorgfalt in Freiburg entworfen und entwickelt. Qualität, der du vertrauen kannst.",
     "weListenDesc": "Hast du eine Idee? Wir lesen jeden Vorschlag. Dein Feedback gestaltet direkt unsere Features.",
-    "justLaunchedDesc": "Frisch aus dem Ofen! Version 1.0 gestartet im Februar 2026 - noch mehr Spass kommt bald.",
-    "communityFirstDesc": "Fur Freundesgruppen gebaut, von Spielern wie dir geformt. Du bist das Herz von WITM."
+    "justLaunchedDesc": "Wir liefern jeden Monat neue Features — mehr Fragen, Kategorien und Spielmodi sind immer unterwegs.",
+    "communityFirstDesc": "Für Freundesgruppen gebaut, von Spielern wie dir geformt. Du bist das Herz von WITM."
   },
   "details": {
     "sectionTitle": "Wie WITM Funktioniert",
@@ -99,47 +106,99 @@
     "sectionSubtitleHighlight": "Das Gameplay",
     "feature1": {
       "title": "Erstellen oder Beitreten in Sekunden",
-      "description": "Ein Spiel zu starten ist muhelos. Erstelle einen Raum und erhalte einen einzigartigen 3-Zeichen-PIN-Code. Teile ihn per Nachricht, und deine Freunde sind dabei! Keine Anmeldung erforderlich.",
-      "bullet1": "3-Zeichen-PIN-Codes fur einfaches Beitreten",
-      "bullet2": "Minimum 2-3 Spieler um den Spass zu starten",
+      "description": "Ein Spiel zu starten ist mühelos. Erstelle einen Raum und erhalte einen einzigartigen 3-Zeichen-PIN-Code. Teile ihn per Nachricht, und deine Freunde sind dabei! Keine Anmeldung erforderlich.",
+      "bullet1": "3-Zeichen-PIN-Codes für einfaches Beitreten",
+      "bullet2": "Minimum 2-3 Spieler um den Spaß zu starten",
       "bullet3": "Funktioniert auf iOS und Android"
     },
     "feature2": {
-      "title": "Abstimmung nach Fahigkeiten",
-      "description": "Nutzer konnen fur andere basierend auf ihren gezeigten Fahigkeiten in verschiedenen Bereichen wie Kreativitat, Kompetenz und Teamarbeit abstimmen. Die App ermoglicht es Nutzern, entsprechend zu bewerten und abzustimmen.",
-      "extra": "Mit einem dynamischen Abstimmungssystem haben Nutzer die Moglichkeit, basierend auf den einzigartigen Qualitaten abzustimmen, die Spieler zeigen. Ob es sich um eine Spielherausforderung, eine Aufgabe oder ein kreatives Projekt handelt, die Community stimmt ab, um die besten Leistungen hervorzuheben."
+      "title": "Wer passt am besten zur Frage?",
+      "description": "Eine witzige Frage taucht auf und alle wählen heimlich den Freund, der am besten passt. Wer ist die größte Drama Queen? Wer würde auf einer einsamen Insel überleben? Eure Gruppe entscheidet!",
+      "extra": "Jede Runde ist eine neue Debatte. Manche Antworten sind offensichtlich, andere werden euch schockieren. Das Beste? Zuzusehen, wie eure Freunde ihre Stimmen rechtfertigen. Ob versteckte Talente oder peinliche Angewohnheiten — die Gruppe weiß es immer."
     },
     "feature3": {
-      "title": "Stimme fur Wer am Besten Passt",
-      "description": "Jede Runde erscheint eine Frage: \"Wer ist am ehesten...?\" Alle stimmen geheim fur den Freund ab, der am besten passt. Sei ehrlich... oder strategisch!",
-      "bullet1": "Geheime Abstimmung halt es spannend",
-      "bullet2": "Optionaler anonymer Modus verbirgt wer fur wen gestimmt hat",
-      "bullet3": "Selbst-Abstimmungs-Option fur noch mehr Spass"
+      "title": "Stimme für Wer am Besten Passt",
+      "description": "Jede Runde erscheint eine Frage: \"Wer ist am ehesten...?\" Alle stimmen geheim für den Freund ab, der am besten passt. Sei ehrlich... oder strategisch!",
+      "bullet1": "Geheime Abstimmung hält es spannend",
+      "bullet2": "Optionaler anonymer Modus verbirgt wer für wen gestimmt hat",
+      "bullet3": "Selbst-Abstimmungs-Option für noch mehr Spaß"
     },
     "feature4": {
-      "title": "Echtzeit-Abstimmung & Feedback",
-      "description": "Spieler konnen Echtzeit-Feedback basierend auf Stimmen erhalten und an laufenden Herausforderungen teilnehmen, die ihnen helfen, sich zu verbessern und schneller voranzukommen.",
-      "extra": "Mit Live-Updates werden Nutzer sofort uber erhaltene Stimmen benachrichtigt, und die Moglichkeit, Feedback zu den Leistungen anderer zu geben, fordert eine unterstutzende Community."
+      "title": "Live-Ergebnisse, echte Reaktionen",
+      "description": "Schau den Stimmen live zu! Sieh, wer gewählt wird, und genieß die Echtzeit-Reaktionen, wenn der Gewinner enthüllt wird. Die Spannung steigt mit jeder Stimme.",
+      "extra": "Die Stimmen aktualisieren sich in Echtzeit, damit alle die Spannung spüren. Wenn das Endergebnis fällt, erwarte Staunen, Gelächter und jede Menge Fingerzeigen. Da fängt der echte Spaß an."
     },
     "feature5": {
       "title": "Ergebnisse & Mutproben",
-      "description": "Nach der Abstimmung werden die Ergebnisse enthullt! Die Person mit den meisten Stimmen wird zum \"Meisten\" dieser Runde gekront und bekommt eine lustige Mutprobe von der Gruppe.",
+      "description": "Nach der Abstimmung werden die Ergebnisse enthüllt! Die Person mit den meisten Stimmen wird zum \"Meisten\" dieser Runde gekrönt und bekommt eine lustige Mutprobe von der Gruppe.",
       "extra": "Das Spiel geht automatisch nach jeder Runde weiter. Konfiguriere 5 bis 20 Fragen pro Spiel, mit Timern von 5 bis 30 Sekunden. Jede Einstellung ist anpassbar!"
     },
     "feature6": {
-      "title": "Community und Soziales Teilen",
-      "description": "Spieler konnen ihre Erfolge, erhaltenen Stimmen und Herausforderungsergebnisse mit ihrer Community teilen, um ihren Fortschritt zu prasentieren.",
-      "extra": "Die soziale Integration ermoglicht es Nutzern, ihre Abstimmungshistorie und Ranglistenpositionen auf verschiedenen Social-Media-Plattformen zu teilen, um ihre Sichtbarkeit zu erhohen und Erfolge zu feiern."
+      "title": "Teilt die Lacher",
+      "description": "Macht Screenshots von den lustigsten Ergebnissen und teilt sie mit der Welt. Zeigt allen, wer zum 'Am ehesten eine Katzenlady' gewählt wurde — das werden sie nie vergessen.",
+      "extra": "Die besten WITM-Momente verdienen ein Publikum. Teilt eure Ergebnisse in den sozialen Medien, fordert andere Freundesgruppen heraus und vergleicht, wer die wildesten Stimmen bekommen hat. Jedes Spiel schafft Geschichten, die es wert sind, erzählt zu werden."
     },
     "feature7": {
       "title": "Endrangliste",
-      "description": "Am Ende sieh die komplette Rangliste, die zeigt wer uber alle Runden hinweg am meisten \"Der Meiste\" gewahlt wurde. Perfekt um freundschaftliche Debatten zu klaren und Angeberrechte zu verdienen!",
-      "extra": "Premium-Spieler konnen eigene Fragen erstellen, auf alle Kategorien zugreifen und jede Spieleinstellung personalisieren. Mach WITM zu deinem eigenen!"
+      "description": "Am Ende sieh die komplette Rangliste, die zeigt wer über alle Runden hinweg am meisten \"Der Meiste\" gewählt wurde. Perfekt um freundschaftliche Debatten zu klären und Angeberrechte zu verdienen!",
+      "extra": "Premium-Spieler können eigene Fragen erstellen, auf alle Kategorien zugreifen und jede Spieleinstellung personalisieren. Mach WITM zu deinem eigenen!"
     }
+  },
+  "gameFeatures": {
+    "sectionTitle": "Mehr Als Nur Abstimmen",
+    "sectionSubtitle": "Live-Reaktionen, Auszeichnungen, Spielmodi und mehr — alles, was aus einem Quiz eine echte Party macht.",
+    "reactions": {
+      "title": "Live-Reaktionen",
+      "description": "Schicke Emoji-Reaktionen in Echtzeit, während die Ergebnisse aufgedeckt werden."
+    },
+    "awards": {
+      "title": "Auszeichnungen am Ende",
+      "description": "10 lustige Titel zum Schluss — Das Schaf, Der Rebell und mehr."
+    },
+    "scoring": {
+      "title": "Konsens-Punkte",
+      "description": "Punkte gibt es, wenn du mit der Mehrheit stimmst. Die letzten Runden zählen doppelt."
+    },
+    "coupleMode": {
+      "title": "Paar-Modus",
+      "description": "Ein Kompatibilitäts-Quiz für zwei, mit persönlichen Tipps."
+    },
+    "collabMode": {
+      "title": "Kollaborativ-Modus",
+      "description": "Alle schreiben vor dem Spiel ihre eigenen Fragen."
+    },
+    "toneFilter": {
+      "title": "Engel oder Teufel",
+      "description": "Der Host wählt die Stimmung: liebe, gemischte oder freche Fragen."
+    },
+    "leaderboard": {
+      "title": "Globale Rangliste",
+      "description": "Klettere in der weltweiten Rangliste nach oben."
+    },
+    "languages": {
+      "title": "6 Sprachen",
+      "description": "Englisch, Französisch, Deutsch — plus 3 Schweizerdeutsch-Dialekte."
+    }
+  },
+  "faq": {
+    "sectionTitle": "Häufig Gestellte Fragen",
+    "sectionDescription": "Alles, was du über WITM wissen musst",
+    "q1": "Wie viele Spieler können mitspielen?",
+    "a1": "Du brauchst mindestens 2 Spieler, um eine Partie zu starten. Nach oben gibt es keine Grenze — je mehr Freunde, desto lustiger! Teile einfach den PIN-Code und alle können sofort beitreten.",
+    "q2": "Ist WITM kostenlos?",
+    "a2": "Ja! WITM ist komplett kostenlos zum Herunterladen und Spielen. Wir bieten ein optionales Premium-Upgrade für eigene Fragen, zusätzliche Kategorien und weitere Spieleinstellungen.",
+    "q3": "Kann ich eigene Fragen erstellen?",
+    "a3": "Klar! Premium-Nutzer können eigene Fragenlisten erstellen. Und mit dem Kollaborativen Modus kann jeder in der Lobby Fragen einreichen, bevor das Spiel losgeht — ganz ohne Premium!",
+    "q4": "Was ist der Kollaborative Modus?",
+    "a4": "Im Kollaborativen Modus kann jeder Spieler in der Lobby eigene Fragen einreichen, bevor das Spiel beginnt. Diese werden mit den Kategorie-Fragen gemischt für ein völlig einzigartiges Spielerlebnis. Perfekt für Insider-Witze!",
+    "q5": "Wie trete ich einem Raum bei?",
+    "a5": "Der Gastgeber erstellt einen Raum und bekommt einen 3-Zeichen-PIN-Code. Gib diesen PIN einfach auf dem Beitrittsbildschirm ein und du bist dabei! Kein Konto nötig, um als Gast beizutreten.",
+    "q6": "Gibt es WITM in meiner Sprache?",
+    "a6": "WITM ist derzeit auf Englisch, Französisch und Deutsch verfügbar — mit über 520 vollständig übersetzten Fragen. Weitere Sprachen folgen bald basierend auf den Wünschen der Community!"
   },
   "download": {
     "title": "Bereit zu Spielen?",
-    "description": "Lade WITM jetzt herunter und entdecke, was deine Freunde wirklich denken. Kostenlos verfugbar auf iOS und Android!"
+    "description": "Euer nächster Spieleabend beginnt hier. Tausende Freundesgruppen spielen schon — ladet WITM kostenlos auf iOS und Android herunter!"
   },
   "team": {
     "sectionTitle": "Team",
@@ -148,7 +207,7 @@
     "members": {
       "corentin": {
         "name": "Corentin Bompard",
-        "role": "Geschaftsfuhrer"
+        "role": "Geschäftsführer"
       },
       "celien": {
         "name": "Celien Bompard",
@@ -161,12 +220,46 @@
       "nathan": {
         "name": "Nathan Genoud",
         "role": "Offizieller Testdirektor"
+      },
+      "olivier": {
+        "name": "Olivier Jung",
+        "role": "Oberpfleger"
       }
     }
   },
+  "testimonials": {
+    "sectionTitle": "Was Spieler Sagen",
+    "sectionDescription": "Echte Geschichten von echten Spieleabenden",
+    "reviews": [
+      {
+        "name": "Anna S.",
+        "context": "Spieleabend",
+        "quote": "Wir haben 3 Stunden am Stück gespielt und konnten nicht aufhören zu lachen. Die Fragen sind genial und die Mutproben waren legendär.",
+        "stars": 5
+      },
+      {
+        "name": "Lukas W.",
+        "context": "Teambuilding",
+        "quote": "Viel besser als langweilige Kennenlernspiele. Unser Team hat sich endlich richtig kennengelernt. Der anonyme Modus ist genial!",
+        "stars": 5
+      },
+      {
+        "name": "Marie H.",
+        "context": "Familientreffen",
+        "quote": "Sogar meine Eltern waren begeistert! Die Familien-Kategorie ist perfekt — lustig, aber nie zu peinlich. Wir spielen jetzt jeden Sonntag.",
+        "stars": 5
+      },
+      {
+        "name": "Felix R.",
+        "context": "Geburtstagsparty",
+        "quote": "Die Kollaborativen Fragen sind der Hammer. Jeder fügt seine Insider-Witze hinzu und es wird SO persönlich.",
+        "stars": 5
+      }
+    ]
+  },
   "feedback": {
-    "title": "Ideen? Wir horen zu!",
-    "description": "Wir lieben es, von unseren Spielern zu horen. Teile deine Gedanken, schlage neue Fragen vor, oder sag einfach Hallo. Jede Nachricht hilft uns, WITM besser zu machen!",
+    "title": "Ideen? Wir hören zu!",
+    "description": "Eine geniale Frage im Kopf? Lust auf eine neue Kategorie? Oder wollt ihr uns einfach aufziehen? Schreibt uns — wir lesen jede Nachricht und freuen uns riesig von euch zu hören.",
     "email": "quiestlepluss@gmail.com"
   }
 }
