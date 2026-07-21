@@ -6,9 +6,12 @@ import Features from '../components/home/Features';
 import ExampleQuestions from '../components/home/ExampleQuestions';
 import Details from '../components/home/Details';
 import AppCarousel from '../components/home/AppCarousel';
+import GameFeatures from '../components/home/GameFeatures';
 import WhyChoose from '../components/home/WhyChoose';
+import FAQ from '../components/home/FAQ';
 import Download from '../components/home/Download';
 import Team from '../components/home/Team';
+import Testimonials from '../components/home/Testimonials';
 import Feedback from '../components/home/Feedback';
 
 export default function Home() {
@@ -29,9 +32,12 @@ export default function Home() {
       <ExampleQuestions />
       <AppCarousel />
       <Details />
+      <GameFeatures />
       <WhyChoose />
+      <FAQ />
       <Download />
       <Team />
+      <Testimonials />
       <Feedback />
     </>
   );

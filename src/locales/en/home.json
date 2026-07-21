@@ -2,16 +2,21 @@
   "hero": {
     "title": "WITM",
     "subtitle": "Who Is The Most...?",
-    "description": "The party game that reveals what your friends really think! Vote on fun questions, discover surprising truths, and dare the winners. Quick to start, impossible to forget.",
+    "description": "The party game where you vote on your friends — and they vote on you. Who's getting dared tonight?",
     "ctaJoin": "Join Our Community",
     "ctaDownload": "Get the App",
-    "scrollHint": "Scroll to explore"
+    "scrollHint": "Scroll to explore",
+    "stats": {
+      "questions": "520+ Questions",
+      "categories": "7 Categories",
+      "languages": "3 Languages"
+    }
   },
   "about": {
     "sectionLabel": "About Us",
     "title": "A Small Swiss Team, Big Ideas",
     "description": "We're a passionate team from Fribourg, Switzerland, dedicated to bringing friends together through fun and unforgettable moments.",
-    "story": "WITM was born from a simple question: \"Who among us is the most likely to...?\" Now you can settle the debate! Create a room, invite your friends with a PIN code, and vote on hilarious questions. The one with the most votes? They get a dare!",
+    "story": "WITM was born from a simple question: \"Who among us is the most likely to...?\" Now you can settle the debate! Create a room, invite your friends with a PIN code, and vote on hilarious questions. The one with the most votes? They get a dare! Plus, with Collaborative Questions, your group can create and submit your own questions in real time.",
     "pillars": {
       "swissQuality": {
         "label": "Swiss Quality",
@@ -22,8 +27,8 @@
         "text": "Your feedback shapes our app"
       },
       "justLaunched": {
-        "label": "Just Launched",
-        "text": "Version 1.0 on February 3, 2026"
+        "label": "Actively Updated",
+        "text": "New features every month"
       },
       "communityFirst": {
         "label": "Community First",
@@ -39,7 +44,7 @@
     },
     "funQuiz": {
       "title": "Vote on Friends",
-      "description": "Fun questions like \"Who is the most likely to...\" appear. Everyone votes secretly for who fits best!"
+      "description": "Fun questions like \"Who is the most likely to...\" appear — plus your group can submit custom questions on the spot. Everyone votes secretly for who fits best!"
     },
     "dynamicVoting": {
       "title": "Reveal & Dare",
@@ -69,7 +74,9 @@
     "q3": "Most likely to run away and join the circus",
     "q4": "Most likely to be the messiest in the house",
     "q5": "Most likely to quit their job in a dramatic way",
-    "q6": "Most likely to break into Area 51 just to see what's inside"
+    "q6": "Most likely to break into Area 51 just to see what's inside",
+    "q7": "Most likely to accidentally send a text to the wrong person",
+    "q8": "Most likely to survive a zombie apocalypse"
   },
   "carousel": {
     "sectionTitle": "See It in Action",
@@ -86,11 +93,11 @@
     "subtitle": "The party game made for real friendships",
     "swissMade": "Swiss Made",
     "weListen": "We Listen",
-    "justLaunched": "Just Launched",
+    "justLaunched": "Actively Updated",
     "communityFirst": "Community First",
     "swissMadeDesc": "Designed and developed with Swiss precision and care in Fribourg. Quality you can trust.",
     "weListenDesc": "Have an idea? We read every suggestion. Your feedback directly shapes our features.",
-    "justLaunchedDesc": "Fresh out of the oven! Version 1.0 launched February 2026 - more fun coming soon.",
+    "justLaunchedDesc": "We ship new features every month — more questions, categories, and game modes are always on the way.",
     "communityFirstDesc": "Built for friend groups, shaped by players like you. You are the heart of WITM."
   },
   "details": {
@@ -105,9 +112,9 @@
       "bullet3": "Works on iOS and Android"
     },
     "feature2": {
-      "title": "Vote Based on Capabilities",
-      "description": "Users can vote for others based on their displayed capabilities in different areas like creativity, skill, and teamwork. The app allows users to assess and vote accordingly.",
-      "extra": "With a dynamic voting system, users get the chance to vote based on the unique qualities that players showcase. Whether it's a game challenge, a task, or a creative project, the community votes to highlight the best performances."
+      "title": "Who Fits the Question Best?",
+      "description": "A hilarious question pops up and everyone secretly picks the friend who fits it most. Who's the biggest drama queen? Who'd survive on a desert island? Your crew decides!",
+      "extra": "Every round is a new debate. Some answers are obvious, some will shock you. The best part? Watching your friends try to justify their votes. Whether it's about hidden talents or embarrassing habits, the group always knows."
     },
     "feature3": {
       "title": "Vote for Who Fits Best",
@@ -117,9 +124,9 @@
       "bullet3": "Self-vote toggle for even more fun"
     },
     "feature4": {
-      "title": "Real-Time Voting & Feedback",
-      "description": "Players can receive real-time feedback based on votes and participate in ongoing challenges, helping them improve and advance faster.",
-      "extra": "With live updates, users are instantly notified of votes they've received, and the ability to give feedback on others' performances fosters a supportive community."
+      "title": "Live Results, Real Reactions",
+      "description": "Watch the votes roll in live! See who's getting picked and enjoy the real-time reactions when the winner is revealed. The tension builds with every vote.",
+      "extra": "Votes update in real time so everyone can feel the suspense. When the final tally drops, expect gasps, laughs, and a whole lot of finger-pointing. That's where the real fun begins."
     },
     "feature5": {
       "title": "Results & Dares",
@@ -127,9 +134,9 @@
       "extra": "The game automatically advances after each round. Configure 5 to 20 questions per game, with timers from 5 to 30 seconds. Every setting is customizable!"
     },
     "feature6": {
-      "title": "Community and Social Sharing",
-      "description": "Players can share their achievements, votes received, and challenge results with their community, allowing them to show off their progress.",
-      "extra": "Social integration lets users share their voting history and leaderboard positions on various social media platforms, enabling them to increase visibility and celebrate achievements."
+      "title": "Share the Laughs",
+      "description": "Screenshot your funniest results and share them with the world. Show everyone who got voted 'Most likely to become a cat lady' — they'll never live it down.",
+      "extra": "The best WITM moments deserve an audience. Share your results on social media, challenge other friend groups to play, and compare who got the wildest votes. Every game creates stories worth telling."
     },
     "feature7": {
       "title": "Final Leaderboard",
@@ -137,9 +144,61 @@
       "extra": "Premium players can create custom questions, access all categories, and personalize every game setting. Make WITM truly yours!"
     }
   },
+  "gameFeatures": {
+    "sectionTitle": "More Than Just Voting",
+    "sectionSubtitle": "Live reactions, awards, game modes and more — everything that turns a quiz into a party.",
+    "reactions": {
+      "title": "Live Reactions",
+      "description": "Fire off emoji reactions in real time while the results roll in."
+    },
+    "awards": {
+      "title": "End-of-Game Awards",
+      "description": "10 fun titles handed out at the end — The Sheep, The Rebel and more."
+    },
+    "scoring": {
+      "title": "Consensus Scoring",
+      "description": "Score points by voting with the majority. Final rounds count double."
+    },
+    "coupleMode": {
+      "title": "Couple Mode",
+      "description": "A two-player compatibility quiz with personalized advice for you two."
+    },
+    "collabMode": {
+      "title": "Collaborative Mode",
+      "description": "Everyone writes their own questions before the game starts."
+    },
+    "toneFilter": {
+      "title": "Angel or Devil",
+      "description": "The host picks the vibe: kind, mixed or spicy questions."
+    },
+    "leaderboard": {
+      "title": "Global Leaderboard",
+      "description": "Climb the worldwide rankings, one game night at a time."
+    },
+    "languages": {
+      "title": "6 Languages",
+      "description": "English, French, German — plus 3 Swiss German dialects."
+    }
+  },
+  "faq": {
+    "sectionTitle": "Frequently Asked Questions",
+    "sectionDescription": "Everything you need to know about WITM",
+    "q1": "How many players can play?",
+    "a1": "You need at least 2 players to start a game. There's no upper limit — the more friends, the more fun! Just share the PIN code and everyone can join instantly.",
+    "q2": "Is WITM free to play?",
+    "a2": "Yes! WITM is completely free to download and play. We offer an optional premium upgrade for custom questions, extra categories, and more game settings.",
+    "q3": "Can I create my own questions?",
+    "a3": "Absolutely! Premium users can create custom question lists. Plus, with Collaborative Mode, everyone in the lobby can submit questions before the game starts — no premium needed!",
+    "q4": "What is Collaborative Mode?",
+    "a4": "Collaborative Mode lets every player in the lobby submit their own questions before the game begins. These are mixed with the category questions for a totally unique game experience. Perfect for inside jokes!",
+    "q5": "How do I join a room?",
+    "a5": "The host creates a room and gets a 3-character PIN code. Just enter this PIN on the join screen and you're in! No account needed to join as a guest.",
+    "q6": "Is WITM available in my language?",
+    "a6": "WITM is currently available in English, French, and German — with all 520+ questions fully translated. More languages are coming soon based on community requests!"
+  },
   "download": {
     "title": "Ready to Play?",
-    "description": "Download WITM now and discover what your friends really think. Available free on iOS and Android!"
+    "description": "Your next game night starts here. Join thousands of friend groups already playing — download WITM free on iOS and Android!"
   },
   "team": {
     "sectionTitle": "Team",
@@ -161,12 +220,46 @@
       "nathan": {
         "name": "Nathan Genoud",
         "role": "Official Director of Tests"
+      },
+      "olivier": {
+        "name": "Olivier Jung",
+        "role": "Head Nurse"
       }
     }
   },
+  "testimonials": {
+    "sectionTitle": "What Players Say",
+    "sectionDescription": "Real stories from real game nights",
+    "reviews": [
+      {
+        "name": "Sarah M.",
+        "context": "Student game night",
+        "quote": "We played for 3 hours straight and couldn't stop laughing. The questions are spot-on and the dares made it legendary.",
+        "stars": 5
+      },
+      {
+        "name": "Lucas D.",
+        "context": "Work team building",
+        "quote": "Way better than boring icebreakers. Our team actually got to know each other. The anonymous mode is genius!",
+        "stars": 5
+      },
+      {
+        "name": "Emma K.",
+        "context": "Family reunion",
+        "quote": "Even my parents got into it! The Family category is perfect — funny but never too awkward. We play every Sunday now.",
+        "stars": 5
+      },
+      {
+        "name": "Maxime R.",
+        "context": "Birthday party",
+        "quote": "The Collaborative Questions feature is a game-changer. Everyone adds their inside jokes and it becomes SO personal.",
+        "stars": 5
+      }
+    ]
+  },
   "feedback": {
     "title": "Got ideas? We're all ears!",
-    "description": "We love hearing from our players. Share your thoughts, suggest new questions, or just say hello. Every message helps us make WITM better!",
+    "description": "Got a killer question idea? Want a new category? Or just wanna roast us? Drop us a line — we read every single message and we'd love to hear from you.",
     "email": "quiestlepluss@gmail.com"
   }
 }
