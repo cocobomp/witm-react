@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["YV7H45829S.com.qelp.ch"],
+        "components": [
+          {
+            "/": "/j/*",
+            "comment": "Universal link to join a WITM room by PIN"
+          }
+        ],
+        "paths": ["/j/*"]
+      }
+    ]
+  }
+}

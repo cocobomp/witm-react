@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "Tritt einem WITM-Spiel bei",
+    "description": "Deine Freunde haben dich zu einem WITM-Spiel eingeladen. Öffne die App und mach mit dem PIN mit!"
+  },
+  "title": "Du bist eingeladen!",
+  "subtitle": "Deine Freunde warten in einem WITM-Spiel auf dich.",
+  "pinLabel": "Spiel-PIN",
+  "openApp": "In der App öffnen",
+  "openAppHint": "Du hast WITM schon? Tippe, um direkt ins Spiel zu springen.",
+  "copyPin": "PIN kopieren",
+  "copied": "PIN kopiert!",
+  "noAppTitle": "Noch keine App?",
+  "noAppDescription": "Lade WITM kostenlos herunter und gib dann den PIN oben ein, um mitzuspielen.",
+  "invalidTitle": "Dieser Einladungslink scheint kaputt zu sein",
+  "invalidDescription": "Bitte deinen Freund, den Link erneut zu senden, oder gib den PIN direkt in der App ein."
+}

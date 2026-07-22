@@ -13,9 +13,14 @@
     "signOut": "Sign out"
   },
   "stats": {
-    "totalQuestions": "Total Questions",
+    "totalQuestions": "Active Questions",
+    "deletedQuestions": "Deleted Questions",
     "categories": "Categories",
     "pendingChanges": "Pending Changes"
+  },
+  "tabs": {
+    "active": "Active",
+    "deleted": "Deleted"
   },
   "questions": {
     "title": "Questions",
@@ -29,7 +34,8 @@
     "add": "Add Question",
     "deleted": "Deleted",
     "modified": "Modified",
-    "new": "New"
+    "new": "New",
+    "restoring": "Restoring..."
   },
   "editor": {
     "title": "Edit Question",

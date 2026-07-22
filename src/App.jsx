@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { MotionConfig } from 'framer-motion';
 import Layout from './components/layout/Layout';
+import { ThemeProvider } from './contexts/ThemeContext';
 import { AuthProvider } from './contexts/AuthContext';
 import AdminRoute from './components/admin/AdminRoute';
 
@@ -12,6 +13,7 @@ const DeleteAccount = lazy(() => import('./pages/DeleteAccount'));
 const Blog = lazy(() => import('./pages/Blog'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
 const NotFound = lazy(() => import('./pages/NotFound'));
+const JoinRoom = lazy(() => import('./pages/JoinRoom'));
 const AdminLogin = lazy(() => import('./pages/AdminLogin'));
 const Admin = lazy(() => import('./pages/Admin'));
 
@@ -37,40 +39,47 @@ function Loading() {
 export default function App() {
   return (
     <MotionConfig reducedMotion="user">
-      <AuthProvider>
-        <BrowserRouter>
-          <Suspense fallback={<Loading />}>
-            <Routes>
-              {/* Admin routes (no language prefix) */}
-              <Route path="/admin/login" element={<AdminLogin />} />
-              <Route
-                path="/admin"
-                element={
-                  <AdminRoute>
-                    <Admin />
-                  </AdminRoute>
-                }
-              />
+      <ThemeProvider>
+        <AuthProvider>
+          <BrowserRouter>
+            <Suspense fallback={<Loading />}>
+              <Routes>
+                {/* Admin routes (no language prefix) */}
+                <Route path="/admin/login" element={<AdminLogin />} />
+                <Route
+                  path="/admin"
+                  element={
+                    <AdminRoute>
+                      <Admin />
+                    </AdminRoute>
+                  }
+                />
 
-              {/* Public routes with language prefixes */}
-              {LANG_PREFIXES.map((prefix) => (
-                <Route key={prefix} path={prefix || '/'} element={<Layout />}>
-                  {PAGE_ROUTES.map((route) =>
-                    route.index ? (
-                      <Route key="index" index element={route.element} />
-                    ) : (
-                      <Route key={route.path} path={route.path} element={route.element} />
-                    )
-                  )}
+                {/* Universal link fallback: whoisthemost.com/j/PIN (no language prefix) */}
+                <Route path="/j/:pin" element={<Layout />}>
+                  <Route index element={<JoinRoom />} />
                 </Route>
-              ))}
-              <Route path="*" element={<Layout />}>
-                <Route path="*" element={<NotFound />} />
-              </Route>
-            </Routes>
-          </Suspense>
-        </BrowserRouter>
-      </AuthProvider>
+
+                {/* Public routes with language prefixes */}
+                {LANG_PREFIXES.map((prefix) => (
+                  <Route key={prefix} path={prefix || '/'} element={<Layout />}>
+                    {PAGE_ROUTES.map((route) =>
+                      route.index ? (
+                        <Route key="index" index element={route.element} />
+                      ) : (
+                        <Route key={route.path} path={route.path} element={route.element} />
+                      )
+                    )}
+                  </Route>
+                ))}
+                <Route path="*" element={<Layout />}>
+                  <Route path="*" element={<NotFound />} />
+                </Route>
+              </Routes>
+            </Suspense>
+          </BrowserRouter>
+        </AuthProvider>
+      </ThemeProvider>
     </MotionConfig>
   );
 }

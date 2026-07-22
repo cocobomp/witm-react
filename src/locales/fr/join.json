@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "Rejoins une partie WITM",
+    "description": "Tes amis t'ont invité à une partie WITM. Ouvre l'app et rejoins-les avec le PIN !"
+  },
+  "title": "Tu es invité !",
+  "subtitle": "Tes amis t'attendent dans une partie WITM.",
+  "pinLabel": "PIN de la partie",
+  "openApp": "Ouvrir dans l'app",
+  "openAppHint": "Tu as déjà WITM ? Appuie pour rejoindre la partie directement.",
+  "copyPin": "Copier le PIN",
+  "copied": "PIN copié !",
+  "noAppTitle": "Pas encore l'app ?",
+  "noAppDescription": "Télécharge WITM gratuitement, puis saisis le PIN ci-dessus pour rejoindre tes amis.",
+  "invalidTitle": "Ce lien d'invitation semble cassé",
+  "invalidDescription": "Demande à ton ami de renvoyer le lien, ou saisis le PIN directement dans l'app."
+}
