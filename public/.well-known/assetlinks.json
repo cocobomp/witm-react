@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "com.qelp.ch",
       "sha256_cert_fingerprints": [
-        "TODO_REPLACE_WITH_PLAY_APP_SIGNING_SHA256_FINGERPRINT_FROM_PLAY_CONSOLE_SETUP_APP_INTEGRITY"
+        "FA:2F:09:E6:86:58:D0:CB:F9:7E:69:F9:B3:6A:6F:2A:95:D8:2C:34:58:4D:EA:F0:25:8C:CB:B1:00:CE:02:D6",
+        "CA:E6:DB:97:C7:E6:50:59:79:1A:1C:AB:0E:02:7A:FE:AD:CB:25:AA:36:0F:F7:F4:03:FD:69:D1:FD:62:F7:FE"
       ]
     }
   }
