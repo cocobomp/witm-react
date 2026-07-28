@@ -56,8 +56,9 @@ export default function App() {
                 />
 
                 {/* Universal link fallback: whoisthemost.com/j/PIN (no language prefix) */}
-                <Route path="/j/:pin" element={<Layout />}>
+                <Route path="/j" element={<Layout />}>
                   <Route index element={<JoinRoom />} />
+                  <Route path=":pin" element={<JoinRoom />} />
                 </Route>
 
                 {/* Public routes with language prefixes */}
