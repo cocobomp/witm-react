@@ -234,4 +234,15 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog post: v3.2 — No More Ads, Honest Ties, Two-Player Games -->
+  <url>
+    <loc>https://whoisthemost.com/blog/2026-08-06-no-more-ads</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://whoisthemost.com/blog/2026-08-06-no-more-ads" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://whoisthemost.com/fr/blog/2026-08-06-no-more-ads" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://whoisthemost.com/de/blog/2026-08-06-no-more-ads" />
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
