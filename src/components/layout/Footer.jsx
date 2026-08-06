@@ -32,7 +32,7 @@ export default function Footer() {
           {/* Column 1: Brand + Contact */}
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <img src="/img/logo.png" alt="WITM" className="h-10 w-10" />
+              <img src="/img/logo.png" alt="WITM" className="h-10 w-10" loading="lazy" width="40" height="40" />
               <span className="font-bold text-xl tracking-tight">WITM</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs">

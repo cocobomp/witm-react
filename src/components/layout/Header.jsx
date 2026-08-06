@@ -140,7 +140,7 @@ export default function Header() {
             to={langPrefix || '/'}
             className="group flex items-center gap-2.5 shrink-0"
           >
-            <img src="/img/logo.png" alt="WITM" className="h-8 w-8 transition-transform duration-200 group-hover:scale-105" />
+            <img src="/img/logo.png" alt="WITM" className="h-8 w-8 transition-transform duration-200 group-hover:scale-105" width="32" height="32" />
             <span className="font-bold text-lg text-gray-900 transition-all duration-200 group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-accent group-hover:bg-clip-text group-hover:text-transparent">
               WITM
             </span>

@@ -7,7 +7,7 @@ import { CONTACT_EMAIL } from '../../constants/links';
 const pillars = [
   { key: 'swissQuality', emoji: '\u{1F1E8}\u{1F1ED}' },
   { key: 'weListen', emoji: '\u{1F442}' },
-  { key: 'justLaunched', emoji: '\u{1F680}' },
+  { key: 'justLaunched', emoji: '\u{1F504}' },
   { key: 'communityFirst', emoji: '\u{2764}\u{FE0F}' },
 ];
 
