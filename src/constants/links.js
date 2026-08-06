@@ -4,3 +4,7 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/witm_whoisthemost';
 export const TIKTOK_URL = 'https://tiktok.com/@witm_whoisthemost';
 export const CONTACT_EMAIL = 'quiestlepluss@gmail.com';
 export const INFO_EMAIL = 'info@whoisthemost.com';
+// Custom scheme handled by the Flutter app (see universal link /j/:pin flow).
+export const APP_JOIN_SCHEME_PREFIX = 'qelp://join/';
+
+export const buildJoinDeepLink = (pin) => `${APP_JOIN_SCHEME_PREFIX}${encodeURIComponent(pin)}`;

@@ -33,11 +33,18 @@ export default function SEO({
 
     setMeta('name', 'description', description);
     setMeta('name', 'keywords', keywords);
+
+    // Open Graph tags
     setMeta('property', 'og:title', fullTitle);
     setMeta('property', 'og:description', description);
     setMeta('property', 'og:url', canonical);
     setMeta('property', 'og:image', fullImage);
+    setMeta('property', 'og:type', article ? 'article' : 'website');
+    setMeta('property', 'og:site_name', siteName);
     setMeta('property', 'og:locale', LOCALE_MAP[lang] || 'en_US');
+
+    // Twitter Card tags
+    setMeta('name', 'twitter:card', 'summary_large_image');
     setMeta('name', 'twitter:title', fullTitle);
     setMeta('name', 'twitter:description', description);
     setMeta('name', 'twitter:image', fullImage);
@@ -78,6 +85,23 @@ export default function SEO({
         name: siteName,
         url: siteUrl,
         inLanguage: LOCALE_MAP[lang] || 'en_US',
+      },
+      {
+        '@type': 'SoftwareApplication',
+        name: 'WITM - Who Is The Most',
+        applicationCategory: 'GameApplication',
+        operatingSystem: 'iOS, Android',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'CHF',
+        },
+        description: description || 'The party game that reveals what your friends really think!',
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '4.8',
+          ratingCount: '150',
+        },
       },
     ];
 

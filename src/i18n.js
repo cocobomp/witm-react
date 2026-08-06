@@ -7,27 +7,30 @@ import enHome from './locales/en/home.json'
 import enLegal from './locales/en/legal.json'
 import enBlog from './locales/en/blog.json'
 import enAdmin from './locales/en/admin.json'
+import enJoin from './locales/en/join.json'
 
 import frCommon from './locales/fr/common.json'
 import frHome from './locales/fr/home.json'
 import frLegal from './locales/fr/legal.json'
 import frBlog from './locales/fr/blog.json'
 import frAdmin from './locales/fr/admin.json'
+import frJoin from './locales/fr/join.json'
 
 import deCommon from './locales/de/common.json'
 import deHome from './locales/de/home.json'
 import deLegal from './locales/de/legal.json'
 import deBlog from './locales/de/blog.json'
 import deAdmin from './locales/de/admin.json'
+import deJoin from './locales/de/join.json'
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
-      en: { common: enCommon, home: enHome, legal: enLegal, blog: enBlog, admin: enAdmin },
-      fr: { common: frCommon, home: frHome, legal: frLegal, blog: frBlog, admin: frAdmin },
-      de: { common: deCommon, home: deHome, legal: deLegal, blog: deBlog, admin: deAdmin },
+      en: { common: enCommon, home: enHome, legal: enLegal, blog: enBlog, admin: enAdmin, join: enJoin },
+      fr: { common: frCommon, home: frHome, legal: frLegal, blog: frBlog, admin: frAdmin, join: frJoin },
+      de: { common: deCommon, home: deHome, legal: deLegal, blog: deBlog, admin: deAdmin, join: deJoin },
     },
     fallbackLng: 'en',
     supportedLngs: ['en', 'fr', 'de'],
