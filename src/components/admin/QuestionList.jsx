@@ -1,10 +1,12 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useQuestions } from '../../contexts/QuestionsContext';
 
-export default function QuestionList({ questions, categories, onEdit }) {
+export default function QuestionList({ questions, categories, onEdit, mode = 'active' }) {
   const { t, i18n } = useTranslation('admin');
-  const { deleteQuestion, restoreQuestion } = useQuestions();
+  const { deleteQuestion, restoreQuestion, restoreDeletedQuestion } = useQuestions();
+  const [restoringIds, setRestoringIds] = useState(new Set());
 
   // Get category by ID
   const getCategoryName = (catId) => {
@@ -96,7 +98,23 @@ export default function QuestionList({ questions, categories, onEdit }) {
 
               {/* Actions */}
               <div className="flex items-center gap-2 flex-shrink-0">
-                {question._status === 'deleted' ? (
+                {mode === 'deleted' ? (
+                  <button
+                    onClick={async () => {
+                      setRestoringIds((prev) => new Set(prev).add(question.id));
+                      await restoreDeletedQuestion(question.id);
+                      setRestoringIds((prev) => {
+                        const next = new Set(prev);
+                        next.delete(question.id);
+                        return next;
+                      });
+                    }}
+                    disabled={restoringIds.has(question.id)}
+                    className="px-3 py-1.5 text-sm text-green-400 hover:text-green-300 hover:bg-green-500/10 rounded-lg transition-colors disabled:opacity-50"
+                  >
+                    {restoringIds.has(question.id) ? t('questions.restoring') : t('questions.restore')}
+                  </button>
+                ) : question._status === 'deleted' ? (
                   <button
                     onClick={() => restoreQuestion(question.id)}
                     className="px-3 py-1.5 text-sm text-green-400 hover:text-green-300 hover:bg-green-500/10 rounded-lg transition-colors"

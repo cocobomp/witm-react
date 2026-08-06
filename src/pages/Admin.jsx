@@ -18,10 +18,12 @@ function AdminDashboard() {
     loading,
     error,
     getAllQuestions,
+    getDeletedQuestions,
     getAllCategories,
     unsavedCount,
   } = useQuestions();
 
+  const [activeTab, setActiveTab] = useState('active');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [editingQuestion, setEditingQuestion] = useState(null);
@@ -33,10 +35,14 @@ function AdminDashboard() {
   }, [loadAll]);
 
   const questions = getAllQuestions();
+  const deletedQuestions = getDeletedQuestions();
   const categories = getAllCategories();
 
+  // Source questions based on active tab
+  const sourceQuestions = activeTab === 'deleted' ? deletedQuestions : questions;
+
   // Filter questions
-  const filteredQuestions = questions.filter((q) => {
+  const filteredQuestions = sourceQuestions.filter((q) => {
     // Filter by category
     if (selectedCategory !== 'all' && q.catId !== selectedCategory) {
       return false;
@@ -119,7 +125,7 @@ function AdminDashboard() {
       {/* Main content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 mb-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -134,6 +140,18 @@ function AdminDashboard() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
+            className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 cursor-pointer hover:border-red-500/30 transition-colors"
+            onClick={() => setActiveTab('deleted')}
+          >
+            <p className="text-gray-400 text-sm">{t('stats.deletedQuestions')}</p>
+            <p className={`text-3xl font-bold mt-1 ${deletedQuestions.length > 0 ? 'text-red-400' : 'text-white'}`}>
+              {deletedQuestions.length}
+            </p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
             className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6"
           >
             <p className="text-gray-400 text-sm">{t('stats.categories')}</p>
@@ -142,7 +160,7 @@ function AdminDashboard() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.3 }}
             className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6"
           >
             <p className="text-gray-400 text-sm">{t('stats.pendingChanges')}</p>
@@ -150,6 +168,30 @@ function AdminDashboard() {
               {unsavedCount}
             </p>
           </motion.div>
+        </div>
+
+        {/* Tabs */}
+        <div className="flex gap-2 mb-6">
+          <button
+            onClick={() => setActiveTab('active')}
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+              activeTab === 'active'
+                ? 'bg-primary text-white'
+                : 'bg-white/5 text-gray-400 hover:text-white hover:bg-white/10'
+            }`}
+          >
+            {t('tabs.active')} ({questions.filter((q) => q._status !== 'deleted').length})
+          </button>
+          <button
+            onClick={() => setActiveTab('deleted')}
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+              activeTab === 'deleted'
+                ? 'bg-red-500 text-white'
+                : 'bg-white/5 text-gray-400 hover:text-white hover:bg-white/10'
+            }`}
+          >
+            {t('tabs.deleted')} ({deletedQuestions.length})
+          </button>
         </div>
 
         {/* Pending Batches */}
@@ -188,27 +230,29 @@ function AdminDashboard() {
             onChange={setSelectedCategory}
           />
 
-          {/* Actions */}
-          <div className="flex gap-2">
-            <button
-              onClick={() => setShowGenerator(true)}
-              className="px-4 py-3 bg-accent hover:bg-accent/80 text-white rounded-xl font-medium transition-colors flex items-center gap-2"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-              <span className="hidden sm:inline">AI Generate</span>
-            </button>
-            <button
-              onClick={() => setEditingQuestion({ isNew: true })}
-              className="px-4 py-3 bg-primary hover:bg-primary-dark text-white rounded-xl font-medium transition-colors flex items-center gap-2"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-              </svg>
-              <span className="hidden sm:inline">{t('questions.add')}</span>
-            </button>
-          </div>
+          {/* Actions (hidden in deleted tab) */}
+          {activeTab === 'active' && (
+            <div className="flex gap-2">
+              <button
+                onClick={() => setShowGenerator(true)}
+                className="px-4 py-3 bg-accent hover:bg-accent/80 text-white rounded-xl font-medium transition-colors flex items-center gap-2"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                <span className="hidden sm:inline">AI Generate</span>
+              </button>
+              <button
+                onClick={() => setEditingQuestion({ isNew: true })}
+                className="px-4 py-3 bg-primary hover:bg-primary-dark text-white rounded-xl font-medium transition-colors flex items-center gap-2"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                </svg>
+                <span className="hidden sm:inline">{t('questions.add')}</span>
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Loading state */}
@@ -222,6 +266,7 @@ function AdminDashboard() {
             questions={filteredQuestions}
             categories={categories}
             onEdit={(question) => setEditingQuestion(question)}
+            mode={activeTab}
           />
         )}
       </main>

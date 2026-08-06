@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useCallback, useMemo } from 'react';
-import { fetchAllQuestions, fetchAllCategories, batchSave } from '../services/firestore';
+import { fetchAllQuestions, fetchAllCategories, batchSave, restoreQuestion as firestoreRestore } from '../services/firestore';
 
 const QuestionsContext = createContext(null);
 
@@ -231,6 +231,47 @@ export function QuestionsProvider({ children }) {
     return allQuestions;
   }, [questions, created, dirty, deleted]);
 
+  // Get soft-deleted questions from Firestore (isDeleted === true)
+  const getDeletedQuestions = useCallback(() => {
+    const deletedQuestions = [];
+    for (const [, question] of questions) {
+      if (question.isDeleted) {
+        deletedQuestions.push({
+          ...question,
+          _status: 'firestore_deleted',
+        });
+      }
+    }
+    return deletedQuestions;
+  }, [questions]);
+
+  // Restore a question that is soft-deleted in Firestore
+  const restoreDeletedQuestion = useCallback(async (id) => {
+    try {
+      await firestoreRestore(id);
+      // Update local state immediately
+      setQuestions((prev) => {
+        const newQuestions = new Map(prev);
+        const existing = newQuestions.get(id);
+        if (existing) {
+          newQuestions.set(id, { ...existing, isDeleted: false, deletedAt: null });
+        }
+        return newQuestions;
+      });
+      setOriginalQuestions((prev) => {
+        const newOriginal = new Map(prev);
+        const existing = newOriginal.get(id);
+        if (existing) {
+          newOriginal.set(id, { ...existing, isDeleted: false, deletedAt: null });
+        }
+        return newOriginal;
+      });
+    } catch (err) {
+      console.error('Error restoring question:', err);
+      setError(err.message);
+    }
+  }, []);
+
   // Get all categories as array
   const getAllCategories = useCallback(() => {
     return Array.from(categories.values());
@@ -254,6 +295,7 @@ export function QuestionsProvider({ children }) {
     questions,
     categories,
     getAllQuestions,
+    getDeletedQuestions,
     getAllCategories,
     getQuestion,
     getCategory,
@@ -263,6 +305,7 @@ export function QuestionsProvider({ children }) {
     updateQuestion,
     deleteQuestion,
     restoreQuestion,
+    restoreDeletedQuestion,
     createQuestion,
     saveAll,
     discardChanges,
