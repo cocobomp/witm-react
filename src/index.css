@@ -47,6 +47,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   body {
@@ -54,8 +55,9 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #1e293b;
-    background: #ffffff;
+    color: var(--text-body, #1e293b);
+    background: var(--bg-body, #ffffff);
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   /* Selection highlight */
@@ -161,4 +163,1619 @@
   .animate-pulse-glow {
     animation: var(--animate-pulse-glow);
   }
+}
+
+/* ——————————————————————————————————————————————
+   Theme: Minimal (default — Apple-style clean)
+   —————————————————————————————————————————————— */
+[data-theme="minimal"] {
+  --bg-body: #ffffff;
+  --text-body: #1e293b;
+  --text-muted: #64748b;
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --header-bg: rgba(255, 255, 255, 0.9);
+  --section-alt-bg: #f8fafc;
+  --color-primary: #6366f1;
+  --color-primary-dark: #4f46e5;
+  --color-primary-light: #818cf8;
+  --color-accent: #8b5cf6;
+}
+
+/* --- Minimal: Glass cards → clean white + thin border --- */
+[data-theme="minimal"] .glass {
+  background: #ffffff;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* --- Minimal: Gradient text — refined two-tone --- */
+[data-theme="minimal"] .gradient-text {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* --- Minimal: Gradient border — more subtle --- */
+[data-theme="minimal"] .gradient-border::before {
+  opacity: 0.4;
+}
+
+/* --- Minimal: Animations — slower, gentler --- */
+[data-theme="minimal"] .animate-float {
+  animation-duration: 8s;
+}
+
+[data-theme="minimal"] .animate-pulse-glow {
+  animation: none;
+}
+
+/* --- Minimal: Alternating section backgrounds --- */
+[data-theme="minimal"] section:nth-of-type(even) {
+  background-color: var(--section-alt-bg);
+}
+
+/* --- Minimal: Scrollbar — lighter --- */
+[data-theme="minimal"] ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="minimal"] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* --- Minimal: Selection — softer highlight --- */
+[data-theme="minimal"] ::selection {
+  background: rgba(99, 102, 241, 0.1);
+}
+
+/* --- Minimal: Hide decorative blobs for clean look --- */
+[data-theme="minimal"] .blur-3xl { display: none !important; }
+
+/* --- Minimal: Refined typography --- */
+[data-theme="minimal"] h1, [data-theme="minimal"] h2, [data-theme="minimal"] h3 {
+  letter-spacing: -0.025em;
+  font-weight: 600;
+}
+[data-theme="minimal"] p, [data-theme="minimal"] span {
+  letter-spacing: 0.01em;
+}
+
+/* --- Minimal: Generous spacing --- */
+[data-theme="minimal"] section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+/* --- Minimal: Flat cards, no blur effects --- */
+[data-theme="minimal"] .backdrop-blur-md,
+[data-theme="minimal"] .backdrop-blur-lg,
+[data-theme="minimal"] [class*="backdrop-blur"] {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* --- Minimal: Softer, flatter shadows --- */
+[data-theme="minimal"] .shadow-lg { box-shadow: 0 1px 3px rgba(0,0,0,0.06) !important; }
+[data-theme="minimal"] .shadow-xl { box-shadow: 0 2px 6px rgba(0,0,0,0.06) !important; }
+[data-theme="minimal"] .shadow-2xl { box-shadow: 0 4px 12px rgba(0,0,0,0.06) !important; }
+[data-theme="minimal"] .hover\:shadow-xl:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important; }
+
+/* --- Minimal: No hover scale transforms --- */
+[data-theme="minimal"] .hover\:scale-\[1\.03\]:hover { transform: none !important; }
+[data-theme="minimal"] .hover\:scale-\[1\.02\]:hover { transform: none !important; }
+
+/* --- Minimal: Disable float animations --- */
+[data-theme="minimal"] .animate-float { animation: none !important; }
+
+/* --- Minimal: Larger card border-radius for softness --- */
+[data-theme="minimal"] .rounded-2xl { border-radius: 20px !important; }
+[data-theme="minimal"] .rounded-xl { border-radius: 16px !important; }
+
+/* ——————————————————————————————————————————————
+   Theme Switcher component styles
+   —————————————————————————————————————————————— */
+.theme-switcher-btn {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  color: #1e293b;
+}
+
+.theme-switcher-btn:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+.theme-switcher-panel {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  color: #1e293b;
+}
+
+.theme-vote-btn {
+  background: rgba(99, 102, 241, 0.06);
+  border: 1px solid rgba(99, 102, 241, 0.12);
+}
+
+.theme-vote-btn:hover {
+  background: rgba(99, 102, 241, 0.12);
+  border-color: rgba(99, 102, 241, 0.25);
+}
+
+.theme-vote-active {
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.theme-vote-fill {
+  background: rgba(99, 102, 241, 0.08);
+}
+
+/* ——————————————————————————————————————————————
+   Theme: Gaming (Dark Neon)
+   —————————————————————————————————————————————— */
+
+[data-theme="gaming"] {
+  --color-primary: #00ff88;
+  --color-primary-dark: #00cc6a;
+  --color-primary-light: #33ffaa;
+  --color-accent: #8b5cf6;
+  --bg-body: #0a0a1a;
+  --text-body: #e2e8f0;
+  --text-muted: #94a3b8;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --header-bg: rgba(10, 10, 26, 0.95);
+  --section-alt-bg: #0d0d24;
+  --font-sans: 'Outfit', system-ui, sans-serif;
+  --color-surface: #0d0d24;
+  --color-dark: #060612;
+  --color-dark-surface: #12122a;
+}
+
+/* ── Body & global ── */
+
+[data-theme="gaming"] body {
+  background: #0a0a1a !important;
+  color: #e2e8f0 !important;
+  font-family: 'Outfit', system-ui, sans-serif !important;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px) !important;
+  background-size: 40px 40px !important;
+}
+
+/* ── Selection & scrollbar ── */
+
+[data-theme="gaming"] ::selection {
+  background: rgba(0, 255, 136, 0.25) !important;
+  color: #fff !important;
+}
+
+[data-theme="gaming"] ::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 136, 0.3) !important;
+}
+
+[data-theme="gaming"] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 136, 0.5) !important;
+}
+
+[data-theme="gaming"] ::-webkit-scrollbar-track {
+  background: #0a0a1a !important;
+}
+
+/* ── Focus rings ── */
+
+[data-theme="gaming"] *:focus-visible {
+  box-shadow: 0 0 0 2px rgba(0, 255, 136, 0.5) !important;
+}
+
+/* ── Typography ── */
+
+[data-theme="gaming"] h1,
+[data-theme="gaming"] h2,
+[data-theme="gaming"] h3,
+[data-theme="gaming"] h4,
+[data-theme="gaming"] h5,
+[data-theme="gaming"] h6 {
+  color: #f1f5f9 !important;
+  font-weight: 700;
+}
+
+[data-theme="gaming"] p {
+  color: #94a3b8 !important;
+}
+
+/* Override Tailwind text color utilities */
+[data-theme="gaming"] .text-gray-900 { color: #f1f5f9 !important; }
+[data-theme="gaming"] .text-gray-800 { color: #e2e8f0 !important; }
+[data-theme="gaming"] .text-gray-700 { color: #cbd5e1 !important; }
+[data-theme="gaming"] .text-gray-600 { color: #94a3b8 !important; }
+[data-theme="gaming"] .text-gray-500 { color: #64748b !important; }
+[data-theme="gaming"] .text-gray-400 { color: #64748b !important; }
+
+/* ── Gradient text → neon green to purple ── */
+
+[data-theme="gaming"] .gradient-text {
+  background: linear-gradient(135deg, #00ff88 0%, #8b5cf6 50%, #00ff88 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* ── Glass cards ── */
+
+[data-theme="gaming"] .glass {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-color: rgba(0, 255, 136, 0.15) !important;
+  backdrop-filter: blur(16px) !important;
+}
+
+/* ── Gradient border ── */
+
+[data-theme="gaming"] .gradient-border::before {
+  background: linear-gradient(135deg, #00ff88, #8b5cf6) !important;
+}
+
+/* ── Header ── */
+
+[data-theme="gaming"] header {
+  background: rgba(10, 10, 26, 0.95) !important;
+  border-bottom: 1px solid rgba(0, 255, 136, 0.1);
+}
+
+/* Logo text */
+[data-theme="gaming"] header span.font-bold {
+  color: #f1f5f9 !important;
+}
+
+/* Nav links */
+[data-theme="gaming"] header nav a {
+  color: #94a3b8 !important;
+}
+
+[data-theme="gaming"] header nav a:hover {
+  color: #00ff88 !important;
+}
+
+[data-theme="gaming"] header nav a.text-primary {
+  color: #00ff88 !important;
+}
+
+/* Active nav indicator */
+[data-theme="gaming"] header nav .bg-primary {
+  background-color: #00ff88 !important;
+}
+
+/* Hamburger button */
+[data-theme="gaming"] header button[aria-label="Toggle menu"] {
+  color: #94a3b8 !important;
+}
+
+[data-theme="gaming"] header button[aria-label="Toggle menu"]:hover {
+  color: #00ff88 !important;
+  background: rgba(0, 255, 136, 0.1) !important;
+}
+
+/* Mobile menu overlay */
+[data-theme="gaming"] header .fixed.bg-white {
+  background: #0a0a1a !important;
+}
+
+[data-theme="gaming"] header .border-gray-100,
+[data-theme="gaming"] header .border-t {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Mobile nav link hover */
+[data-theme="gaming"] header .hover\:bg-gray-50:hover {
+  background: rgba(0, 255, 136, 0.08) !important;
+}
+
+/* Header scroll shadow → neon glow line */
+[data-theme="gaming"] header.shadow-sm {
+  box-shadow: 0 1px 0 0 rgba(0, 255, 136, 0.15) !important;
+}
+
+/* ── Hero section ── */
+
+[data-theme="gaming"] #hero {
+  background: linear-gradient(180deg, #0a0a1a 0%, #0d0d24 100%) !important;
+}
+
+/* Hero text color overrides */
+[data-theme="gaming"] #hero .text-primary {
+  color: #00ff88 !important;
+}
+
+/* Hero blobs → brighter for neon effect */
+[data-theme="gaming"] #hero .blur-3xl .rounded-full {
+  filter: brightness(1.8) saturate(1.5);
+}
+
+/* Phone mockup neon glow */
+[data-theme="gaming"] #hero .shadow-2xl {
+  box-shadow: 0 0 40px rgba(0, 255, 136, 0.15), 0 0 80px rgba(139, 92, 246, 0.1) !important;
+}
+
+/* ── Features section ── */
+
+[data-theme="gaming"] #features .bg-white {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="gaming"] #features .group:hover .bg-white {
+  background: rgba(0, 255, 136, 0.08) !important;
+  border-color: rgba(0, 255, 136, 0.2);
+}
+
+[data-theme="gaming"] #features .shadow-sm {
+  box-shadow: none !important;
+}
+
+[data-theme="gaming"] #features .group-hover\:shadow-lg {
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.1) !important;
+}
+
+[data-theme="gaming"] #features .group-hover\:shadow-indigo-100 {
+  --tw-shadow-color: rgba(0, 255, 136, 0.1) !important;
+}
+
+/* ── About section ── */
+
+[data-theme="gaming"] #about {
+  background: #0a0a1a !important;
+}
+
+[data-theme="gaming"] #about .bg-surface {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+[data-theme="gaming"] #about .border-gray-100 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="gaming"] #about .text-primary {
+  color: #00ff88 !important;
+}
+
+/* ── Card component overrides ── */
+
+[data-theme="gaming"] .bg-white.rounded-2xl {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+[data-theme="gaming"] .border-gray-100 {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-theme="gaming"] .shadow-indigo-100 {
+  --tw-shadow-color: rgba(0, 255, 136, 0.08) !important;
+}
+
+/* Gradient border card inner bg */
+[data-theme="gaming"] .bg-gradient-to-br .bg-white.rounded-2xl {
+  background: rgba(10, 10, 26, 0.9) !important;
+}
+
+/* ── Example Questions section ── */
+
+[data-theme="gaming"] section.bg-white {
+  background: #0a0a1a !important;
+}
+
+/* Question card gradient bg → darker neon */
+[data-theme="gaming"] .from-primary\/5 {
+  --tw-gradient-from: rgba(0, 255, 136, 0.08) !important;
+}
+
+[data-theme="gaming"] .to-accent\/5 {
+  --tw-gradient-to: rgba(139, 92, 246, 0.08) !important;
+}
+
+[data-theme="gaming"] .border-primary\/10 {
+  border-color: rgba(0, 255, 136, 0.15) !important;
+}
+
+[data-theme="gaming"] .group-hover\:border-primary\/30 {
+  border-color: rgba(0, 255, 136, 0.35) !important;
+}
+
+[data-theme="gaming"] .group-hover\:shadow-primary\/5 {
+  --tw-shadow-color: rgba(0, 255, 136, 0.1) !important;
+}
+
+/* ── App Carousel section ── */
+
+[data-theme="gaming"] section.bg-gradient-to-b.from-white,
+[data-theme="gaming"] section[class*="from-white"][class*="to-surface"] {
+  background: linear-gradient(180deg, #0a0a1a, #0d0d24) !important;
+}
+
+/* Carousel arrow buttons */
+[data-theme="gaming"] button.rounded-full.bg-white {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8 !important;
+}
+
+[data-theme="gaming"] button.rounded-full.bg-white:hover {
+  background: rgba(0, 255, 136, 0.15) !important;
+  color: #00ff88 !important;
+  border-color: rgba(0, 255, 136, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.15) !important;
+}
+
+/* Carousel dots */
+[data-theme="gaming"] .bg-gray-300 {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+[data-theme="gaming"] .hover\:bg-gray-400:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Carousel progress bar track */
+[data-theme="gaming"] .bg-gray-200 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* ── WhyChoose section ── */
+
+[data-theme="gaming"] #why-choose {
+  background: #0d0d24 !important;
+}
+
+[data-theme="gaming"] #why-choose .backdrop-blur-md {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-color: rgba(0, 255, 136, 0.1) !important;
+}
+
+[data-theme="gaming"] #why-choose .backdrop-blur-md:hover {
+  background: rgba(0, 255, 136, 0.06) !important;
+  border-color: rgba(0, 255, 136, 0.25) !important;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.08);
+}
+
+/* ── Team section ── */
+
+[data-theme="gaming"] #team {
+  background: #0a0a1a !important;
+}
+
+[data-theme="gaming"] #team .ring-white {
+  --tw-ring-color: rgba(10, 10, 26, 0.8) !important;
+}
+
+[data-theme="gaming"] #team .from-indigo-100 {
+  --tw-gradient-from: rgba(0, 255, 136, 0.15) !important;
+}
+
+[data-theme="gaming"] #team .to-violet-100 {
+  --tw-gradient-to: rgba(139, 92, 246, 0.15) !important;
+}
+
+[data-theme="gaming"] #team .shadow-indigo-100 {
+  --tw-shadow-color: rgba(0, 255, 136, 0.1) !important;
+}
+
+[data-theme="gaming"] #team .text-primary {
+  color: #00ff88 !important;
+}
+
+[data-theme="gaming"] #team .from-primary\/10 {
+  --tw-gradient-from: rgba(0, 255, 136, 0.15) !important;
+}
+
+[data-theme="gaming"] #team .to-accent\/10 {
+  --tw-gradient-to: rgba(139, 92, 246, 0.15) !important;
+}
+
+/* ── Download section → neon gradient ── */
+
+[data-theme="gaming"] #download,
+[data-theme="gaming"] section#download {
+  background: linear-gradient(135deg, #00cc6a 0%, #8b5cf6 100%) !important;
+}
+
+/* ── Buttons ── */
+
+/* Primary button: neon green with glow */
+[data-theme="gaming"] .bg-gradient-to-r.from-primary.to-accent,
+[data-theme="gaming"] a.bg-gradient-to-r.from-primary.to-accent {
+  background: linear-gradient(135deg, #00ff88, #00cc6a) !important;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3), 0 4px 12px rgba(0, 255, 136, 0.2) !important;
+  color: #0a0a1a !important;
+}
+
+[data-theme="gaming"] .bg-gradient-to-r.from-primary.to-accent:hover,
+[data-theme="gaming"] a.bg-gradient-to-r.from-primary.to-accent:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.5), 0 4px 20px rgba(0, 255, 136, 0.3) !important;
+}
+
+/* Secondary button: neon green border */
+[data-theme="gaming"] .border-primary.text-primary,
+[data-theme="gaming"] a.border-primary.text-primary {
+  border-color: #00ff88 !important;
+  color: #00ff88 !important;
+}
+
+[data-theme="gaming"] .border-primary.text-primary:hover,
+[data-theme="gaming"] a.border-primary.text-primary:hover {
+  background: #00ff88 !important;
+  color: #0a0a1a !important;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3) !important;
+}
+
+/* ── text-primary / bg-primary utility overrides ── */
+
+[data-theme="gaming"] .text-primary {
+  color: #00ff88 !important;
+}
+
+[data-theme="gaming"] .bg-primary {
+  background-color: #00ff88 !important;
+}
+
+/* ── Footer ── */
+
+[data-theme="gaming"] footer,
+[data-theme="gaming"] footer.bg-dark {
+  background: #060612 !important;
+}
+
+[data-theme="gaming"] footer .bg-dark-surface {
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+[data-theme="gaming"] footer .text-primary-light {
+  color: #00ff88 !important;
+}
+
+[data-theme="gaming"] footer .hover\:bg-primary:hover {
+  background: #00ff88 !important;
+}
+
+[data-theme="gaming"] footer .border-gray-800\/60 {
+  border-color: rgba(0, 255, 136, 0.1) !important;
+}
+
+/* ── Language switcher ── */
+
+[data-theme="gaming"] .bg-gray-100\/80 {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-theme="gaming"] .bg-gray-100\/80 .text-gray-500 {
+  color: #94a3b8 !important;
+}
+
+[data-theme="gaming"] .bg-gray-100\/80 .text-gray-500:hover {
+  color: #e2e8f0 !important;
+}
+
+[data-theme="gaming"] .bg-gray-100\/80 .bg-primary {
+  background-color: #00ff88 !important;
+}
+
+[data-theme="gaming"] .bg-gray-100\/80 .text-white {
+  color: #0a0a1a !important;
+}
+
+/* ── Catch-all: no white backgrounds leak through ── */
+
+[data-theme="gaming"] section {
+  background-color: #0a0a1a;
+}
+
+[data-theme="gaming"] .bg-white {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+[data-theme="gaming"] .bg-slate-50,
+[data-theme="gaming"] .to-slate-50 {
+  background-color: #0d0d24 !important;
+}
+
+[data-theme="gaming"] .bg-gray-50,
+[data-theme="gaming"] .hover\:bg-gray-50:hover {
+  background-color: rgba(0, 255, 136, 0.06) !important;
+}
+
+[data-theme="gaming"] .bg-gradient-to-b.from-surface\/60 {
+  background: linear-gradient(180deg, #0d0d24, #0a0a1a) !important;
+}
+
+[data-theme="gaming"] main {
+  background: #0a0a1a !important;
+}
+
+/* ── Phone screen stays white for screenshots ── */
+
+[data-theme="gaming"] .rounded-\[2\.2rem\].overflow-hidden.bg-white,
+[data-theme="gaming"] .rounded-\[2rem\].overflow-hidden.bg-white,
+[data-theme="gaming"] .rounded-\[2\.5rem\] .overflow-hidden.bg-white {
+  background: #ffffff !important;
+}
+
+/* ── Neon glow keyframe ── */
+
+@keyframes neon-pulse {
+  0%, 100% { box-shadow: 0 0 5px rgba(0, 255, 136, 0.2), 0 0 20px rgba(0, 255, 136, 0.1); }
+  50% { box-shadow: 0 0 10px rgba(0, 255, 136, 0.4), 0 0 40px rgba(0, 255, 136, 0.2); }
+}
+
+[data-theme="gaming"] .animate-pulse-glow {
+  animation: neon-pulse 3s ease-in-out infinite !important;
+}
+
+/* ── Scan-line overlay (subtle) ── */
+
+[data-theme="gaming"] body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+}
+
+/* ── Blog & prose overrides ── */
+
+[data-theme="gaming"] article {
+  color: #e2e8f0;
+}
+
+[data-theme="gaming"] article a {
+  color: #00ff88;
+}
+
+[data-theme="gaming"] article a:hover {
+  color: #33ffaa;
+}
+
+[data-theme="gaming"] .prose {
+  --tw-prose-body: #94a3b8;
+  --tw-prose-headings: #f1f5f9;
+  --tw-prose-links: #00ff88;
+  --tw-prose-bold: #e2e8f0;
+  --tw-prose-counters: #64748b;
+  --tw-prose-bullets: #64748b;
+  --tw-prose-hr: rgba(255, 255, 255, 0.1);
+  --tw-prose-quotes: #cbd5e1;
+  --tw-prose-quote-borders: rgba(0, 255, 136, 0.3);
+  --tw-prose-code: #00ff88;
+  --tw-prose-pre-code: #e2e8f0;
+  --tw-prose-pre-bg: rgba(255, 255, 255, 0.05);
+}
+
+/* ── Misc overrides ── */
+
+/* Hover gradient border on feature categories */
+[data-theme="gaming"] .hover\:from-primary\/30:hover {
+  --tw-gradient-from: rgba(0, 255, 136, 0.3) !important;
+}
+
+[data-theme="gaming"] .hover\:via-accent\/20:hover {
+  --tw-gradient-via: rgba(139, 92, 246, 0.2) !important;
+}
+
+[data-theme="gaming"] .hover\:to-primary\/30:hover {
+  --tw-gradient-to: rgba(0, 255, 136, 0.3) !important;
+}
+
+/* Shadow overrides */
+[data-theme="gaming"] .shadow-2xl {
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme="gaming"] .shadow-lg {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="gaming"] .hover\:shadow-lg:hover {
+  box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1) !important;
+}
+
+[data-theme="gaming"] .hover\:shadow-xl:hover {
+  box-shadow: 0 20px 40px rgba(0, 255, 136, 0.15) !important;
+}
+
+/* About / Card section borders */
+[data-theme="gaming"] .border-gray-200 {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Download section store badges */
+[data-theme="gaming"] .border-white\/10,
+[data-theme="gaming"] .border-white\/20 {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* --- Gaming: Sharp angular corners --- */
+[data-theme="gaming"] .rounded-2xl { border-radius: 8px !important; }
+[data-theme="gaming"] .rounded-xl { border-radius: 6px !important; }
+[data-theme="gaming"] .rounded-lg { border-radius: 4px !important; }
+[data-theme="gaming"] .rounded-full:not(img):not(.ring-4):not([class*="w-"]):not([class*="h-"]) { border-radius: 8px !important; }
+
+/* --- Gaming: Bold uppercase section titles --- */
+[data-theme="gaming"] h2 {
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  font-weight: 800 !important;
+}
+
+/* --- Gaming: Section dividers — neon accent line --- */
+[data-theme="gaming"] section + section {
+  border-top: 1px solid rgba(0, 255, 136, 0.12) !important;
+}
+
+/* --- Gaming: Cards get a left accent border --- */
+[data-theme="gaming"] .bg-white.rounded-2xl,
+[data-theme="gaming"] .glass {
+  border-left: 3px solid rgba(0, 255, 136, 0.4) !important;
+}
+
+/* --- Gaming: Bolder base font weight --- */
+[data-theme="gaming"] body {
+  font-weight: 500;
+}
+
+/* --- Gaming: Label/small text tracking --- */
+[data-theme="gaming"] .text-sm, [data-theme="gaming"] .text-xs {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* --- Gaming: Button style — squared, aggressive --- */
+[data-theme="gaming"] a[class*="rounded-full"],
+[data-theme="gaming"] button[class*="rounded-full"] {
+  border-radius: 8px !important;
+}
+
+/* --- Gaming: Stronger hover glow on cards --- */
+[data-theme="gaming"] .bg-white.rounded-2xl:hover,
+[data-theme="gaming"] .glass:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.12), inset 0 0 30px rgba(0, 255, 136, 0.03) !important;
+}
+
+/* --- Gaming: Noise/grain texture on body --- */
+[data-theme="gaming"] body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* Dark theme switcher overrides (for gaming + glass) */
+[data-theme="gaming"] .theme-switcher-btn,
+[data-theme="glass"] .theme-switcher-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #e2e8f0;
+}
+
+[data-theme="gaming"] .theme-switcher-btn:hover,
+[data-theme="glass"] .theme-switcher-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+[data-theme="gaming"] .theme-switcher-panel,
+[data-theme="glass"] .theme-switcher-panel {
+  background: rgba(15, 23, 42, 0.92);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+}
+
+[data-theme="gaming"] .theme-vote-btn,
+[data-theme="glass"] .theme-vote-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="gaming"] .theme-vote-btn:hover,
+[data-theme="glass"] .theme-vote-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="gaming"] .theme-vote-active,
+[data-theme="glass"] .theme-vote-active {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="gaming"] .theme-vote-fill,
+[data-theme="glass"] .theme-vote-fill {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* ——————————————————————————————————————————————
+   Theme: Glassmorphism
+   —————————————————————————————————————————————— */
+
+/* --- CSS Variables --- */
+[data-theme="glass"] {
+  --color-primary: #a78bfa;
+  --color-primary-dark: #8b5cf6;
+  --color-primary-light: #c4b5fd;
+  --color-accent: #f472b6;
+  --bg-body: #0f172a;
+  --text-body: #e2e8f0;
+  --text-muted: #94a3b8;
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --card-border: rgba(255, 255, 255, 0.15);
+  --header-bg: rgba(15, 23, 42, 0.8);
+  --section-alt-bg: rgba(255, 255, 255, 0.03);
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --color-surface: #0f172a;
+  --color-dark: #0f172a;
+  --color-dark-surface: #1e293b;
+}
+
+/* --- Animated gradient orb keyframes --- */
+@keyframes glass-orb-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(30px, -20px) scale(1.05); }
+  66%      { transform: translate(-20px, 15px) scale(0.95); }
+}
+
+@keyframes glass-orb-drift-reverse {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(-25px, 20px) scale(0.95); }
+  66%      { transform: translate(15px, -25px) scale(1.05); }
+}
+
+/* --- Body: dark gradient base with animated orbs --- */
+[data-theme="glass"] body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+[data-theme="glass"] body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(ellipse 800px 800px at 15% 15%, rgba(167, 139, 250, 0.2), transparent),
+    radial-gradient(ellipse 700px 700px at 85% 75%, rgba(244, 114, 182, 0.15), transparent),
+    radial-gradient(ellipse 600px 600px at 50% 50%, rgba(139, 92, 246, 0.12), transparent);
+  pointer-events: none;
+  z-index: 0;
+  animation: glass-orb-drift 20s ease-in-out infinite;
+}
+
+[data-theme="glass"] body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(ellipse 450px 450px at 70% 30%, rgba(244, 114, 182, 0.08), transparent),
+    radial-gradient(ellipse 350px 350px at 30% 70%, rgba(167, 139, 250, 0.1), transparent);
+  pointer-events: none;
+  z-index: 0;
+  animation: glass-orb-drift-reverse 25s ease-in-out infinite;
+}
+
+/* Main content above orbs */
+[data-theme="glass"] #root {
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Selection & Scrollbar --- */
+[data-theme="glass"] ::selection {
+  background: rgba(244, 114, 182, 0.3);
+  color: #fff;
+}
+
+[data-theme="glass"] ::-webkit-scrollbar-thumb {
+  background: rgba(167, 139, 250, 0.35);
+}
+
+[data-theme="glass"] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(167, 139, 250, 0.55);
+}
+
+[data-theme="glass"] ::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+}
+
+/* --- Focus rings: violet --- */
+[data-theme="glass"] *:focus-visible {
+  box-shadow: 0 0 0 2px rgba(167, 139, 250, 0.5);
+}
+
+/* --- Header: frosted glass --- */
+[data-theme="glass"] header {
+  background: rgba(15, 23, 42, 0.7) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="glass"] header .text-gray-900,
+[data-theme="glass"] header .font-bold {
+  color: #f1f5f9 !important;
+}
+
+[data-theme="glass"] header .text-gray-500 {
+  color: #94a3b8 !important;
+}
+
+[data-theme="glass"] header .text-gray-500:hover,
+[data-theme="glass"] header .hover\:text-gray-900:hover {
+  color: #e2e8f0 !important;
+}
+
+[data-theme="glass"] header .text-gray-600 {
+  color: #94a3b8 !important;
+}
+
+[data-theme="glass"] header .text-gray-600:hover {
+  color: #e2e8f0 !important;
+}
+
+[data-theme="glass"] header .text-primary {
+  color: #a78bfa !important;
+}
+
+[data-theme="glass"] header .bg-primary {
+  background-color: #a78bfa !important;
+}
+
+/* Active nav indicator */
+[data-theme="glass"] header [class*="bg-primary"] {
+  background-color: #a78bfa !important;
+}
+
+/* Header hover bg */
+[data-theme="glass"] header .hover\:bg-gray-50:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Mobile menu */
+[data-theme="glass"] header .bg-white {
+  background: rgba(15, 23, 42, 0.95) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+[data-theme="glass"] header .text-gray-700 {
+  color: #cbd5e1 !important;
+}
+
+[data-theme="glass"] header .hover\:text-primary:hover {
+  color: #a78bfa !important;
+}
+
+[data-theme="glass"] header .hover\:bg-gray-50:hover {
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+[data-theme="glass"] header .bg-primary\/5 {
+  background: rgba(167, 139, 250, 0.1) !important;
+}
+
+[data-theme="glass"] header .border-gray-100 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* --- Gradient text: violet → pink → violet --- */
+[data-theme="glass"] .gradient-text {
+  background: linear-gradient(135deg, #a78bfa 0%, #f472b6 50%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* --- Glass card base utility --- */
+[data-theme="glass"] .glass {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* --- ALL sections: transparent, no white backgrounds --- */
+[data-theme="glass"] section {
+  background: transparent !important;
+}
+
+/* Hero section overrides */
+[data-theme="glass"] #hero {
+  background: transparent !important;
+}
+
+/* Hero gradient blobs - enhance for glass theme */
+[data-theme="glass"] #hero .opacity-20 {
+  opacity: 0.3 !important;
+}
+
+[data-theme="glass"] #hero .opacity-15 {
+  opacity: 0.25 !important;
+}
+
+/* --- Text color overrides: all light on dark --- */
+[data-theme="glass"] .text-gray-900,
+[data-theme="glass"] .text-gray-800 {
+  color: #f1f5f9 !important;
+}
+
+[data-theme="glass"] .text-gray-700 {
+  color: #e2e8f0 !important;
+}
+
+[data-theme="glass"] .text-gray-600 {
+  color: #cbd5e1 !important;
+}
+
+[data-theme="glass"] .text-gray-500 {
+  color: #94a3b8 !important;
+}
+
+[data-theme="glass"] .text-gray-400 {
+  color: #94a3b8 !important;
+}
+
+[data-theme="glass"] .text-gray-300 {
+  color: #cbd5e1 !important;
+}
+
+/* Keep footer text-gray-500 dimmer */
+[data-theme="glass"] footer .text-gray-500 {
+  color: #64748b !important;
+}
+
+/* --- Cards & containers: frosted glass --- */
+[data-theme="glass"] .bg-white {
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="glass"] .bg-surface {
+  background: rgba(255, 255, 255, 0.04) !important;
+}
+
+[data-theme="glass"] .bg-slate-50,
+[data-theme="glass"] .bg-slate-100 {
+  background: rgba(255, 255, 255, 0.04) !important;
+}
+
+/* Gradient sections to transparent */
+[data-theme="glass"] .from-white {
+  --tw-gradient-from: transparent !important;
+}
+
+[data-theme="glass"] .to-slate-50 {
+  --tw-gradient-to: transparent !important;
+}
+
+[data-theme="glass"] .to-surface {
+  --tw-gradient-to: transparent !important;
+}
+
+[data-theme="glass"] .from-surface\/60 {
+  --tw-gradient-from: transparent !important;
+}
+
+/* --- Feature category cards --- */
+[data-theme="glass"] .bg-white.rounded-2xl {
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Feature card hover shadows */
+[data-theme="glass"] .group-hover\:shadow-indigo-100 {
+  --tw-shadow-color: rgba(167, 139, 250, 0.15) !important;
+}
+
+[data-theme="glass"] .shadow-indigo-100 {
+  --tw-shadow-color: rgba(167, 139, 250, 0.1) !important;
+}
+
+/* --- Card component (gradient border variant) --- */
+[data-theme="glass"] .from-primary\/20 {
+  --tw-gradient-from: rgba(167, 139, 250, 0.2) !important;
+}
+
+[data-theme="glass"] .via-accent\/20 {
+  --tw-gradient-from: rgba(244, 114, 182, 0.2) !important;
+}
+
+[data-theme="glass"] .to-primary\/20 {
+  --tw-gradient-to: rgba(167, 139, 250, 0.2) !important;
+}
+
+/* Card inner bg */
+[data-theme="glass"] .bg-white.rounded-2xl.p-6 {
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Card borders */
+[data-theme="glass"] .border-gray-100 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="glass"] .border-gray-200 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Card shadows */
+[data-theme="glass"] .shadow-sm {
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* --- About section badges (pills) --- */
+[data-theme="glass"] .bg-surface.text-sm {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #cbd5e1 !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+[data-theme="glass"] .rounded-full.bg-surface {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* --- Example question cards --- */
+[data-theme="glass"] .from-primary\/5 {
+  --tw-gradient-from: rgba(167, 139, 250, 0.08) !important;
+}
+
+[data-theme="glass"] .to-accent\/5 {
+  --tw-gradient-to: rgba(244, 114, 182, 0.06) !important;
+}
+
+[data-theme="glass"] .border-primary\/10 {
+  border-color: rgba(167, 139, 250, 0.2) !important;
+}
+
+[data-theme="glass"] .group-hover\:border-primary\/30:hover {
+  border-color: rgba(167, 139, 250, 0.4) !important;
+}
+
+[data-theme="glass"] .group-hover\:shadow-primary\/5 {
+  --tw-shadow-color: rgba(167, 139, 250, 0.15) !important;
+}
+
+/* --- Download section: enhanced glass gradient --- */
+[data-theme="glass"] #download {
+  background: linear-gradient(
+    135deg,
+    rgba(167, 139, 250, 0.2) 0%,
+    rgba(244, 114, 182, 0.15) 50%,
+    rgba(139, 92, 246, 0.2) 100%
+  ) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- WhyChoose (dark section) glass overrides --- */
+[data-theme="glass"] .bg-dark {
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+
+[data-theme="glass"] .bg-dark-surface {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* WhyChoose card already uses bg-white/[0.06] so just enhance slightly */
+[data-theme="glass"] .bg-white\/\[0\.06\] {
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+[data-theme="glass"] .hover\:bg-white\/\[0\.1\]:hover {
+  background: rgba(255, 255, 255, 0.14) !important;
+}
+
+/* --- Team section: image ring & decorations --- */
+[data-theme="glass"] .ring-white {
+  --tw-ring-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+[data-theme="glass"] .shadow-indigo-100 {
+  --tw-shadow-color: rgba(167, 139, 250, 0.2) !important;
+}
+
+[data-theme="glass"] .from-indigo-100 {
+  --tw-gradient-from: rgba(167, 139, 250, 0.2) !important;
+}
+
+[data-theme="glass"] .to-violet-100 {
+  --tw-gradient-to: rgba(196, 181, 253, 0.2) !important;
+}
+
+/* Team social button */
+[data-theme="glass"] .from-primary\/10 {
+  --tw-gradient-from: rgba(167, 139, 250, 0.15) !important;
+}
+
+[data-theme="glass"] .to-accent\/10 {
+  --tw-gradient-to: rgba(244, 114, 182, 0.1) !important;
+}
+
+/* --- AppCarousel overrides --- */
+/* Phone bezel shadows */
+[data-theme="glass"] .shadow-gray-900\/30 {
+  --tw-shadow-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Carousel nav arrows: glass style */
+[data-theme="glass"] .bg-white.shadow-lg.rounded-full {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #cbd5e1 !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3) !important;
+}
+
+[data-theme="glass"] .bg-white.shadow-lg.rounded-full:hover {
+  background: rgba(255, 255, 255, 0.18) !important;
+  color: #a78bfa !important;
+  box-shadow: 0 4px 24px rgba(167, 139, 250, 0.2) !important;
+}
+
+/* Carousel dots */
+[data-theme="glass"] .bg-gray-300 {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+[data-theme="glass"] .hover\:bg-gray-400:hover {
+  background-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Carousel progress bar */
+[data-theme="glass"] .bg-gray-200 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* --- Buttons: glass with glow --- */
+[data-theme="glass"] .from-primary {
+  --tw-gradient-from: #a78bfa !important;
+}
+
+[data-theme="glass"] .to-accent {
+  --tw-gradient-to: #f472b6 !important;
+}
+
+/* Primary button: glass glow */
+[data-theme="glass"] .bg-gradient-to-r.from-primary.to-accent {
+  background: linear-gradient(135deg, #a78bfa, #f472b6) !important;
+  box-shadow: 0 0 20px rgba(167, 139, 250, 0.3), 0 0 40px rgba(244, 114, 182, 0.15);
+}
+
+[data-theme="glass"] .bg-gradient-to-r.from-primary.to-accent:hover {
+  box-shadow: 0 0 30px rgba(167, 139, 250, 0.5), 0 0 60px rgba(244, 114, 182, 0.25) !important;
+}
+
+/* Secondary button: glass border */
+[data-theme="glass"] .border-primary {
+  border-color: #a78bfa !important;
+}
+
+[data-theme="glass"] .border-2.border-primary {
+  border-color: #a78bfa !important;
+  background: rgba(167, 139, 250, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+[data-theme="glass"] .border-2.border-primary:hover {
+  background: #a78bfa !important;
+  box-shadow: 0 0 24px rgba(167, 139, 250, 0.35);
+}
+
+/* --- Gradient border pseudo-element: violet → pink --- */
+[data-theme="glass"] .gradient-border::before {
+  background: linear-gradient(135deg, #a78bfa, #f472b6) !important;
+}
+
+/* --- Footer: glass on dark --- */
+[data-theme="glass"] footer {
+  background: rgba(15, 23, 42, 0.6) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="glass"] footer .bg-dark {
+  background: transparent !important;
+}
+
+[data-theme="glass"] footer .border-gray-800\/60 {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Footer social icons */
+[data-theme="glass"] footer .bg-dark-surface {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-theme="glass"] footer .hover\:bg-primary:hover {
+  background-color: #a78bfa !important;
+}
+
+/* Footer link colors */
+[data-theme="glass"] footer .text-primary-light {
+  color: #c4b5fd !important;
+}
+
+[data-theme="glass"] footer .text-gray-400 {
+  color: #94a3b8 !important;
+}
+
+[data-theme="glass"] footer .text-gray-400:hover,
+[data-theme="glass"] footer .hover\:text-white:hover {
+  color: #f1f5f9 !important;
+}
+
+/* Footer gradient top border */
+[data-theme="glass"] footer > div:first-child {
+  background: linear-gradient(90deg, transparent, #a78bfa, #f472b6, #a78bfa, transparent) !important;
+}
+
+/* --- Blog page overrides --- */
+[data-theme="glass"] .prose {
+  color: #cbd5e1;
+}
+
+[data-theme="glass"] .prose h1,
+[data-theme="glass"] .prose h2,
+[data-theme="glass"] .prose h3,
+[data-theme="glass"] .prose h4 {
+  color: #f1f5f9;
+}
+
+[data-theme="glass"] .prose a {
+  color: #a78bfa;
+}
+
+[data-theme="glass"] .prose strong {
+  color: #f1f5f9;
+}
+
+[data-theme="glass"] .prose blockquote {
+  border-left-color: #a78bfa;
+  color: #94a3b8;
+}
+
+[data-theme="glass"] .prose code {
+  color: #c4b5fd;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="glass"] .prose hr {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --- Misc utility overrides --- */
+[data-theme="glass"] .bg-gradient-to-b.from-gray-800.to-gray-900 {
+  background: linear-gradient(to bottom, #1e293b, #0f172a) !important;
+}
+
+/* Shadow overrides for dark context */
+[data-theme="glass"] .shadow-2xl {
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="glass"] .shadow-lg {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Hover state shadows */
+[data-theme="glass"] .hover\:shadow-lg:hover {
+  box-shadow: 0 10px 30px rgba(167, 139, 250, 0.15) !important;
+}
+
+[data-theme="glass"] .hover\:shadow-xl:hover {
+  box-shadow: 0 20px 40px rgba(167, 139, 250, 0.2) !important;
+}
+
+/* Primary color references */
+[data-theme="glass"] .text-primary {
+  color: #a78bfa !important;
+}
+
+[data-theme="glass"] .hover\:text-accent:hover {
+  color: #f472b6 !important;
+}
+
+[data-theme="glass"] .bg-primary {
+  background-color: #a78bfa !important;
+}
+
+[data-theme="glass"] .bg-primary\/5 {
+  background: rgba(167, 139, 250, 0.08) !important;
+}
+
+/* Store badge images - slightly brighten in dark context */
+[data-theme="glass"] img[alt*="App Store"],
+[data-theme="glass"] img[alt*="Google Play"] {
+  filter: brightness(1.1);
+}
+
+/* Backdrop for decorative blobs */
+[data-theme="glass"] .blur-3xl {
+  filter: blur(64px) brightness(1.2);
+}
+
+/* Border overrides for dark mode */
+[data-theme="glass"] .border-white\/10 {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+[data-theme="glass"] .border-white\/20 {
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+/* Hover gradient border on feature categories */
+[data-theme="glass"] .hover\:from-primary\/30:hover {
+  --tw-gradient-from: rgba(167, 139, 250, 0.3) !important;
+}
+
+[data-theme="glass"] .hover\:via-accent\/20:hover {
+  --tw-gradient-via: rgba(244, 114, 182, 0.2) !important;
+}
+
+[data-theme="glass"] .hover\:to-primary\/30:hover {
+  --tw-gradient-to: rgba(167, 139, 250, 0.3) !important;
+}
+
+/* Input fields if any */
+[data-theme="glass"] input,
+[data-theme="glass"] textarea,
+[data-theme="glass"] select {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #e2e8f0;
+}
+
+[data-theme="glass"] input::placeholder,
+[data-theme="glass"] textarea::placeholder {
+  color: #64748b;
+}
+
+[data-theme="glass"] input:focus,
+[data-theme="glass"] textarea:focus,
+[data-theme="glass"] select:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 2px rgba(167, 139, 250, 0.25);
+}
+
+/* --- Ensure no white leaks anywhere --- */
+[data-theme="glass"] .bg-white\/90 {
+  background: rgba(15, 23, 42, 0.7) !important;
+}
+
+[data-theme="glass"] .bg-white\/70 {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-theme="glass"] .bg-white\/10 {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Download section shape colors */
+[data-theme="glass"] .bg-white\/10.rounded-full {
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+/* Header scrolled state → glass instead of white */
+[data-theme="glass"] header.bg-white\/90 {
+  background: rgba(15, 23, 42, 0.85) !important;
+}
+
+/* Link colors in dark context */
+[data-theme="glass"] a.text-primary {
+  color: #a78bfa !important;
+}
+
+[data-theme="glass"] a.text-primary:hover {
+  color: #c4b5fd !important;
+}
+
+/* Blog cards / list items */
+[data-theme="glass"] .bg-white.rounded-2xl,
+[data-theme="glass"] .bg-white.rounded-xl,
+[data-theme="glass"] .bg-white.rounded-lg {
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Override any remaining white */
+[data-theme="glass"] [class*="bg-white"]:not(img):not(video):not(picture):not(svg) {
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+/* Keep phone screen interior white for screenshots */
+[data-theme="glass"] .rounded-\[2\.2rem\].overflow-hidden.bg-white,
+[data-theme="glass"] .rounded-\[2\.5rem\].overflow-hidden.bg-white,
+[data-theme="glass"] .rounded-\[2rem\].overflow-hidden.bg-white {
+  background: #fff !important;
+  border: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* --- Glass: Extra round corners --- */
+[data-theme="glass"] .rounded-2xl { border-radius: 24px !important; }
+[data-theme="glass"] .rounded-xl { border-radius: 20px !important; }
+[data-theme="glass"] .rounded-lg { border-radius: 16px !important; }
+
+/* --- Glass: Cards lift on hover with 3D feel --- */
+[data-theme="glass"] .bg-white.rounded-2xl,
+[data-theme="glass"] .glass {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+[data-theme="glass"] .bg-white.rounded-2xl:hover,
+[data-theme="glass"] .glass:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 20px 60px rgba(167, 139, 250, 0.15), 0 0 40px rgba(244, 114, 182, 0.08) !important;
+}
+
+/* --- Glass: Lighter body text for ethereal feel --- */
+[data-theme="glass"] p, [data-theme="glass"] span:not(.font-bold):not(.font-semibold) {
+  font-weight: 300 !important;
+}
+
+/* --- Glass: Stronger blur on cards --- */
+[data-theme="glass"] .bg-white {
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+}
+
+/* --- Glass: Inner glow effect on cards --- */
+[data-theme="glass"] .bg-white.rounded-2xl {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 8px 32px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* --- Glass: Buttons have glass feel --- */
+[data-theme="glass"] a[class*="rounded-full"],
+[data-theme="glass"] button[class*="rounded-full"] {
+  border-radius: 9999px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
