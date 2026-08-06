@@ -1,0 +1,7 @@
+# Redirects from old static site URLs
+/terms-and-conditions.html /terms 301
+/terms-and-conditions /terms 301
+/privacy-policy.html /privacy-policy 301
+
+# SPA catch-all: serve index.html for all non-asset routes
+/* /index.html 200

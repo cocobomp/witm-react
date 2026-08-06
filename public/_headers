@@ -1,0 +1,7 @@
+# Serve app association files with the JSON content type required by
+# Apple (universal links) and Google (Android App Links) verifiers.
+/.well-known/apple-app-site-association
+  Content-Type: application/json
+
+/.well-known/assetlinks.json
+  Content-Type: application/json

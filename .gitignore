@@ -28,3 +28,7 @@ dist-ssr
 *.sln
 *.sw?
 .vercel
+
+# Design exports: source lives in the design tool, not here. PDFs and PNGs
+# of the Crigui flyer are build output of that tool, not of this site.
+crigui-flyer/

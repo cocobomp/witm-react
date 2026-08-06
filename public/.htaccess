@@ -38,6 +38,11 @@
   Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 
+# --- Redirects from old static site ---
+Redirect 301 /terms-and-conditions.html /terms
+Redirect 301 /terms-and-conditions /terms
+Redirect 301 /privacy-policy.html /privacy-policy
+
 # --- SPA routing ---
 RewriteEngine On
 RewriteBase /
