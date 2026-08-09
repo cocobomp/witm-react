@@ -1,7 +1,9 @@
-import { APP_STORE_URL, GOOGLE_PLAY_URL } from '../../constants/links';
+import { buildAppStoreUrl, buildGooglePlayUrl } from '../../constants/links';
 
-export default function StoreBadges({ className = '', variant = 'light' }) {
+export default function StoreBadges({ className = '', variant = 'light', campaign }) {
   const isDark = variant === 'dark';
+  const appStoreUrl = buildAppStoreUrl(campaign);
+  const googlePlayUrl = buildGooglePlayUrl(campaign);
 
   const linkClass = isDark
     ? 'bg-white/5 hover:bg-white/10 border-white/10'
@@ -14,7 +16,7 @@ export default function StoreBadges({ className = '', variant = 'light' }) {
     <div className={`flex flex-wrap gap-3 sm:gap-4 ${className}`}>
       {/* App Store */}
       <a
-        href={APP_STORE_URL}
+        href={appStoreUrl}
         target="_blank"
         rel="noopener noreferrer"
         className={`inline-flex items-center gap-3 border rounded-xl px-5 py-3 transition-all duration-200 hover:scale-105 hover:shadow-lg ${linkClass}`}
@@ -30,7 +32,7 @@ export default function StoreBadges({ className = '', variant = 'light' }) {
 
       {/* Google Play */}
       <a
-        href={GOOGLE_PLAY_URL}
+        href={googlePlayUrl}
         target="_blank"
         rel="noopener noreferrer"
         className={`inline-flex items-center gap-3 border rounded-xl px-5 py-3 transition-all duration-200 hover:scale-105 hover:shadow-lg ${linkClass}`}

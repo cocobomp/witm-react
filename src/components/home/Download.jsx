@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import Section from '../ui/Section';
-import { APP_STORE_URL, GOOGLE_PLAY_URL } from '../../constants/links';
+import { STORE_CAMPAIGNS } from '../../constants/links';
 import StoreBadges from '../ui/StoreBadges';
 
 export default function Download() {
@@ -56,7 +56,10 @@ export default function Download() {
               {t('download.description')}
             </p>
 
-            <StoreBadges className="justify-center md:justify-start" />
+            <StoreBadges
+              className="justify-center md:justify-start"
+              campaign={STORE_CAMPAIGNS.home}
+            />
           </motion.div>
 
           {/* Right: Floating app mockup */}
