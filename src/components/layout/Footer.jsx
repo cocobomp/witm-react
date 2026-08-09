@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 import useLangPrefix from '../../hooks/useLangPrefix';
-import { INSTAGRAM_URL, TIKTOK_URL } from '../../constants/links';
+import { INSTAGRAM_URL, TIKTOK_URL, STORE_CAMPAIGNS } from '../../constants/links';
 import StoreBadges from '../ui/StoreBadges';
 
 export default function Footer() {
@@ -107,7 +107,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               {t('footer.downloadDescription')}
             </p>
-            <StoreBadges className="flex-col" variant="dark" />
+            <StoreBadges className="flex-col" variant="dark" campaign={STORE_CAMPAIGNS.footer} />
           </div>
         </div>
       </div>

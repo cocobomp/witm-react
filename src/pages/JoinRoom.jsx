@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import SEO from '../components/seo/SEO';
 import Section from '../components/ui/Section';
 import StoreBadges from '../components/ui/StoreBadges';
-import { buildJoinDeepLink } from '../constants/links';
+import { buildJoinDeepLink, STORE_CAMPAIGNS } from '../constants/links';
 
 const MIN_PIN_LENGTH = 3; // app room PINs are 3 digits
 const MAX_PIN_LENGTH = 8;
@@ -31,7 +31,7 @@ function DownloadPanel({ title, description }) {
     >
       <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">{title}</h2>
       <p className="text-white/80 mb-6 leading-relaxed">{description}</p>
-      <StoreBadges />
+      <StoreBadges campaign={STORE_CAMPAIGNS.join} />
     </motion.div>
   );
 }
