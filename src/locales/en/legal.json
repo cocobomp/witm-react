@@ -75,28 +75,36 @@
       "item1": "You agree to provide accurate and up-to-date information during account registration and maintain the security of your account credentials.",
       "item2": "You are responsible for all activities conducted under your account and agree not to engage in any behavior that is unlawful, harmful, or violates our policies."
     },
+    "userContent": {
+      "title": "3. User Content",
+      "intro": "The app lets you create questions (personal lists, collaborative questions in a room), free-text answers and a nickname, which other players in the room can see. By posting such content you agree to the following:",
+      "item1": "Zero tolerance: hateful, harassing, sexually explicit content aimed at a person, discriminatory, illegal content or content meant to harm a player is prohibited, as is any abusive behaviour.",
+      "item2": "Any player can report content or a player from within the app, and block a player. A room host can immediately delete a question and remove a player.",
+      "item3": "We act on every report within 24 hours: the content is removed and the account behind abusive content is ejected from the service.",
+      "item4": "To report abuse or inappropriate activity, email info@whoisthemost.com — the address is also in the app settings."
+    },
     "ip": {
-      "title": "3. Intellectual Property",
+      "title": "4. Intellectual Property",
       "text": "All content, features, and functionality of the app, including text, images, videos, graphics, and trademarks, are owned by WITM or its licensors and are protected by intellectual property laws. You may not reproduce, distribute, or use any content without prior written consent."
     },
     "liability": {
-      "title": "4. Limitation of Liability",
+      "title": "5. Limitation of Liability",
       "text": "WITM is not responsible for any damages arising from the use of the app, including but not limited to direct, indirect, incidental, or consequential damages. Use the app at your own risk."
     },
     "termination": {
-      "title": "5. Termination",
+      "title": "6. Termination",
       "text": "We reserve the right to suspend or terminate your account if you violate these terms or engage in any unauthorized activities. We may also terminate services without prior notice if required for legal or operational reasons."
     },
     "governingLaw": {
-      "title": "6. Governing Law",
+      "title": "7. Governing Law",
       "text": "These terms are governed by and construed in accordance with the laws of Switzerland. Any disputes arising out of or related to these terms will be subject to the exclusive jurisdiction of the courts in Fribourg, Switzerland."
     },
     "changes": {
-      "title": "7. Changes to the Terms",
+      "title": "8. Changes to the Terms",
       "text": "We may update these terms from time to time to reflect changes in our policies or legal requirements. You will be notified of significant updates, and the updated terms will be effective immediately upon posting."
     },
     "contact": {
-      "title": "8. Contact Us",
+      "title": "9. Contact Us",
       "text": "If you have any questions or concerns about these terms, feel free to reach out to us:",
       "email": "info@whoisthemost.com"
     }

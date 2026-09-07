@@ -75,28 +75,36 @@
       "item1": "Sie stimmen zu, bei der Kontoregistrierung genaue und aktuelle Informationen anzugeben und die Sicherheit Ihrer Kontodaten zu gewährleisten.",
       "item2": "Sie sind für alle Aktivitäten unter Ihrem Konto verantwortlich und stimmen zu, sich nicht an rechtswidrigem, schädlichem oder gegen unsere Richtlinien verstoßendem Verhalten zu beteiligen."
     },
+    "userContent": {
+      "title": "3. Nutzerinhalte",
+      "intro": "Die App erlaubt es, Fragen (persönliche Listen, gemeinsame Fragen in einem Raum), Freitext-Antworten und einen Spielernamen zu erstellen, die für die anderen Spieler im Raum sichtbar sind. Mit dem Veröffentlichen solcher Inhalte akzeptieren Sie Folgendes:",
+      "item1": "Null Toleranz: hasserfüllte, belästigende, gegen eine Person gerichtete sexuell explizite, diskriminierende, rechtswidrige oder auf Schädigung eines Spielers zielende Inhalte sind verboten, ebenso jedes missbräuchliche Verhalten.",
+      "item2": "Jeder Spieler kann Inhalte oder Spieler in der App melden und Spieler blockieren. Der Gastgeber eines Raums kann eine Frage sofort löschen und einen Spieler entfernen.",
+      "item3": "Wir bearbeiten jede Meldung innerhalb von 24 Stunden: der Inhalt wird entfernt und das Konto hinter missbräuchlichen Inhalten wird vom Dienst ausgeschlossen.",
+      "item4": "Missbrauch oder unangemessenes Verhalten melden Sie an info@whoisthemost.com — die Adresse steht auch in den App-Einstellungen."
+    },
     "ip": {
-      "title": "3. Geistiges Eigentum",
+      "title": "4. Geistiges Eigentum",
       "text": "Alle Inhalte, Funktionen und Funktionalitäten der App, einschließlich Text, Bilder, Videos, Grafiken und Marken, sind Eigentum von WITM oder seinen Lizenzgebern und durch Gesetze zum geistigen Eigentum geschützt. Sie dürfen keine Inhalte ohne vorherige schriftliche Zustimmung reproduzieren, verbreiten oder verwenden."
     },
     "liability": {
-      "title": "4. Haftungsbeschränkung",
+      "title": "5. Haftungsbeschränkung",
       "text": "WITM ist nicht verantwortlich für Schäden, die aus der Nutzung der App entstehen, einschließlich, aber nicht beschränkt auf direkte, indirekte, zufällige oder Folgeschäden. Die Nutzung der App erfolgt auf eigenes Risiko."
     },
     "termination": {
-      "title": "5. Kündigung",
+      "title": "6. Kündigung",
       "text": "Wir behalten uns das Recht vor, Ihr Konto zu sperren oder zu kündigen, wenn Sie gegen diese Bedingungen verstoßen oder sich an nicht autorisierten Aktivitäten beteiligen. Wir können Dienste auch ohne vorherige Ankündigung beenden, wenn dies aus rechtlichen oder betrieblichen Gründen erforderlich ist."
     },
     "governingLaw": {
-      "title": "6. Anwendbares Recht",
+      "title": "7. Anwendbares Recht",
       "text": "Diese Bedingungen unterliegen den Gesetzen der Schweiz und werden entsprechend ausgelegt. Alle Streitigkeiten, die sich aus diesen Bedingungen ergeben, unterliegen der ausschließlichen Zuständigkeit der Gerichte in Freiburg, Schweiz."
     },
     "changes": {
-      "title": "7. Änderungen der Bedingungen",
+      "title": "8. Änderungen der Bedingungen",
       "text": "Wir können diese Bedingungen von Zeit zu Zeit aktualisieren, um Änderungen in unseren Richtlinien oder rechtlichen Anforderungen widerzuspiegeln. Sie werden über wesentliche Aktualisierungen benachrichtigt, und die aktualisierten Bedingungen werden sofort nach Veröffentlichung wirksam."
     },
     "contact": {
-      "title": "8. Kontaktieren Sie Uns",
+      "title": "9. Kontaktieren Sie Uns",
       "text": "Wenn Sie Fragen oder Bedenken zu diesen Bedingungen haben, kontaktieren Sie uns gerne:",
       "email": "info@whoisthemost.com"
     }

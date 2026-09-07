@@ -8,6 +8,7 @@ import useLangPrefix from '../hooks/useLangPrefix';
 const SECTION_DEFS = [
   { id: 'acceptance', key: 'acceptance' },
   { id: 'responsibilities', key: 'responsibilities' },
+  { id: 'user-content', key: 'userContent' },
   { id: 'intellectual-property', key: 'ip' },
   { id: 'liability', key: 'liability' },
   { id: 'termination', key: 'termination' },
@@ -60,6 +61,20 @@ export default function TermsAndConditions() {
               </li>
             ))}
           </ul>
+        );
+      case 'userContent':
+        return (
+          <>
+            <p className="text-gray-500 leading-relaxed mb-4">{t('terms.userContent.intro')}</p>
+            <ul className="space-y-3 text-gray-500">
+              {['item1', 'item2', 'item3', 'item4'].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
+                  <span className="leading-relaxed">{t(`terms.userContent.${item}`)}</span>
+                </li>
+              ))}
+            </ul>
+          </>
         );
       case 'contact':
         return (
