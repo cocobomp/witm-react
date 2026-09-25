@@ -6,14 +6,8 @@ import {
   onAuthStateChanged
 } from 'firebase/auth';
 import { auth } from '../firebase';
-
-// Whitelist of admin emails
-const ADMIN_EMAILS = [
-  'quiestlepluss@gmail.com',
-  'corentin@qelp.ch',
-  'cocobomp@gmail.com',
-  'bompard.corentin@gmail.com',
-];
+// Shared with the AI proxy, which enforces the same allowlist server-side.
+import { ADMIN_EMAILS } from '../constants/adminEmails';
 
 const AuthContext = createContext(null);
 

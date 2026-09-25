@@ -1,20 +1,47 @@
 /**
  * AI API client service
- * Communicates with Vercel serverless function to access Groq API
+ * Communicates with Vercel serverless function to access Groq API.
+ * Every call except the health check carries the signed-in admin's Firebase
+ * ID token; the function rejects anything else (401/403).
  */
+import { auth } from '../firebase';
 
 const API_ENDPOINT = import.meta.env.VITE_API_URL
   ? `${import.meta.env.VITE_API_URL}/api/claude`
   : '/api/claude';
 
-const ADMIN_KEY = import.meta.env.VITE_ADMIN_SECRET || '';
+const NOT_SIGNED_IN_MESSAGE = 'You must be signed in with an admin account to use the AI tools.';
 
-function getHeaders() {
-  const headers = { 'Content-Type': 'application/json' };
-  if (ADMIN_KEY) {
-    headers['X-Admin-Key'] = ADMIN_KEY;
+async function buildAuthHeaders() {
+  const user = auth.currentUser;
+  if (!user) {
+    throw new Error(NOT_SIGNED_IN_MESSAGE);
   }
-  return headers;
+  // getIdToken() returns the cached token and refreshes it when it is about to expire.
+  const idToken = await user.getIdToken();
+  return { 'Content-Type': 'application/json', Authorization: `Bearer ${idToken}` };
+}
+
+async function readErrorMessage(response, fallbackMessage) {
+  const body = await response.json().catch(() => ({}));
+  if (typeof body.error === 'string') {
+    return body.error;
+  }
+  return body.error?.message || body.message || fallbackMessage;
+}
+
+async function postAuthenticated(payload, failureMessage) {
+  const response = await fetch(API_ENDPOINT, {
+    method: 'POST',
+    headers: await buildAuthHeaders(),
+    body: JSON.stringify(payload),
+  });
+
+  if (!response.ok) {
+    throw new Error(await readErrorMessage(response, `${failureMessage}: ${response.status}`));
+  }
+
+  return response.json();
 }
 
 /**
@@ -26,29 +53,11 @@ function getHeaders() {
  * @returns {Promise<Array>} Array of generated questions with translations
  */
 export async function generateQuestions({ category, count = 5, language = 'fr' }) {
-  try {
-    const response = await fetch(API_ENDPOINT, {
-      method: 'POST',
-      headers: getHeaders(),
-      body: JSON.stringify({
-        action: 'generate',
-        category,
-        count,
-        language,
-      }),
-    });
-
-    if (!response.ok) {
-      const error = await response.json().catch(() => ({}));
-      throw new Error(error.message || `Failed to generate questions: ${response.status}`);
-    }
-
-    const data = await response.json();
-    return data.questions || [];
-  } catch (error) {
-    console.error('Error generating questions:', error);
-    throw error;
-  }
+  const data = await postAuthenticated(
+    { action: 'generate', category, count, language },
+    'Failed to generate questions',
+  );
+  return data.questions || [];
 }
 
 /**
@@ -57,23 +66,7 @@ export async function generateQuestions({ category, count = 5, language = 'fr' }
  * @returns {Promise<Object>} Batch metadata with batchId
  */
 export async function createBatch({ category, count = 5, language = 'fr' }) {
-  const response = await fetch(API_ENDPOINT, {
-    method: 'POST',
-    headers: getHeaders(),
-    body: JSON.stringify({
-      action: 'batch-create',
-      category,
-      count,
-      language,
-    }),
-  });
-
-  if (!response.ok) {
-    const error = await response.json().catch(() => ({}));
-    throw new Error(error.error || `Failed to create batch: ${response.status}`);
-  }
-
-  return response.json();
+  return postAuthenticated({ action: 'batch-create', category, count, language }, 'Failed to create batch');
 }
 
 /**
@@ -82,21 +75,7 @@ export async function createBatch({ category, count = 5, language = 'fr' }) {
  * @returns {Promise<Object>} Batch status info
  */
 export async function checkBatchStatus(batchId) {
-  const response = await fetch(API_ENDPOINT, {
-    method: 'POST',
-    headers: getHeaders(),
-    body: JSON.stringify({
-      action: 'batch-status',
-      batchId,
-    }),
-  });
-
-  if (!response.ok) {
-    const error = await response.json().catch(() => ({}));
-    throw new Error(error.error || `Failed to check batch status: ${response.status}`);
-  }
-
-  return response.json();
+  return postAuthenticated({ action: 'batch-status', batchId }, 'Failed to check batch status');
 }
 
 /**
@@ -105,21 +84,7 @@ export async function checkBatchStatus(batchId) {
  * @returns {Promise<Object>} { questions: [...] }
  */
 export async function fetchBatchResults(batchId) {
-  const response = await fetch(API_ENDPOINT, {
-    method: 'POST',
-    headers: getHeaders(),
-    body: JSON.stringify({
-      action: 'batch-results',
-      batchId,
-    }),
-  });
-
-  if (!response.ok) {
-    const error = await response.json().catch(() => ({}));
-    throw new Error(error.error || `Failed to fetch batch results: ${response.status}`);
-  }
-
-  return response.json();
+  return postAuthenticated({ action: 'batch-results', batchId }, 'Failed to fetch batch results');
 }
 
 /**
@@ -129,33 +94,14 @@ export async function fetchBatchResults(batchId) {
  * @returns {Promise<Object>} Object with translations { en, fr, de }
  */
 export async function translateQuestion(text, sourceLanguage = null) {
-  try {
-    const response = await fetch(API_ENDPOINT, {
-      method: 'POST',
-      headers: getHeaders(),
-      body: JSON.stringify({
-        action: 'translate',
-        text,
-        sourceLanguage,
-        targetLanguages: ['en', 'fr', 'de'],
-      }),
-    });
-
-    if (!response.ok) {
-      const error = await response.json().catch(() => ({}));
-      throw new Error(error.message || `Failed to translate: ${response.status}`);
-    }
-
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error('Error translating question:', error);
-    throw error;
-  }
+  return postAuthenticated(
+    { action: 'translate', text, sourceLanguage, targetLanguages: ['en', 'fr', 'de'] },
+    'Failed to translate',
+  );
 }
 
 /**
- * Check if the AI API is available
+ * Check if the AI API is available (public, no token needed)
  * @returns {Promise<boolean>} True if API is available
  */
 export async function checkApiHealth() {
