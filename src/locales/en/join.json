@@ -1,17 +1,19 @@
 {
   "meta": {
     "title": "Join a WITM game",
-    "description": "Your friends invited you to a WITM game. Open the app and join them with the PIN!"
+    "description": "Your friends invited you to a WITM game. Open the app and join them with the code!"
   },
   "title": "You're invited!",
+  "titleWithInviter": "{{name}} invites you!",
   "subtitle": "Your friends are waiting for you in a WITM game.",
-  "pinLabel": "Game PIN",
+  "codeLabel": "Game code",
   "openApp": "Open in the app",
   "openAppHint": "Already have WITM? Tap to jump straight into the game.",
-  "copyPin": "Copy PIN",
-  "copied": "PIN copied!",
+  "copyCode": "Copy the code",
+  "copied": "Code copied!",
   "noAppTitle": "Don't have the app yet?",
-  "noAppDescription": "Download WITM for free, then enter the PIN above to join your friends.",
+  "noAppDescription": "Download WITM for free, then paste or type the code above to join your friends.",
+  "copyAndInstall": "Copy the code and install",
   "invalidTitle": "This invite link looks broken",
-  "invalidDescription": "Ask your friend to resend the link, or enter the game PIN directly in the app."
+  "invalidDescription": "Ask your friend to resend the link, or enter the game code directly in the app."
 }
