@@ -49,7 +49,8 @@ export default function LanguageSwitcher() {
         ? pathWithoutLang || '/'
         : `/${langCode}${pathWithoutLang}`;
 
-    navigate(newPath);
+    // Keep the query: an invite link carries the inviter's name in it.
+    navigate(`${newPath}${location.search}`);
   };
 
   return (

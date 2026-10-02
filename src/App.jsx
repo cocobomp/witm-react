@@ -26,6 +26,10 @@ const PAGE_ROUTES = [
   { path: 'delete-account', element: <DeleteAccount /> },
   { path: 'blog', element: <Blog /> },
   { path: 'blog/:slug', element: <BlogPost /> },
+  // Invite links: whoisthemost.com/j/<code> is the universal-link fallback
+  // shared by the app; /fr/j and /de/j only exist for the language switcher.
+  { path: 'j', element: <JoinRoom /> },
+  { path: 'j/:pin', element: <JoinRoom /> },
 ];
 
 function Loading() {
@@ -54,12 +58,6 @@ export default function App() {
                     </AdminRoute>
                   }
                 />
-
-                {/* Universal link fallback: whoisthemost.com/j/PIN (no language prefix) */}
-                <Route path="/j" element={<Layout />}>
-                  <Route index element={<JoinRoom />} />
-                  <Route path=":pin" element={<JoinRoom />} />
-                </Route>
 
                 {/* Public routes with language prefixes */}
                 {LANG_PREFIXES.map((prefix) => (
