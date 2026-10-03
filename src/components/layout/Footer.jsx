@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 import useLangPrefix from '../../hooks/useLangPrefix';
 import { INSTAGRAM_URL, TIKTOK_URL, STORE_CAMPAIGNS } from '../../constants/links';
+import BrandLogo from '../ui/BrandLogo';
 import StoreBadges from '../ui/StoreBadges';
 
 export default function Footer() {
@@ -32,8 +33,8 @@ export default function Footer() {
           {/* Column 1: Brand + Contact */}
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <img src="/img/logo.png" alt="WITM" className="h-10 w-10" loading="lazy" width="40" height="40" />
-              <span className="font-bold text-xl tracking-tight">WITM</span>
+              <img src="/img/logo.png" alt="" className="h-10 w-10" loading="lazy" width="40" height="40" />
+              <BrandLogo size="compact" tone="dark" className="h-[34px]" loading="lazy" />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs">
               {t('footer.brandTagline')}

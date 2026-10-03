@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
+import BrandLogo from '../ui/BrandLogo';
 import Button from '../ui/Button';
 import { INSTAGRAM_URL, TIKTOK_URL } from '../../constants/links';
 
@@ -55,14 +56,14 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <motion.span
+            <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.1 }}
-              className="inline-block text-primary font-semibold text-sm uppercase tracking-widest mb-4"
+              className="mb-5"
             >
-              WITM
-            </motion.span>
+              <BrandLogo size="large" className="h-14 lg:h-16" />
+            </motion.div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6 tracking-tight">
               <span className="gradient-text">{t('hero.subtitle')}</span>
             </h1>
