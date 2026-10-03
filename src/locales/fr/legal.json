@@ -78,6 +78,7 @@
     "userContent": {
       "title": "3. Contenu des utilisateurs",
       "intro": "L'application permet de créer des questions (listes personnelles, questions collaboratives dans un salon), des réponses libres et un pseudo, visibles par les autres joueurs du salon. En publiant ce contenu, vous acceptez les règles suivantes :",
+      "responsibility": "Responsabilité du contenu : les questions, réponses et pseudos créés par les joueurs sont publiés sous la seule responsabilité de leur auteur. WITM n'en est pas l'auteur, ne les vérifie pas avant leur affichage et n'est pas responsable de leur contenu. WITM retire tout contenu signalé qui enfreint ces règles, dans les 24 heures.",
       "item1": "Tolérance zéro : tout contenu haineux, harcelant, sexuellement explicite envers une personne, discriminatoire, illégal ou visant à nuire à un joueur est interdit, de même que tout comportement abusif.",
       "item2": "Chaque joueur peut signaler un contenu ou un joueur depuis l'application, et bloquer un joueur. L'hôte d'un salon peut supprimer immédiatement une question et exclure un joueur.",
       "item3": "Nous traitons chaque signalement sous 24 heures : le contenu concerné est retiré et le compte à l'origine d'un contenu abusif est exclu du service.",

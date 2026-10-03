@@ -67,7 +67,7 @@ export default function TermsAndConditions() {
           <>
             <p className="text-gray-500 leading-relaxed mb-4">{t('terms.userContent.intro')}</p>
             <ul className="space-y-3 text-gray-500">
-              {['item1', 'item2', 'item3', 'item4'].map((item) => (
+              {['responsibility', 'item1', 'item2', 'item3', 'item4'].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                   <span className="leading-relaxed">{t(`terms.userContent.${item}`)}</span>
@@ -122,7 +122,7 @@ export default function TermsAndConditions() {
             {t('terms.pageTitle')}
           </h1>
           <p className="text-sm text-gray-400 mb-5">
-            Last updated: January 15, 2025
+            Last updated: October 3, 2026
           </p>
           <p className="text-gray-500 leading-relaxed text-lg">
             {t('terms.intro')}
