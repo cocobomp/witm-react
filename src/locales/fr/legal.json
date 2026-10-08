@@ -75,28 +75,37 @@
       "item1": "Vous acceptez de fournir des informations exactes et à jour lors de l'inscription et de maintenir la sécurité de vos identifiants de compte.",
       "item2": "Vous êtes responsable de toutes les activités menées sous votre compte et vous engagez à ne pas adopter un comportement illégal, nuisible ou contraire à nos politiques."
     },
+    "userContent": {
+      "title": "3. Contenu des utilisateurs",
+      "intro": "L'application permet de créer des questions (listes personnelles, questions collaboratives dans un salon), des réponses libres et un pseudo, visibles par les autres joueurs du salon. En publiant ce contenu, vous acceptez les règles suivantes :",
+      "responsibility": "Responsabilité du contenu : les questions, réponses et pseudos créés par les joueurs sont publiés sous la seule responsabilité de leur auteur. WITM n'en est pas l'auteur, ne les vérifie pas avant leur affichage et n'est pas responsable de leur contenu. WITM retire tout contenu signalé qui enfreint ces règles, dans les 24 heures.",
+      "item1": "Tolérance zéro : tout contenu haineux, harcelant, sexuellement explicite envers une personne, discriminatoire, illégal ou visant à nuire à un joueur est interdit, de même que tout comportement abusif.",
+      "item2": "Chaque joueur peut signaler un contenu ou un joueur depuis l'application, et bloquer un joueur. L'hôte d'un salon peut supprimer immédiatement une question et exclure un joueur.",
+      "item3": "Nous traitons chaque signalement sous 24 heures : le contenu concerné est retiré et le compte à l'origine d'un contenu abusif est exclu du service.",
+      "item4": "Pour signaler un abus ou une activité inappropriée, écrivez-nous à info@whoisthemost.com — l'adresse figure aussi dans les réglages de l'application."
+    },
     "ip": {
-      "title": "3. Propriété Intellectuelle",
+      "title": "4. Propriété Intellectuelle",
       "text": "Tout le contenu, les fonctionnalités et la fonctionnalité de l'application, y compris le texte, les images, les vidéos, les graphiques et les marques déposées, sont la propriété de WITM ou de ses concédants de licence et sont protégés par les lois sur la propriété intellectuelle. Vous ne pouvez pas reproduire, distribuer ou utiliser tout contenu sans consentement écrit préalable."
     },
     "liability": {
-      "title": "4. Limitation de Responsabilité",
+      "title": "5. Limitation de Responsabilité",
       "text": "WITM n'est pas responsable des dommages découlant de l'utilisation de l'application, y compris mais sans s'y limiter, les dommages directs, indirects, accessoires ou consécutifs. Utilisez l'application à vos propres risques."
     },
     "termination": {
-      "title": "5. Résiliation",
+      "title": "6. Résiliation",
       "text": "Nous nous réservons le droit de suspendre ou de résilier votre compte si vous violez ces conditions ou si vous vous engagez dans des activités non autorisées. Nous pouvons également mettre fin aux services sans préavis si cela est nécessaire pour des raisons légales ou opérationnelles."
     },
     "governingLaw": {
-      "title": "6. Droit Applicable",
+      "title": "7. Droit Applicable",
       "text": "Ces conditions sont régies et interprétées conformément aux lois de la Suisse. Tout litige découlant de ces conditions sera soumis à la juridiction exclusive des tribunaux de Fribourg, Suisse."
     },
     "changes": {
-      "title": "7. Modifications des Conditions",
+      "title": "8. Modifications des Conditions",
       "text": "Nous pouvons mettre à jour ces conditions de temps à autre pour refléter les changements dans nos politiques ou les exigences légales. Vous serez notifié des mises à jour significatives, et les conditions mises à jour seront effectives immédiatement après publication."
     },
     "contact": {
-      "title": "8. Nous Contacter",
+      "title": "9. Nous Contacter",
       "text": "Si vous avez des questions ou des préoccupations concernant ces conditions, n'hésitez pas à nous contacter :",
       "email": "info@whoisthemost.com"
     }
