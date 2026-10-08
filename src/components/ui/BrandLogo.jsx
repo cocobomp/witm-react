@@ -1,10 +1,11 @@
+import { BRAND_NAME } from '../../constants/brand';
 import { useTheme } from '../../contexts/ThemeContext';
 
 // Sticker logotype of the 3.5 brand (spec 3.5 §3.1): letters as outlined
 // paths, a light and a dark cut. The slogan stays real text next to it.
 const LOGO_VARIANTS = {
-  compact: { file: 'witm-logo-compact', width: 90.457, height: 29.698 },
-  large: { file: 'witm-logo', width: 192.825, height: 62.031 },
+  compact: { file: 'qelp-logo-compact', width: 88.231, height: 30.097 },
+  large: { file: 'qelp-logo', width: 187.969, height: 62.903 },
 };
 
 const LIGHT_THEME = 'minimal';
@@ -21,7 +22,7 @@ export default function BrandLogo({ size = 'compact', tone = 'auto', className =
   return (
     <img
       src={`/img/brand/${variant.file}-${isDark ? 'dark' : 'light'}.svg`}
-      alt="WITM"
+      alt={BRAND_NAME}
       width={variant.width}
       height={variant.height}
       loading={loading}
