@@ -1,18 +1,18 @@
 {
   "meta": {
-    "title": "Tritt einem WITM-Spiel bei",
-    "description": "Deine Freunde haben dich zu einem WITM-Spiel eingeladen. Öffne die App und spiel mit dem Code mit!"
+    "title": "Tritt einem QELP-Spiel bei",
+    "description": "Deine Freunde haben dich zu einem QELP-Spiel (früher WITM) eingeladen. Öffne die App und spiel mit dem Code mit!"
   },
   "title": "Du bist eingeladen!",
   "titleWithInviter": "{{name}} lädt dich ein!",
-  "subtitle": "Deine Freunde warten in einem WITM-Spiel auf dich.",
+  "subtitle": "Deine Freunde warten in einem QELP-Spiel auf dich.",
   "codeLabel": "Spielcode",
   "openApp": "In der App öffnen",
-  "openAppHint": "Du hast WITM schon? Tippe, um direkt ins Spiel zu springen.",
+  "openAppHint": "Du hast QELP (früher WITM) schon? Tippe, um direkt ins Spiel zu springen.",
   "copyCode": "Code kopieren",
   "copied": "Code kopiert!",
   "noAppTitle": "Noch keine App?",
-  "noAppDescription": "Lade WITM kostenlos herunter und füge dann den Code oben ein oder tippe ihn ein, um mitzuspielen.",
+  "noAppDescription": "Lade QELP kostenlos herunter und füge dann den Code oben ein oder tippe ihn ein, um mitzuspielen.",
   "copyAndInstall": "Code kopieren und installieren",
   "invalidTitle": "Dieser Einladungslink scheint kaputt zu sein",
   "invalidDescription": "Bitte deinen Freund, den Link erneut zu senden, oder gib den Code direkt in der App ein."

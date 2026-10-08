@@ -72,7 +72,7 @@ function AdminDashboard() {
             {/* Logo */}
             <div className="flex items-center gap-4">
               <h1 className="text-xl font-bold">
-                <span className="gradient-text">WITM</span>
+                <span className="gradient-text">QELP</span>
                 <span className="text-gray-400 ml-2 text-sm font-normal">
                   {t('title')}
                 </span>

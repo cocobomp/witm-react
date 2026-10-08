@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import Section from '../ui/Section';
 
-const questions = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6'];
+const questions = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7'];
 
 export default function FAQ() {
   const { t } = useTranslation('home');

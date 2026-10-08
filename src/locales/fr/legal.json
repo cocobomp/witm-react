@@ -1,9 +1,9 @@
 {
   "privacyPolicy": {
     "pageTitle": "Politique de Confidentialité",
-    "metaTitle": "WITM - Politique de Confidentialité",
+    "metaTitle": "Politique de confidentialité",
     "breadcrumb": "Politique de Confidentialité",
-    "intro": "Chez WITM, nous valorisons votre vie privée et nous nous engageons à protéger vos informations personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons et partageons vos informations lorsque vous utilisez notre application.",
+    "intro": "Chez QELP (anciennement WITM), nous valorisons votre vie privée et nous nous engageons à protéger vos informations personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons et partageons vos informations lorsque vous utilisez notre application.",
     "infoCollected": {
       "title": "Informations que Nous Collectons",
       "personalInfo": {
@@ -63,9 +63,9 @@
   },
   "terms": {
     "pageTitle": "Conditions d'Utilisation",
-    "metaTitle": "WITM - Conditions d'Utilisation",
+    "metaTitle": "Conditions d'utilisation",
     "breadcrumb": "Conditions d'Utilisation",
-    "intro": "Bienvenue sur WITM ! En utilisant notre application, vous acceptez de vous conformer aux conditions d'utilisation suivantes. Veuillez lire attentivement ces conditions avant d'accéder à nos services.",
+    "intro": "Bienvenue sur QELP (anciennement WITM) ! En utilisant notre application, vous acceptez de vous conformer aux conditions d'utilisation suivantes. Veuillez lire attentivement ces conditions avant d'accéder à nos services.",
     "acceptance": {
       "title": "1. Acceptation des Conditions",
       "text": "En créant un compte ou en utilisant notre application, vous acceptez ces conditions d'utilisation dans leur intégralité. Si vous n'êtes pas d'accord avec ces conditions, vous ne devez pas utiliser notre application."
@@ -78,7 +78,7 @@
     "userContent": {
       "title": "3. Contenu des utilisateurs",
       "intro": "L'application permet de créer des questions (listes personnelles, questions collaboratives dans un salon), des réponses libres et un pseudo, visibles par les autres joueurs du salon. En publiant ce contenu, vous acceptez les règles suivantes :",
-      "responsibility": "Responsabilité du contenu : les questions, réponses et pseudos créés par les joueurs sont publiés sous la seule responsabilité de leur auteur. WITM n'en est pas l'auteur, ne les vérifie pas avant leur affichage et n'est pas responsable de leur contenu. WITM retire tout contenu signalé qui enfreint ces règles, dans les 24 heures.",
+      "responsibility": "Responsabilité du contenu : les questions, réponses et pseudos créés par les joueurs sont publiés sous la seule responsabilité de leur auteur. QELP n'en est pas l'auteur, ne les vérifie pas avant leur affichage et n'est pas responsable de leur contenu. QELP retire tout contenu signalé qui enfreint ces règles, dans les 24 heures.",
       "item1": "Tolérance zéro : tout contenu haineux, harcelant, sexuellement explicite envers une personne, discriminatoire, illégal ou visant à nuire à un joueur est interdit, de même que tout comportement abusif.",
       "item2": "Chaque joueur peut signaler un contenu ou un joueur depuis l'application, et bloquer un joueur. L'hôte d'un salon peut supprimer immédiatement une question et exclure un joueur.",
       "item3": "Nous traitons chaque signalement sous 24 heures : le contenu concerné est retiré et le compte à l'origine d'un contenu abusif est exclu du service.",
@@ -86,11 +86,11 @@
     },
     "ip": {
       "title": "4. Propriété Intellectuelle",
-      "text": "Tout le contenu, les fonctionnalités et la fonctionnalité de l'application, y compris le texte, les images, les vidéos, les graphiques et les marques déposées, sont la propriété de WITM ou de ses concédants de licence et sont protégés par les lois sur la propriété intellectuelle. Vous ne pouvez pas reproduire, distribuer ou utiliser tout contenu sans consentement écrit préalable."
+      "text": "Tout le contenu, les fonctionnalités et la fonctionnalité de l'application, y compris le texte, les images, les vidéos, les graphiques et les marques déposées, sont la propriété de QELP ou de ses concédants de licence et sont protégés par les lois sur la propriété intellectuelle. Vous ne pouvez pas reproduire, distribuer ou utiliser tout contenu sans consentement écrit préalable."
     },
     "liability": {
       "title": "5. Limitation de Responsabilité",
-      "text": "WITM n'est pas responsable des dommages découlant de l'utilisation de l'application, y compris mais sans s'y limiter, les dommages directs, indirects, accessoires ou consécutifs. Utilisez l'application à vos propres risques."
+      "text": "QELP n'est pas responsable des dommages découlant de l'utilisation de l'application, y compris mais sans s'y limiter, les dommages directs, indirects, accessoires ou consécutifs. Utilisez l'application à vos propres risques."
     },
     "termination": {
       "title": "6. Résiliation",
@@ -112,7 +112,7 @@
   },
   "deleteAccount": {
     "pageTitle": "Suppression de Compte",
-    "metaTitle": "WITM - Supprimer le Compte",
+    "metaTitle": "Supprimer le compte",
     "breadcrumb": "Supprimer le compte",
     "intro": "La suppression de votre compte est une action permanente et irréversible. En procédant à la suppression du compte, vous acceptez ce qui suit",
     "permanentTitle": "Votre compte sera supprimé définitivement",

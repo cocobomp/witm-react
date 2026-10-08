@@ -1,9 +1,31 @@
 import { useEffect } from 'react';
 
-const LOCALE_MAP = { en: 'en_US', fr: 'fr_FR', de: 'de_DE' };
+import {
+  BRAND_ALTERNATE_NAMES,
+  BRAND_NAME,
+  siteNameFor,
+  storeNameFor,
+} from '../../constants/brand';
+import { INSTAGRAM_URL, TIKTOK_URL } from '../../constants/links';
 
+const LOCALE_MAP = { en: 'en_US', fr: 'fr_FR', de: 'de_DE' };
+const SITE_URL = 'https://whoisthemost.com';
+
+/** « Page | QELP – Qui est le plus ? », or the title alone when it is whole. */
+function pageTitle(title, siteName, isFullTitle) {
+  if (!title) return siteName;
+  if (isFullTitle) return title;
+  return `${title} | ${siteName}`;
+}
+
+/**
+ * @param {boolean} isFullTitle  the title already names the site (the home
+ *   page's « QELP – Qui est le plus ? (anciennement WITM) »), so it gets no
+ *   « | site name » suffix
+ */
 export default function SEO({
   title,
+  isFullTitle = false,
   description,
   keywords,
   lang = 'en',
@@ -11,10 +33,9 @@ export default function SEO({
   image = '/img/logo.png',
   article,
 }) {
-  const siteName = 'WITM - Who Is The Most';
-  const fullTitle = title ? `${title} | ${siteName}` : siteName;
-  const siteUrl = 'https://whoisthemost.com';
-  const fullImage = image.startsWith('http') ? image : `${siteUrl}${image}`;
+  const siteName = siteNameFor(lang);
+  const fullTitle = pageTitle(title, siteName, isFullTitle);
+  const fullImage = image.startsWith('http') ? image : `${SITE_URL}${image}`;
 
   useEffect(() => {
     document.documentElement.lang = lang;
@@ -72,23 +93,23 @@ export default function SEO({
     const schemas = [
       {
         '@type': 'Organization',
-        name: 'WITM - Who Is The Most',
-        url: siteUrl,
-        logo: `${siteUrl}/img/logo.png`,
-        sameAs: [
-          'https://www.instagram.com/witm_whoisthemost',
-          'https://tiktok.com/@witm_whoisthemost',
-        ],
+        name: BRAND_NAME,
+        alternateName: BRAND_ALTERNATE_NAMES,
+        url: SITE_URL,
+        logo: `${SITE_URL}/img/logo.png`,
+        sameAs: [INSTAGRAM_URL, TIKTOK_URL],
       },
       {
         '@type': 'WebSite',
-        name: siteName,
-        url: siteUrl,
+        name: BRAND_NAME,
+        alternateName: [siteName, ...BRAND_ALTERNATE_NAMES],
+        url: SITE_URL,
         inLanguage: LOCALE_MAP[lang] || 'en_US',
       },
       {
         '@type': 'SoftwareApplication',
-        name: 'WITM - Who Is The Most',
+        name: storeNameFor(lang),
+        alternateName: [BRAND_NAME, ...BRAND_ALTERNATE_NAMES],
         applicationCategory: 'GameApplication',
         operatingSystem: 'iOS, Android',
         offers: {
@@ -111,7 +132,7 @@ export default function SEO({
         headline: article.title,
         datePublished: article.date,
         author: { '@type': 'Person', name: article.author },
-        publisher: { '@type': 'Organization', name: 'WITM' },
+        publisher: { '@type': 'Organization', name: BRAND_NAME },
         mainEntityOfPage: canonical,
       });
     }
@@ -125,7 +146,7 @@ export default function SEO({
       const el = document.getElementById(jsonLdId);
       if (el) el.remove();
     };
-  }, [fullTitle, description, keywords, lang, canonical, fullImage, article]);
+  }, [fullTitle, siteName, description, keywords, lang, canonical, fullImage, article]);
 
   return null;
 }

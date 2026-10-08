@@ -20,7 +20,7 @@
     "email": "info@whoisthemost.com",
     "copyright": "Copyright",
     "allRightsReserved": "All Rights Reserved",
-    "brandTagline": "Who Is The Most - The party voting game that brings friends together.",
+    "brandTagline": "Who is the most? The party voting game that brings friends together. Formerly WITM.",
     "downloadTitle": "Download the App",
     "downloadDescription": "Available on iOS and Android. Play with friends anywhere!",
     "madeBy": "Developed by"
@@ -51,7 +51,8 @@
     "de": "German"
   },
   "meta": {
-    "siteTitle": "WITM - Who Is The Most",
-    "siteDescription": "The party game that reveals what your friends really think! Vote on fun questions like \"Who is the most likely to...\" and dare the winners. Free on iOS and Android."
+    "siteTitle": "QELP – Who is the most? (formerly WITM)",
+    "siteDescription": "QELP (formerly WITM) is the party game that reveals what your friends really think! Vote on fun questions like \"Who is the most likely to...\" and dare the winners. Free on iOS and Android.",
+    "siteKeywords": "QELP, WITM, who is the most, who is most likely to, party game, game night, voting game, friends game, Switzerland"
   }
 }

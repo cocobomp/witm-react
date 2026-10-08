@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 import useLangPrefix from '../../hooks/useLangPrefix';
 import { INSTAGRAM_URL, TIKTOK_URL, STORE_CAMPAIGNS } from '../../constants/links';
+import { BRAND_NAME } from '../../constants/brand';
 import BrandLogo from '../ui/BrandLogo';
 import StoreBadges from '../ui/StoreBadges';
 
@@ -118,7 +119,7 @@ export default function Footer() {
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} WITM {t('footer.allRightsReserved')}
+              &copy; {new Date().getFullYear()} {BRAND_NAME} {t('footer.allRightsReserved')}
               <Link
                 to="/admin"
                 className="ml-3 text-gray-600 hover:text-gray-400 transition-colors"

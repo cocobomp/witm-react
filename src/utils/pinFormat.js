@@ -1,5 +1,5 @@
 /**
- * Room codes, read exactly as the WITM app reads them (app 3.5:
+ * Room codes, read exactly as the app reads them (app 3.5:
  * `lib/src/core/utils/pin_format.dart` and `JoinDeepLink.extractPin`).
  *
  * Stored PINs are always 3 digits: every app version ever shipped refuses to
@@ -17,7 +17,12 @@ export const STORED_PIN_LENGTH = 3;
 /** What a `/j/<code>` link may carry: the stored PIN, or a 2-digit code. */
 const JOIN_CODE_PATTERN = /^\d{2,3}$/;
 
-/** Prefix of the copied text, so the app's « Paste the code » chip trusts it. */
+/**
+ * Prefix of the copied text, so the app's « Paste the code » chip trusts it.
+ * It stays « WITM » after the rename to QELP: apps 3.5.0 to 3.5.2 only trust
+ * that prefix (`PastedJoinCode`), and « QELP 42 » would make them ask for a
+ * confirming tap. Switch it once the apps in use also trust « QELP ».
+ */
 const COPY_PREFIX = 'WITM';
 
 /** The code to print and read aloud: `042` reads `42`. */

@@ -1,9 +1,9 @@
 {
   "privacyPolicy": {
     "pageTitle": "Privacy Policy",
-    "metaTitle": "WITM - Privacy Policy",
+    "metaTitle": "Privacy Policy",
     "breadcrumb": "Privacy Policy",
-    "intro": "At WITM, we value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and share your information when you use our app.",
+    "intro": "At QELP (formerly WITM), we value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and share your information when you use our app.",
     "infoCollected": {
       "title": "Information We Collect",
       "personalInfo": {
@@ -63,9 +63,9 @@
   },
   "terms": {
     "pageTitle": "Terms & Conditions",
-    "metaTitle": "WITM - Terms and Conditions",
+    "metaTitle": "Terms and Conditions",
     "breadcrumb": "Terms & Conditions",
-    "intro": "Welcome to WITM! By using our app, you agree to comply with and be bound by the following terms and conditions of use. Please read these terms carefully before accessing or using our services.",
+    "intro": "Welcome to QELP (formerly WITM)! By using our app, you agree to comply with and be bound by the following terms and conditions of use. Please read these terms carefully before accessing or using our services.",
     "acceptance": {
       "title": "1. Acceptance of Terms",
       "text": "By creating an account or using our app, you accept these terms and conditions in full. If you do not agree to these terms, you must not use our app."
@@ -78,7 +78,7 @@
     "userContent": {
       "title": "3. User Content",
       "intro": "The app lets you create questions (personal lists, collaborative questions in a room), free-text answers and a nickname, which other players in the room can see. By posting such content you agree to the following:",
-      "responsibility": "Responsibility for content: questions, answers and nicknames created by players are published under the sole responsibility of their author. WITM is not their author, does not review them before they are shown and is not responsible for their content. WITM removes any reported content that breaks these rules within 24 hours.",
+      "responsibility": "Responsibility for content: questions, answers and nicknames created by players are published under the sole responsibility of their author. QELP is not their author, does not review them before they are shown and is not responsible for their content. QELP removes any reported content that breaks these rules within 24 hours.",
       "item1": "Zero tolerance: hateful, harassing, sexually explicit content aimed at a person, discriminatory, illegal content or content meant to harm a player is prohibited, as is any abusive behaviour.",
       "item2": "Any player can report content or a player from within the app, and block a player. A room host can immediately delete a question and remove a player.",
       "item3": "We act on every report within 24 hours: the content is removed and the account behind abusive content is ejected from the service.",
@@ -86,11 +86,11 @@
     },
     "ip": {
       "title": "4. Intellectual Property",
-      "text": "All content, features, and functionality of the app, including text, images, videos, graphics, and trademarks, are owned by WITM or its licensors and are protected by intellectual property laws. You may not reproduce, distribute, or use any content without prior written consent."
+      "text": "All content, features, and functionality of the app, including text, images, videos, graphics, and trademarks, are owned by QELP or its licensors and are protected by intellectual property laws. You may not reproduce, distribute, or use any content without prior written consent."
     },
     "liability": {
       "title": "5. Limitation of Liability",
-      "text": "WITM is not responsible for any damages arising from the use of the app, including but not limited to direct, indirect, incidental, or consequential damages. Use the app at your own risk."
+      "text": "QELP is not responsible for any damages arising from the use of the app, including but not limited to direct, indirect, incidental, or consequential damages. Use the app at your own risk."
     },
     "termination": {
       "title": "6. Termination",
@@ -112,7 +112,7 @@
   },
   "deleteAccount": {
     "pageTitle": "Account Deletion",
-    "metaTitle": "WITM - Delete Account",
+    "metaTitle": "Delete Account",
     "breadcrumb": "Delete account",
     "intro": "Deleting your account is a permanent and irreversible action. By proceeding with account deletion, you agree to the following",
     "permanentTitle": "Your account will be deleted permanently",
