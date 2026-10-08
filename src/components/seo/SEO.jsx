@@ -1,17 +1,10 @@
 import { useEffect } from 'react';
 
-import {
-  BRAND_ALTERNATE_NAMES,
-  BRAND_NAME,
-  siteNameFor,
-  storeNameFor,
-} from '../../constants/brand';
-import { INSTAGRAM_URL, TIKTOK_URL } from '../../constants/links';
+import { siteNameFor } from '../../constants/brand';
+import { buildStructuredData, SITE_URL } from './structuredData';
 
-// og:locale wants « fr_FR »; schema.org's inLanguage wants a BCP 47 tag.
+// og:locale wants « fr_FR ».
 const LOCALE_MAP = { en: 'en_US', fr: 'fr_FR', de: 'de_DE' };
-const SCHEMA_LANGUAGES = { en: 'en', fr: 'fr', de: 'de' };
-const SITE_URL = 'https://whoisthemost.com';
 
 /** « Page | QELP – Qui est le plus ? », or the title alone when it is whole. */
 function pageTitle(title, siteName, isFullTitle) {
@@ -92,57 +85,9 @@ export default function SEO({
       document.head.appendChild(script);
     }
 
-    const schemas = [
-      {
-        '@type': 'Organization',
-        name: BRAND_NAME,
-        alternateName: BRAND_ALTERNATE_NAMES,
-        url: SITE_URL,
-        logo: `${SITE_URL}/img/logo.png`,
-        sameAs: [INSTAGRAM_URL, TIKTOK_URL],
-      },
-      {
-        '@type': 'WebSite',
-        name: BRAND_NAME,
-        alternateName: [siteName, ...BRAND_ALTERNATE_NAMES],
-        url: SITE_URL,
-        inLanguage: SCHEMA_LANGUAGES[lang] || 'en',
-      },
-      {
-        '@type': 'SoftwareApplication',
-        name: storeNameFor(lang),
-        alternateName: [BRAND_NAME, ...BRAND_ALTERNATE_NAMES],
-        applicationCategory: 'GameApplication',
-        operatingSystem: 'iOS, Android',
-        offers: {
-          '@type': 'Offer',
-          price: '0',
-          priceCurrency: 'CHF',
-        },
-        description: description || 'The party game that reveals what your friends really think!',
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: '4.8',
-          ratingCount: '150',
-        },
-      },
-    ];
-
-    if (article) {
-      schemas.push({
-        '@type': 'Article',
-        headline: article.title,
-        datePublished: article.date,
-        author: { '@type': 'Person', name: article.author },
-        publisher: { '@type': 'Organization', name: BRAND_NAME },
-        mainEntityOfPage: canonical,
-      });
-    }
-
-    script.textContent = JSON.stringify({
-      '@context': 'https://schema.org',
-      '@graph': schemas,
-    });
+    script.textContent = JSON.stringify(
+      buildStructuredData({ lang, siteName, description, canonical, article }),
+    );
 
     return () => {
       const el = document.getElementById(jsonLdId);
