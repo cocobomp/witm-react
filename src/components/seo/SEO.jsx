@@ -8,7 +8,9 @@ import {
 } from '../../constants/brand';
 import { INSTAGRAM_URL, TIKTOK_URL } from '../../constants/links';
 
+// og:locale wants « fr_FR »; schema.org's inLanguage wants a BCP 47 tag.
 const LOCALE_MAP = { en: 'en_US', fr: 'fr_FR', de: 'de_DE' };
+const SCHEMA_LANGUAGES = { en: 'en', fr: 'fr', de: 'de' };
 const SITE_URL = 'https://whoisthemost.com';
 
 /** « Page | QELP – Qui est le plus ? », or the title alone when it is whole. */
@@ -104,7 +106,7 @@ export default function SEO({
         name: BRAND_NAME,
         alternateName: [siteName, ...BRAND_ALTERNATE_NAMES],
         url: SITE_URL,
-        inLanguage: LOCALE_MAP[lang] || 'en_US',
+        inLanguage: SCHEMA_LANGUAGES[lang] || 'en',
       },
       {
         '@type': 'SoftwareApplication',
