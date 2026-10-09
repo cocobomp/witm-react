@@ -1,6 +1,8 @@
 import { useRef, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
+import { BRAND_NAME } from '../../constants/brand';
+import BrandLogo from '../ui/BrandLogo';
 import Button from '../ui/Button';
 import { INSTAGRAM_URL, TIKTOK_URL } from '../../constants/links';
 
@@ -55,14 +57,17 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <motion.span
+            <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.1 }}
-              className="inline-block text-primary font-semibold text-sm uppercase tracking-widest mb-4"
+              className="mb-5 flex flex-wrap items-center gap-x-4 gap-y-2"
             >
-              WITM
-            </motion.span>
+              <BrandLogo size="large" className="h-14 lg:h-16" />
+              <span className="inline-flex items-center px-3 py-1 rounded-full bg-surface text-sm font-medium text-gray-500 border border-gray-100">
+                {t('hero.formerly')}
+              </span>
+            </motion.div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6 tracking-tight">
               <span className="gradient-text">{t('hero.subtitle')}</span>
             </h1>
@@ -164,7 +169,7 @@ export default function Hero() {
                   <motion.img
                     key={currentImage}
                     src={screenshots[currentImage]}
-                    alt="WITM App Screenshot"
+                    alt={`${BRAND_NAME} App Screenshot`}
                     className="absolute inset-0 w-full h-full object-cover"
                     initial={{ opacity: 0, x: 40 }}
                     animate={{ opacity: 1, x: 0 }}

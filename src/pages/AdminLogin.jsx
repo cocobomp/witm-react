@@ -52,7 +52,7 @@ export default function AdminLogin() {
           {/* Logo */}
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-white mb-2">
-              <span className="gradient-text">WITM</span>
+              <span className="gradient-text">QELP</span>
             </h1>
             <p className="text-gray-400 text-sm">{t('login.title', 'Admin Access')}</p>
           </div>

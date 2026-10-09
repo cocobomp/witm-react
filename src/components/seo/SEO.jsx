@@ -1,9 +1,26 @@
 import { useEffect } from 'react';
 
+import { siteNameFor } from '../../constants/brand';
+import { buildStructuredData, SITE_URL } from './structuredData';
+
+// og:locale wants « fr_FR ».
 const LOCALE_MAP = { en: 'en_US', fr: 'fr_FR', de: 'de_DE' };
 
+/** « Page | QELP – Qui est le plus ? », or the title alone when it is whole. */
+function pageTitle(title, siteName, isFullTitle) {
+  if (!title) return siteName;
+  if (isFullTitle) return title;
+  return `${title} | ${siteName}`;
+}
+
+/**
+ * @param {boolean} isFullTitle  the title already names the site (the home
+ *   page's « QELP – Qui est le plus ? (anciennement WITM) »), so it gets no
+ *   « | site name » suffix
+ */
 export default function SEO({
   title,
+  isFullTitle = false,
   description,
   keywords,
   lang = 'en',
@@ -11,10 +28,9 @@ export default function SEO({
   image = '/img/logo.png',
   article,
 }) {
-  const siteName = 'WITM - Who Is The Most';
-  const fullTitle = title ? `${title} | ${siteName}` : siteName;
-  const siteUrl = 'https://whoisthemost.com';
-  const fullImage = image.startsWith('http') ? image : `${siteUrl}${image}`;
+  const siteName = siteNameFor(lang);
+  const fullTitle = pageTitle(title, siteName, isFullTitle);
+  const fullImage = image.startsWith('http') ? image : `${SITE_URL}${image}`;
 
   useEffect(() => {
     document.documentElement.lang = lang;
@@ -69,63 +85,15 @@ export default function SEO({
       document.head.appendChild(script);
     }
 
-    const schemas = [
-      {
-        '@type': 'Organization',
-        name: 'WITM - Who Is The Most',
-        url: siteUrl,
-        logo: `${siteUrl}/img/logo.png`,
-        sameAs: [
-          'https://www.instagram.com/witm_whoisthemost',
-          'https://tiktok.com/@witm_whoisthemost',
-        ],
-      },
-      {
-        '@type': 'WebSite',
-        name: siteName,
-        url: siteUrl,
-        inLanguage: LOCALE_MAP[lang] || 'en_US',
-      },
-      {
-        '@type': 'SoftwareApplication',
-        name: 'WITM - Who Is The Most',
-        applicationCategory: 'GameApplication',
-        operatingSystem: 'iOS, Android',
-        offers: {
-          '@type': 'Offer',
-          price: '0',
-          priceCurrency: 'CHF',
-        },
-        description: description || 'The party game that reveals what your friends really think!',
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: '4.8',
-          ratingCount: '150',
-        },
-      },
-    ];
-
-    if (article) {
-      schemas.push({
-        '@type': 'Article',
-        headline: article.title,
-        datePublished: article.date,
-        author: { '@type': 'Person', name: article.author },
-        publisher: { '@type': 'Organization', name: 'WITM' },
-        mainEntityOfPage: canonical,
-      });
-    }
-
-    script.textContent = JSON.stringify({
-      '@context': 'https://schema.org',
-      '@graph': schemas,
-    });
+    script.textContent = JSON.stringify(
+      buildStructuredData({ lang, siteName, description, canonical, article }),
+    );
 
     return () => {
       const el = document.getElementById(jsonLdId);
       if (el) el.remove();
     };
-  }, [fullTitle, description, keywords, lang, canonical, fullImage, article]);
+  }, [fullTitle, siteName, description, keywords, lang, canonical, fullImage, article]);
 
   return null;
 }

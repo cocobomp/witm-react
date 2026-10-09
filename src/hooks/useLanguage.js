@@ -2,6 +2,11 @@ import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 
+// Sections without a language prefix in their URL. The app shares one invite
+// link (/j/<code>) with everyone, so it keeps the visitor's browser language
+// instead of falling back to English.
+const LANGUAGE_NEUTRAL_SECTIONS = ['j'];
+
 export default function useLanguage() {
   const { i18n } = useTranslation();
   const location = useLocation();
@@ -15,7 +20,7 @@ export default function useLanguage() {
       if (i18n.language !== langFromPath) {
         i18n.changeLanguage(langFromPath);
       }
-    } else {
+    } else if (!LANGUAGE_NEUTRAL_SECTIONS.includes(langFromPath)) {
       if (i18n.language !== 'en') {
         i18n.changeLanguage('en');
       }

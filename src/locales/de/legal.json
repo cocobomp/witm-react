@@ -1,9 +1,9 @@
 {
   "privacyPolicy": {
     "pageTitle": "Datenschutzrichtlinie",
-    "metaTitle": "WITM - Datenschutzrichtlinie",
+    "metaTitle": "Datenschutzrichtlinie",
     "breadcrumb": "Datenschutzrichtlinie",
-    "intro": "Bei WITM schätzen wir Ihre Privatsphäre und sind bestrebt, Ihre persönlichen Daten zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden und teilen, wenn Sie unsere App nutzen.",
+    "intro": "Bei QELP (früher WITM) schätzen wir Ihre Privatsphäre und sind bestrebt, Ihre persönlichen Daten zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden und teilen, wenn Sie unsere App nutzen.",
     "infoCollected": {
       "title": "Informationen, die Wir Sammeln",
       "personalInfo": {
@@ -63,9 +63,9 @@
   },
   "terms": {
     "pageTitle": "Nutzungsbedingungen",
-    "metaTitle": "WITM - Nutzungsbedingungen",
+    "metaTitle": "Nutzungsbedingungen",
     "breadcrumb": "Nutzungsbedingungen",
-    "intro": "Willkommen bei WITM! Durch die Nutzung unserer App stimmen Sie den folgenden Nutzungsbedingungen zu. Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie auf unsere Dienste zugreifen.",
+    "intro": "Willkommen bei QELP (früher WITM)! Durch die Nutzung unserer App stimmen Sie den folgenden Nutzungsbedingungen zu. Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie auf unsere Dienste zugreifen.",
     "acceptance": {
       "title": "1. Annahme der Bedingungen",
       "text": "Durch die Erstellung eines Kontos oder die Nutzung unserer App akzeptieren Sie diese Nutzungsbedingungen vollständig. Wenn Sie diesen Bedingungen nicht zustimmen, dürfen Sie unsere App nicht nutzen."
@@ -78,7 +78,7 @@
     "userContent": {
       "title": "3. Nutzerinhalte",
       "intro": "Die App erlaubt es, Fragen (persönliche Listen, gemeinsame Fragen in einem Raum), Freitext-Antworten und einen Spielernamen zu erstellen, die für die anderen Spieler im Raum sichtbar sind. Mit dem Veröffentlichen solcher Inhalte akzeptieren Sie Folgendes:",
-      "responsibility": "Verantwortung für Inhalte: Fragen, Antworten und Spitznamen, die Spieler erstellen, werden unter der alleinigen Verantwortung ihrer Urheber veröffentlicht. WITM ist nicht deren Urheber, prüft sie vor der Anzeige nicht und ist für ihren Inhalt nicht verantwortlich. WITM entfernt gemeldete Inhalte, die gegen diese Regeln verstoßen, innerhalb von 24 Stunden.",
+      "responsibility": "Verantwortung für Inhalte: Fragen, Antworten und Spitznamen, die Spieler erstellen, werden unter der alleinigen Verantwortung ihrer Urheber veröffentlicht. QELP ist nicht deren Urheber, prüft sie vor der Anzeige nicht und ist für ihren Inhalt nicht verantwortlich. QELP entfernt gemeldete Inhalte, die gegen diese Regeln verstoßen, innerhalb von 24 Stunden.",
       "item1": "Null Toleranz: hasserfüllte, belästigende, gegen eine Person gerichtete sexuell explizite, diskriminierende, rechtswidrige oder auf Schädigung eines Spielers zielende Inhalte sind verboten, ebenso jedes missbräuchliche Verhalten.",
       "item2": "Jeder Spieler kann Inhalte oder Spieler in der App melden und Spieler blockieren. Der Gastgeber eines Raums kann eine Frage sofort löschen und einen Spieler entfernen.",
       "item3": "Wir bearbeiten jede Meldung innerhalb von 24 Stunden: der Inhalt wird entfernt und das Konto hinter missbräuchlichen Inhalten wird vom Dienst ausgeschlossen.",
@@ -86,11 +86,11 @@
     },
     "ip": {
       "title": "4. Geistiges Eigentum",
-      "text": "Alle Inhalte, Funktionen und Funktionalitäten der App, einschließlich Text, Bilder, Videos, Grafiken und Marken, sind Eigentum von WITM oder seinen Lizenzgebern und durch Gesetze zum geistigen Eigentum geschützt. Sie dürfen keine Inhalte ohne vorherige schriftliche Zustimmung reproduzieren, verbreiten oder verwenden."
+      "text": "Alle Inhalte, Funktionen und Funktionalitäten der App, einschließlich Text, Bilder, Videos, Grafiken und Marken, sind Eigentum von QELP oder seinen Lizenzgebern und durch Gesetze zum geistigen Eigentum geschützt. Sie dürfen keine Inhalte ohne vorherige schriftliche Zustimmung reproduzieren, verbreiten oder verwenden."
     },
     "liability": {
       "title": "5. Haftungsbeschränkung",
-      "text": "WITM ist nicht verantwortlich für Schäden, die aus der Nutzung der App entstehen, einschließlich, aber nicht beschränkt auf direkte, indirekte, zufällige oder Folgeschäden. Die Nutzung der App erfolgt auf eigenes Risiko."
+      "text": "QELP ist nicht verantwortlich für Schäden, die aus der Nutzung der App entstehen, einschließlich, aber nicht beschränkt auf direkte, indirekte, zufällige oder Folgeschäden. Die Nutzung der App erfolgt auf eigenes Risiko."
     },
     "termination": {
       "title": "6. Kündigung",
@@ -112,7 +112,7 @@
   },
   "deleteAccount": {
     "pageTitle": "Kontolöschung",
-    "metaTitle": "WITM - Konto Löschen",
+    "metaTitle": "Konto löschen",
     "breadcrumb": "Konto löschen",
     "intro": "Das Löschen Ihres Kontos ist eine dauerhafte und unwiderrufliche Aktion. Indem Sie mit der Kontolöschung fortfahren, stimmen Sie Folgendem zu",
     "permanentTitle": "Ihr Konto wird dauerhaft gelöscht",

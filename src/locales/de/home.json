@@ -1,7 +1,8 @@
 {
   "hero": {
-    "title": "WITM",
+    "title": "QELP",
     "subtitle": "Wer Ist Am Meisten...?",
+    "formerly": "Früher WITM",
     "description": "Das Partyspiel, bei dem du über deine Freunde abstimmst — und sie über dich. Wer traut sich heute Abend?",
     "ctaJoin": "Community beitreten",
     "ctaDownload": "App laden",
@@ -16,7 +17,7 @@
     "sectionLabel": "Über uns",
     "title": "Ein Kleines Schweizer Team, Große Ideen",
     "description": "Wir sind ein leidenschaftliches Team aus Freiburg, Schweiz, das sich der Verbindung von Freunden durch lustige und unvergessliche Momente widmet.",
-    "story": "WITM wurde aus einer einfachen Frage geboren: \"Wer von uns ist am ehesten...?\" Jetzt könnt ihr die Debatte klären! Erstellt einen Raum, ladet eure Freunde mit einem PIN-Code ein und stimmt über witzige Fragen ab. Wer die meisten Stimmen hat? Bekommt eine Mutprobe! Und mit Kollaborativen Fragen kann eure Gruppe eigene Fragen in Echtzeit erstellen und einreichen.",
+    "story": "QELP, kurz für „Qui Est Le Plus“ (französisch für „Wer ist am meisten“), wurde aus einer einfachen Frage geboren: \"Wer von uns ist am ehesten...?\" Jetzt könnt ihr die Debatte klären! Erstellt einen Raum, ladet eure Freunde mit einem PIN-Code ein und stimmt über witzige Fragen ab. Wer die meisten Stimmen hat? Bekommt eine Mutprobe! Und mit Kollaborativen Fragen kann eure Gruppe eigene Fragen in Echtzeit erstellen und einreichen.",
     "pillars": {
       "swissQuality": {
         "label": "Schweizer Qualität",
@@ -81,7 +82,7 @@
   "carousel": {
     "sectionTitle": "Erlebe die App",
     "sectionDescription": "Wische durch die Screenshots und sieh, wie einfach es ist, mit Freunden zu spielen.",
-    "screen1Alt": "WITM Startbildschirm",
+    "screen1Alt": "QELP Startbildschirm",
     "screen2Alt": "Raum erstellen Bildschirm",
     "screen3Alt": "Abstimmungsbildschirm",
     "previous": "Vorheriger Screenshot",
@@ -89,7 +90,7 @@
     "goToSlide": "Zur Folie {{number}}"
   },
   "whyChoose": {
-    "title": "Warum WITM Wählen?",
+    "title": "Warum QELP Wählen?",
     "subtitle": "Das Partyspiel für echte Freundschaften",
     "swissMade": "Made in Switzerland",
     "weListen": "Wir Hören Zu",
@@ -98,10 +99,10 @@
     "swissMadeDesc": "Mit Schweizer Präzision und Sorgfalt in Freiburg entworfen und entwickelt. Qualität, der du vertrauen kannst.",
     "weListenDesc": "Hast du eine Idee? Wir lesen jeden Vorschlag. Dein Feedback gestaltet direkt unsere Features.",
     "justLaunchedDesc": "Wir liefern jeden Monat neue Features — mehr Fragen, Kategorien und Spielmodi sind immer unterwegs.",
-    "communityFirstDesc": "Für Freundesgruppen gebaut, von Spielern wie dir geformt. Du bist das Herz von WITM."
+    "communityFirstDesc": "Für Freundesgruppen gebaut, von Spielern wie dir geformt. Du bist das Herz von QELP."
   },
   "details": {
-    "sectionTitle": "Wie WITM Funktioniert",
+    "sectionTitle": "Wie QELP Funktioniert",
     "sectionSubtitlePrefix": "Entdecke",
     "sectionSubtitleHighlight": "Das Gameplay",
     "feature1": {
@@ -136,12 +137,12 @@
     "feature6": {
       "title": "Teilt die Lacher",
       "description": "Macht Screenshots von den lustigsten Ergebnissen und teilt sie mit der Welt. Zeigt allen, wer zum 'Am ehesten eine Katzenlady' gewählt wurde — das werden sie nie vergessen.",
-      "extra": "Die besten WITM-Momente verdienen ein Publikum. Teilt eure Ergebnisse in den sozialen Medien, fordert andere Freundesgruppen heraus und vergleicht, wer die wildesten Stimmen bekommen hat. Jedes Spiel schafft Geschichten, die es wert sind, erzählt zu werden."
+      "extra": "Die besten QELP-Momente verdienen ein Publikum. Teilt eure Ergebnisse in den sozialen Medien, fordert andere Freundesgruppen heraus und vergleicht, wer die wildesten Stimmen bekommen hat. Jedes Spiel schafft Geschichten, die es wert sind, erzählt zu werden."
     },
     "feature7": {
       "title": "Endrangliste",
       "description": "Am Ende sieh die komplette Rangliste, die zeigt wer über alle Runden hinweg am meisten \"Der Meiste\" gewählt wurde. Perfekt um freundschaftliche Debatten zu klären und Angeberrechte zu verdienen!",
-      "extra": "Premium-Spieler können eigene Fragen erstellen, auf alle Kategorien zugreifen und jede Spieleinstellung personalisieren. Mach WITM zu deinem eigenen!"
+      "extra": "Premium-Spieler können eigene Fragen erstellen, auf alle Kategorien zugreifen und jede Spieleinstellung personalisieren. Mach QELP zu deinem eigenen!"
     }
   },
   "gameFeatures": {
@@ -182,23 +183,25 @@
   },
   "faq": {
     "sectionTitle": "Häufig Gestellte Fragen",
-    "sectionDescription": "Alles, was du über WITM wissen musst",
+    "sectionDescription": "Alles, was du über QELP wissen musst",
     "q1": "Wie viele Spieler können mitspielen?",
     "a1": "Du brauchst mindestens 2 Spieler, um eine Partie zu starten. Nach oben gibt es keine Grenze — je mehr Freunde, desto lustiger! Teile einfach den PIN-Code und alle können sofort beitreten.",
-    "q2": "Ist WITM kostenlos?",
-    "a2": "Ja! WITM ist komplett kostenlos zum Herunterladen und Spielen. Wir bieten ein optionales Premium-Upgrade für eigene Fragen, zusätzliche Kategorien und weitere Spieleinstellungen.",
+    "q2": "Ist QELP kostenlos?",
+    "a2": "Ja! QELP ist komplett kostenlos zum Herunterladen und Spielen. Wir bieten ein optionales Premium-Upgrade für eigene Fragen, zusätzliche Kategorien und weitere Spieleinstellungen.",
     "q3": "Kann ich eigene Fragen erstellen?",
     "a3": "Klar! Premium-Nutzer können eigene Fragenlisten erstellen. Und mit dem Kollaborativen Modus kann jeder in der Lobby Fragen einreichen, bevor das Spiel losgeht — ganz ohne Premium!",
     "q4": "Was ist der Kollaborative Modus?",
     "a4": "Im Kollaborativen Modus kann jeder Spieler in der Lobby eigene Fragen einreichen, bevor das Spiel beginnt. Diese werden mit den Kategorie-Fragen gemischt für ein völlig einzigartiges Spielerlebnis. Perfekt für Insider-Witze!",
     "q5": "Wie trete ich einem Raum bei?",
     "a5": "Der Gastgeber erstellt einen Raum und bekommt einen 3-Zeichen-PIN-Code. Gib diesen PIN einfach auf dem Beitrittsbildschirm ein und du bist dabei! Kein Konto nötig, um als Gast beizutreten.",
-    "q6": "Gibt es WITM in meiner Sprache?",
-    "a6": "WITM ist derzeit auf Englisch, Französisch und Deutsch verfügbar — mit über 520 vollständig übersetzten Fragen. Weitere Sprachen folgen bald basierend auf den Wünschen der Community!"
+    "q6": "Gibt es QELP in meiner Sprache?",
+    "a6": "QELP ist derzeit auf Englisch, Französisch und Deutsch verfügbar — mit über 520 vollständig übersetzten Fragen. Weitere Sprachen folgen bald basierend auf den Wünschen der Community!",
+    "q7": "Sind WITM und QELP dieselbe App?",
+    "a7": "Ja! WITM heißt jetzt QELP, kurz für „Qui Est Le Plus“, französisch für „Wer ist am meisten“. Gleiches Spiel, gleiche Fragen, gleiches Konto: Wenn du WITM schon hast, reicht ein Update, du musst nichts neu einrichten."
   },
   "download": {
     "title": "Bereit zu Spielen?",
-    "description": "Euer nächster Spieleabend beginnt hier. Tausende Freundesgruppen spielen schon — ladet WITM kostenlos auf iOS und Android herunter!"
+    "description": "Euer nächster Spieleabend beginnt hier. Tausende Freundesgruppen spielen schon — ladet QELP kostenlos auf iOS und Android herunter!"
   },
   "team": {
     "sectionTitle": "Team",
@@ -234,26 +237,22 @@
       {
         "name": "Anna S.",
         "context": "Spieleabend",
-        "quote": "Wir haben 3 Stunden am Stück gespielt und konnten nicht aufhören zu lachen. Die Fragen sind genial und die Mutproben waren legendär.",
-        "stars": 5
+        "quote": "Wir haben 3 Stunden am Stück gespielt und konnten nicht aufhören zu lachen. Die Fragen sind genial und die Mutproben waren legendär."
       },
       {
         "name": "Lukas W.",
         "context": "Teambuilding",
-        "quote": "Viel besser als langweilige Kennenlernspiele. Unser Team hat sich endlich richtig kennengelernt. Der anonyme Modus ist genial!",
-        "stars": 5
+        "quote": "Viel besser als langweilige Kennenlernspiele. Unser Team hat sich endlich richtig kennengelernt. Der anonyme Modus ist genial!"
       },
       {
         "name": "Marie H.",
         "context": "Familientreffen",
-        "quote": "Sogar meine Eltern waren begeistert! Die Familien-Kategorie ist perfekt — lustig, aber nie zu peinlich. Wir spielen jetzt jeden Sonntag.",
-        "stars": 5
+        "quote": "Sogar meine Eltern waren begeistert! Die Familien-Kategorie ist perfekt — lustig, aber nie zu peinlich. Wir spielen jetzt jeden Sonntag."
       },
       {
         "name": "Felix R.",
         "context": "Geburtstagsparty",
-        "quote": "Die Kollaborativen Fragen sind der Hammer. Jeder fügt seine Insider-Witze hinzu und es wird SO persönlich.",
-        "stars": 5
+        "quote": "Die Kollaborativen Fragen sind der Hammer. Jeder fügt seine Insider-Witze hinzu und es wird SO persönlich."
       }
     ]
   },

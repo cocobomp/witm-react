@@ -1,17 +1,19 @@
 {
   "meta": {
-    "title": "Rejoins une partie WITM",
-    "description": "Tes amis t'ont invité à une partie WITM. Ouvre l'app et rejoins-les avec le PIN !"
+    "title": "Rejoins une partie QELP",
+    "description": "Tes amis t'ont invité à une partie QELP (anciennement WITM). Ouvre l'app et rejoins-les avec le code !"
   },
-  "title": "Tu es invité !",
-  "subtitle": "Tes amis t'attendent dans une partie WITM.",
-  "pinLabel": "PIN de la partie",
+  "title": "Tu es invité·e !",
+  "titleWithInviter": "{{name}} t'invite !",
+  "subtitle": "Tes amis t'attendent dans une partie QELP.",
+  "codeLabel": "Code de la partie",
   "openApp": "Ouvrir dans l'app",
-  "openAppHint": "Tu as déjà WITM ? Appuie pour rejoindre la partie directement.",
-  "copyPin": "Copier le PIN",
-  "copied": "PIN copié !",
+  "openAppHint": "Tu as déjà QELP (anciennement WITM) ? Appuie pour rejoindre la partie directement.",
+  "copyCode": "Copier le code",
+  "copied": "Code copié !",
   "noAppTitle": "Pas encore l'app ?",
-  "noAppDescription": "Télécharge WITM gratuitement, puis saisis le PIN ci-dessus pour rejoindre tes amis.",
+  "noAppDescription": "Télécharge QELP gratuitement, puis colle ou saisis le code ci-dessus pour rejoindre tes amis.",
+  "copyAndInstall": "Copier le code et installer",
   "invalidTitle": "Ce lien d'invitation semble cassé",
-  "invalidDescription": "Demande à ton ami de renvoyer le lien, ou saisis le PIN directement dans l'app."
+  "invalidDescription": "Demande à ton ami de renvoyer le lien, ou saisis le code directement dans l'app."
 }

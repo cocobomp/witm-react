@@ -7,7 +7,20 @@ export const INFO_EMAIL = 'info@whoisthemost.com';
 // Custom scheme handled by the Flutter app (see universal link /j/:pin flow).
 export const APP_JOIN_SCHEME_PREFIX = 'qelp://join/';
 
-export const buildJoinDeepLink = (pin) => `${APP_JOIN_SCHEME_PREFIX}${encodeURIComponent(pin)}`;
+/// Query parameter of a join link carrying the inviting host's name
+/// (`/j/042?n=Léa`, app 3.5 `JoinDeepLink.inviterNameParam`).
+export const JOIN_INVITER_PARAM = 'n';
+
+/// The custom-scheme link that opens the app on the join flow. It keeps the
+/// stored 3-digit PIN, the only form apps before 3.5 accept, and hands the
+/// inviter's name on to 3.5 (older apps ignore the query).
+export function buildJoinDeepLink(pin, inviterName) {
+  const base = `${APP_JOIN_SCHEME_PREFIX}${encodeURIComponent(pin)}`;
+  if (!inviterName) return base;
+
+  const query = new URLSearchParams({ [JOIN_INVITER_PARAM]: inviterName });
+  return `${base}?${query.toString()}`;
+}
 
 /// Apple reports `ct` campaigns only when a provider token travels with them.
 /// Read it off App Store Connect → App Analytics → Campaigns and paste it

@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import Section from '../ui/Section';
+import { BRAND_NAME } from '../../constants/brand';
 import { STORE_CAMPAIGNS } from '../../constants/links';
 import StoreBadges from '../ui/StoreBadges';
 
@@ -79,7 +80,7 @@ export default function Download() {
                 <div className="w-full h-full rounded-[2rem] overflow-hidden bg-white">
                   <img
                     src="/img/screens.png"
-                    alt="WITM App"
+                    alt={`${BRAND_NAME} App`}
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />

@@ -6,7 +6,7 @@ import Section from '../ui/Section';
 
 const STAGGER_DELAY = 0.1;
 
-// Real game mechanics from the WITM app (distinct from question categories)
+// Real game mechanics from the QELP app (distinct from question categories)
 const gameFeatures = [
   { key: 'reactions', emoji: '🎉' },
   { key: 'awards', emoji: '🏆' },

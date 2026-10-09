@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import Section from '../ui/Section';
 
-// Real categories from the WITM game
+// Real categories from the QELP game
 const categories = [
   { key: 'wtf', emoji: '🎲' },
   { key: 'friends', emoji: '👬' },

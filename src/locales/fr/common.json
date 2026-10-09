@@ -20,7 +20,7 @@
     "email": "info@whoisthemost.com",
     "copyright": "Copyright",
     "allRightsReserved": "Tous droits réservés",
-    "brandTagline": "Who Is The Most - Le jeu de vote entre amis qui rapproche.",
+    "brandTagline": "Qui est le plus ? Le jeu de vote entre amis qui rapproche. Anciennement WITM.",
     "downloadTitle": "Télécharger l'app",
     "downloadDescription": "Disponible sur iOS et Android. Jouez avec vos amis partout !",
     "madeBy": "Développé par"
@@ -51,7 +51,8 @@
     "de": "Allemand"
   },
   "meta": {
-    "siteTitle": "WITM - Qui est le plus",
-    "siteDescription": "Le jeu de soirée qui révèle ce que vos amis pensent vraiment ! Votez sur des questions fun et lancez des défis aux gagnants. Gratuit sur iOS et Android."
+    "siteTitle": "QELP – Qui est le plus ? (anciennement WITM)",
+    "siteDescription": "QELP (anciennement WITM), le jeu de soirée qui révèle ce que vos amis pensent vraiment ! Votez sur des questions « Qui est le plus… ? » et lancez des défis aux gagnants. Gratuit sur iOS et Android.",
+    "siteKeywords": "QELP, WITM, qui est le plus, qui est le plus susceptible de, jeu de soirée, jeu entre amis, jeu de vote, party game, Suisse"
   }
 }

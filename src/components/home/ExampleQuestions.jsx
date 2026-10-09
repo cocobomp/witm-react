@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import Section from '../ui/Section';
 
-// Real questions from the WITM game
+// Real questions from the QELP game
 const questions = [
   { key: 'q1', emoji: '🎉' },  // Party planner
   { key: 'q2', emoji: '☕' },  // Coffee spender

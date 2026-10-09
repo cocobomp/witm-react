@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 import useLangPrefix from '../../hooks/useLangPrefix';
 import { INSTAGRAM_URL, TIKTOK_URL, STORE_CAMPAIGNS } from '../../constants/links';
+import { BRAND_NAME } from '../../constants/brand';
+import BrandLogo from '../ui/BrandLogo';
 import StoreBadges from '../ui/StoreBadges';
 
 export default function Footer() {
@@ -32,8 +34,8 @@ export default function Footer() {
           {/* Column 1: Brand + Contact */}
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <img src="/img/logo.png" alt="WITM" className="h-10 w-10" loading="lazy" width="40" height="40" />
-              <span className="font-bold text-xl tracking-tight">WITM</span>
+              <img src="/img/logo.png" alt="" className="h-10 w-10" loading="lazy" width="40" height="40" />
+              <BrandLogo size="compact" tone="dark" className="h-[34px]" loading="lazy" />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs">
               {t('footer.brandTagline')}
@@ -117,7 +119,7 @@ export default function Footer() {
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} WITM {t('footer.allRightsReserved')}
+              &copy; {new Date().getFullYear()} {BRAND_NAME} {t('footer.allRightsReserved')}
               <Link
                 to="/admin"
                 className="ml-3 text-gray-600 hover:text-gray-400 transition-colors"
